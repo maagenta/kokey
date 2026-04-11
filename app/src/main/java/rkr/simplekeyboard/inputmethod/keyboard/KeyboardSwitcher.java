@@ -46,6 +46,7 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
     private static final String TAG = KeyboardSwitcher.class.getSimpleName();
 
     private MainKeyboardView mKeyboardView;
+    private rkr.simplekeyboard.inputmethod.latin.EmojiPanelView mEmojiPanelView;
     private LatinIME mLatinIME;
     private RichInputMethodManager mRichImm;
 
@@ -376,6 +377,18 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
 
         mKeyboardView = currentInputView.findViewById(R.id.keyboard_view);
         mKeyboardView.setKeyboardActionListener(mLatinIME);
+        mEmojiPanelView = currentInputView.findViewById(R.id.emoji_view);
         return currentInputView;
+    }
+
+    public void toggleEmojiPanel() {
+        if (mEmojiPanelView == null) return;
+        if (mEmojiPanelView.getVisibility() == android.view.View.VISIBLE) {
+            mEmojiPanelView.setVisibility(android.view.View.GONE);
+            mKeyboardView.setVisibility(android.view.View.VISIBLE);
+        } else {
+            mKeyboardView.setVisibility(android.view.View.GONE);
+            mEmojiPanelView.setVisibility(android.view.View.VISIBLE);
+        }
     }
 }

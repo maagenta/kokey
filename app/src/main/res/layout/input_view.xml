@@ -31,4 +31,10 @@
         android:fitsSystemWindows="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <rkr.simplekeyboard.inputmethod.latin.EmojiPanelView
+        android:id="@+id/emoji_view"
+        android:visibility="gone"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </rkr.simplekeyboard.inputmethod.latin.InputView>

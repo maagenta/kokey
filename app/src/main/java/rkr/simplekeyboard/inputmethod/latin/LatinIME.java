@@ -869,6 +869,10 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         }
     };
 
+    public void toggleEmojiPanel() {
+        mKeyboardSwitcher.toggleEmojiPanel();
+    }
+
     public void launchSettings() {
         requestHideSelf(0);
         final MainKeyboardView mainKeyboardView = mKeyboardSwitcher.getMainKeyboardView();

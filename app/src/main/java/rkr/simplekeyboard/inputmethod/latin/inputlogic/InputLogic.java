@@ -200,6 +200,9 @@ public final class InputLogic {
             case Constants.CODE_SETTINGS:
                 onSettingsKeyPressed();
                 break;
+            case Constants.CODE_EMOJI:
+                onEmojiKeyPressed();
+                break;
             case Constants.CODE_PASTE:
                 mConnection.pasteClipboard();
                 break;
@@ -483,6 +486,10 @@ public final class InputLogic {
      */
     private void onSettingsKeyPressed() {
         mLatinIME.launchSettings();
+    }
+
+    private void onEmojiKeyPressed() {
+        mLatinIME.toggleEmojiPanel();
     }
 
     /**
