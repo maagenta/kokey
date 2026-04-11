@@ -35,6 +35,10 @@
         android:title="@string/show_language_switch_key"
         android:defaultValue="true" />
     <SwitchPreference
+        android:key="pref_show_emoji_key"
+        android:title="@string/show_emoji_key"
+        android:defaultValue="true" />
+    <SwitchPreference
         android:key="pref_use_on_screen"
         android:title="@string/pref_use_on_screen"
         android:summary="@string/pref_use_on_screen_summary"

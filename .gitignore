@@ -43,3 +43,6 @@ captures/
 *.jks
 
 .idea
+
+# Macos
+*.DS_STORE
