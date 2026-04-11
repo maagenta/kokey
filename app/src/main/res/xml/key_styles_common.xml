@@ -93,6 +93,11 @@
         latin:keyLabelFlags="hasPopupHint"
         latin:keyActionFlags="noKeyPreview" />
     <key-style
+        latin:styleName="emojiKeyStyle"
+        latin:keySpec="!icon/emoji_key|!code/key_emoji"
+        latin:keyActionFlags="noKeyPreview"
+        latin:backgroundType="functional" />
+    <key-style
         latin:styleName="settingsKeyStyle"
         latin:keySpec="!icon/settings_key|!code/key_settings"
         latin:keyActionFlags="noKeyPreview|altCodeWhileTyping"
