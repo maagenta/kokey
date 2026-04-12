@@ -393,6 +393,12 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
             mEmojiPanelView.setVisibility(android.view.View.GONE);
             mKeyboardView.setVisibility(android.view.View.VISIBLE);
         } else {
+            final int keyboardHeight = mKeyboardView.getMeasuredHeight();
+            if (keyboardHeight > 0) {
+                final android.view.ViewGroup.LayoutParams lp = mEmojiPanelView.getLayoutParams();
+                lp.height = keyboardHeight;
+                mEmojiPanelView.setLayoutParams(lp);
+            }
             mKeyboardView.setVisibility(android.view.View.GONE);
             mEmojiPanelView.setVisibility(android.view.View.VISIBLE);
             mEmojiPanelView.initialize();

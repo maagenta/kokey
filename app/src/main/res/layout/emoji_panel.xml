@@ -2,31 +2,63 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical">
 
     <!-- Emoji grid -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/emoji_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:clipToPadding="false"
         android:padding="4dp" />
 
-    <!-- Category tab bar -->
-    <HorizontalScrollView
-        android:id="@+id/emoji_tab_bar"
+    <!-- Bottom bar: [keyboard] [category tabs - scrollable] [backspace] -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:scrollbars="none"
-        android:fillViewport="false">
+        android:orientation="horizontal">
 
-        <LinearLayout
-            android:id="@+id/emoji_tab_container"
-            android:layout_width="wrap_content"
+        <!-- Switch back to keyboard -->
+        <Button
+            android:id="@+id/emoji_keyboard_btn"
+            android:layout_width="48dp"
             android:layout_height="match_parent"
-            android:orientation="horizontal" />
+            android:text="⌨"
+            android:textSize="20sp"
+            android:textColor="?attr/functionalTextColor"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="0dp" />
 
-    </HorizontalScrollView>
+        <!-- Scrollable category tabs -->
+        <HorizontalScrollView
+            android:id="@+id/emoji_tab_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            android:fillViewport="false">
+
+            <LinearLayout
+                android:id="@+id/emoji_tab_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+
+        </HorizontalScrollView>
+
+        <!-- Backspace -->
+        <Button
+            android:id="@+id/emoji_backspace_btn"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:text="⌫"
+            android:textSize="20sp"
+            android:textColor="?attr/functionalTextColor"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="0dp" />
+
+    </LinearLayout>
 
 </LinearLayout>

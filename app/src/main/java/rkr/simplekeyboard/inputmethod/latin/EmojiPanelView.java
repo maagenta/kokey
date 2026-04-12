@@ -78,6 +78,16 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
             if (mLatinIME != null) mLatinIME.onTextInput(emoji);
         });
         mRecyclerView.setAdapter(mAdapter);
+
+        findViewById(R.id.emoji_keyboard_btn).setOnClickListener(v -> {
+            if (mLatinIME != null) mLatinIME.toggleEmojiPanel();
+        });
+
+        findViewById(R.id.emoji_backspace_btn).setOnClickListener(v -> {
+            if (mLatinIME != null) mLatinIME.onCodeInput(
+                    rkr.simplekeyboard.inputmethod.latin.common.Constants.CODE_DELETE,
+                    0, 0, false);
+        });
     }
 
     /** Called when the panel becomes visible — lazy-loads emoji data and builds tabs. */
