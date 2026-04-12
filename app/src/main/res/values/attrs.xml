@@ -32,6 +32,8 @@
         <attr name="moreKeysKeyboardStyle" format="reference" />
         <!-- MoreKeysKeyboardView style -->
         <attr name="moreKeysKeyboardViewStyle" format="reference" />
+        <!-- Keyboard background color (shared with emoji panel) -->
+        <attr name="keyboardViewBackground" format="color|reference" />
         <attr name="popupPanelBackgroundColor" format="color" />
         <attr name="keyPressedBackgroundColor" format="color" />
         <attr name="keyNormalBackgroundColor" format="color" />

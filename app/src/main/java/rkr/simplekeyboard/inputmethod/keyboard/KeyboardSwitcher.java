@@ -137,6 +137,11 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         if (mKeyboardView != null) {
             mKeyboardView.onHideWindow();
         }
+        if (mEmojiPanelView != null
+                && mEmojiPanelView.getVisibility() == android.view.View.VISIBLE) {
+            mEmojiPanelView.setVisibility(android.view.View.GONE);
+            mKeyboardView.setVisibility(android.view.View.VISIBLE);
+        }
     }
 
     private void setKeyboard(
@@ -378,6 +383,7 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         mKeyboardView = currentInputView.findViewById(R.id.keyboard_view);
         mKeyboardView.setKeyboardActionListener(mLatinIME);
         mEmojiPanelView = currentInputView.findViewById(R.id.emoji_view);
+        mEmojiPanelView.setLatinIME(mLatinIME);
         return currentInputView;
     }
 
@@ -389,6 +395,7 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         } else {
             mKeyboardView.setVisibility(android.view.View.GONE);
             mEmojiPanelView.setVisibility(android.view.View.VISIBLE);
+            mEmojiPanelView.initialize();
         }
     }
 }
