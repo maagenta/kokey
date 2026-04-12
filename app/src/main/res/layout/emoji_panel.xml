@@ -6,13 +6,11 @@
     android:orientation="vertical">
 
     <!-- Emoji grid -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/emoji_recycler_view"
+    <rkr.simplekeyboard.inputmethod.latin.EmojiGridView
+        android:id="@+id/emoji_grid_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:clipToPadding="false"
-        android:padding="4dp" />
+        android:layout_weight="1" />
 
     <!-- Bottom bar: [keyboard] [category tabs - scrollable] [backspace] -->
     <LinearLayout

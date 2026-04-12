@@ -2,13 +2,16 @@ package rkr.simplekeyboard.inputmethod.latin;
 
 import android.content.Context;
 import android.content.res.XmlResourceParser;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.os.Build;
+import android.text.Layout;
+import android.text.StaticLayout;
+import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import org.xmlpull.v1.XmlPullParser;
 
@@ -20,18 +23,13 @@ import rkr.simplekeyboard.inputmethod.R;
 
 public final class EmojiPanelView extends android.widget.FrameLayout {
 
-    // Emoji version thresholds (Android API level → Emoji version)
-    // Emoji 3  → API 24+ (Android 7.0, bundled via system font)
-    // Emoji 11 → API 28+ (Android 9)
-    // Emoji 12 → API 29+ (Android 10)
-    // Emoji 13 → API 30+ (Android 11)
-    // Emoji 14 → API 32+ (Android 12L)
-    // Emoji 15 → API 34+ (Android 14)
-    private static final int API_EMOJI_11 = Build.VERSION_CODES.P;      // 28
-    private static final int API_EMOJI_12 = Build.VERSION_CODES.Q;      // 29
-    private static final int API_EMOJI_13 = Build.VERSION_CODES.R;      // 30
+    private int mBitmapSize = 48; // overridden in onFinishInflate with real pixel size
+
+    private static final int API_EMOJI_11 = Build.VERSION_CODES.P;
+    private static final int API_EMOJI_12 = Build.VERSION_CODES.Q;
+    private static final int API_EMOJI_13 = Build.VERSION_CODES.R;
     private static final int API_EMOJI_14 = 32;
-    private static final int API_EMOJI_15 = Build.VERSION_CODES.UPSIDE_DOWN_CAKE; // 34
+    private static final int API_EMOJI_15 = Build.VERSION_CODES.UPSIDE_DOWN_CAKE;
 
     private static final String[] CATEGORIES = {
             "smileys", "people", "animals", "nature",
@@ -51,12 +49,11 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
             R.drawable.ic_emoji_cat_flags,
     };
 
-    private RecyclerView mRecyclerView;
+    private EmojiGridView mEmojiGridView;
     private LinearLayout mTabContainer;
-    private EmojiAdapter mAdapter;
 
-    // Per-category emoji lists, built once on first show
     private List<List<String>> mCategoryEmojis;
+    private List<List<Bitmap>> mCategoryBitmaps;
     private int mCurrentCategory = 0;
 
     private LatinIME mLatinIME;
@@ -67,6 +64,30 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
 
     public void setLatinIME(final LatinIME latinIME) {
         mLatinIME = latinIME;
+        // Start pre-rendering as soon as the keyboard is created
+        preload();
+    }
+
+    private void preload() {
+        if (mCategoryEmojis != null) return;
+        final int bitmapSize = mBitmapSize;
+        new Thread(() -> {
+            final List<List<String>> categoryEmojis = new ArrayList<>();
+            final List<List<Bitmap>> categoryBitmaps = new ArrayList<>();
+            for (final String category : CATEGORIES) {
+                final List<String> emojis = loadCategory(category);
+                final List<Bitmap> bitmaps = new ArrayList<>(emojis.size());
+                for (final String emoji : emojis) {
+                    bitmaps.add(renderEmoji(emoji, bitmapSize));
+                }
+                categoryEmojis.add(emojis);
+                categoryBitmaps.add(bitmaps);
+            }
+            post(() -> {
+                mCategoryEmojis = categoryEmojis;
+                mCategoryBitmaps = categoryBitmaps;
+            });
+        }).start();
     }
 
     @Override
@@ -74,17 +95,15 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
         super.onFinishInflate();
         LayoutInflater.from(getContext()).inflate(R.layout.emoji_panel, this, true);
 
-        mRecyclerView = findViewById(R.id.emoji_recycler_view);
+        mEmojiGridView = findViewById(R.id.emoji_grid_view);
         mTabContainer = findViewById(R.id.emoji_tab_container);
 
-        final int columns = getResources().getDisplayMetrics().widthPixels
-                / getResources().getDimensionPixelSize(android.R.dimen.app_icon_size);
-        mRecyclerView.setLayoutManager(new GridLayoutManager(getContext(), Math.max(columns, 6)));
-
-        mAdapter = new EmojiAdapter(new ArrayList<>(), emoji -> {
+        final int cellSize = getResources().getDimensionPixelSize(android.R.dimen.app_icon_size);
+        mBitmapSize = cellSize;
+        final int columns = Math.max(getResources().getDisplayMetrics().widthPixels / cellSize, 6);
+        mEmojiGridView.setup(cellSize, columns, emoji -> {
             if (mLatinIME != null) mLatinIME.onTextInput(emoji);
         });
-        mRecyclerView.setAdapter(mAdapter);
 
         findViewById(R.id.emoji_keyboard_btn).setOnClickListener(v -> {
             if (mLatinIME != null) mLatinIME.toggleEmojiPanel();
@@ -97,19 +116,19 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
         });
     }
 
-    /** Called when the panel becomes visible — lazy-loads emoji data and builds tabs. */
     public void initialize() {
-        if (mCategoryEmojis != null) return; // already loaded
-        mCategoryEmojis = new ArrayList<>();
-        for (final String category : CATEGORIES) {
-            mCategoryEmojis.add(loadCategory(category));
+        if (mCategoryEmojis != null) {
+            // Already loaded — show immediately
+            buildTabs();
+            showCategory(0);
+        } else {
+            // Still loading — wait and retry
+            post(this::initialize);
         }
-        buildTabs();
-        showCategory(0);
     }
 
     private void buildTabs() {
-        mTabContainer.removeAllViews();
+        if (mTabContainer.getChildCount() > 0) return; // already built
         for (int i = 0; i < CATEGORIES.length; i++) {
             final int index = i;
             final android.widget.ImageButton btn = new android.widget.ImageButton(getContext());
@@ -126,27 +145,42 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
 
     private void showCategory(final int index) {
         mCurrentCategory = index;
-        if (mCategoryEmojis != null && index < mCategoryEmojis.size()) {
-            mAdapter.setEmojis(mCategoryEmojis.get(index));
-            mRecyclerView.scrollToPosition(0);
-        }
-        // Highlight selected tab
+        mEmojiGridView.setData(mCategoryEmojis.get(index), mCategoryBitmaps.get(index));
+        mEmojiGridView.scrollToTop();
         for (int i = 0; i < mTabContainer.getChildCount(); i++) {
             mTabContainer.getChildAt(i).setAlpha(i == index ? 1.0f : 0.4f);
         }
     }
 
+    private static Bitmap renderEmoji(final String emoji, final int size) {
+        final TextPaint paint = new TextPaint(android.graphics.Paint.ANTI_ALIAS_FLAG);
+        paint.setTextSize(size * 0.75f);
+        final StaticLayout layout = StaticLayout.Builder
+                .obtain(emoji, 0, emoji.length(), paint, size)
+                .setAlignment(Layout.Alignment.ALIGN_CENTER)
+                .setMaxLines(1)
+                .build();
+        final Bitmap soft = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888);
+        final Canvas canvas = new Canvas(soft);
+        canvas.translate(0, (size - layout.getHeight()) / 2f);
+        layout.draw(canvas);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            final Bitmap hard = soft.copy(Bitmap.Config.HARDWARE, false);
+            soft.recycle();
+            return hard;
+        }
+        return soft;
+    }
+
     private List<String> loadCategory(final String category) {
         final List<String> result = new ArrayList<>();
         final int sdk = Build.VERSION.SDK_INT;
-
         loadFromXml(result, getResourceId("emojis_v3_" + category));
         if (sdk >= API_EMOJI_11) loadFromXml(result, getResourceId("emojis_v11_" + category));
         if (sdk >= API_EMOJI_12) loadFromXml(result, getResourceId("emojis_v12_" + category));
         if (sdk >= API_EMOJI_13) loadFromXml(result, getResourceId("emojis_v13_" + category));
         if (sdk >= API_EMOJI_14) loadFromXml(result, getResourceId("emojis_v14_" + category));
         if (sdk >= API_EMOJI_15) loadFromXml(result, getResourceId("emojis_v15_" + category));
-
         return result;
     }
 
