@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.res.XmlResourceParser;
 import android.os.Build;
 import android.util.AttributeSet;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 
@@ -39,9 +38,17 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
             "food", "travel", "activities", "objects", "symbols", "flags"
     };
 
-    private static final String[] CATEGORY_ICONS = {
-            "😀", "👋", "🐶", "🌿",
-            "🍔", "✈️", "⚽", "💡", "🔣", "🏳️"
+    private static final int[] CATEGORY_ICONS = {
+            R.drawable.ic_emoji_cat_smileys,
+            R.drawable.ic_emoji_cat_people,
+            R.drawable.ic_emoji_cat_animals,
+            R.drawable.ic_emoji_cat_nature,
+            R.drawable.ic_emoji_cat_food,
+            R.drawable.ic_emoji_cat_travel,
+            R.drawable.ic_emoji_cat_activities,
+            R.drawable.ic_emoji_cat_objects,
+            R.drawable.ic_emoji_cat_symbols,
+            R.drawable.ic_emoji_cat_flags,
     };
 
     private RecyclerView mRecyclerView;
@@ -105,14 +112,13 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
         mTabContainer.removeAllViews();
         for (int i = 0; i < CATEGORIES.length; i++) {
             final int index = i;
-            final android.widget.Button btn = new android.widget.Button(getContext());
-            btn.setText(CATEGORY_ICONS[i]);
-            btn.setTextSize(18f);
+            final android.widget.ImageButton btn = new android.widget.ImageButton(getContext());
+            btn.setImageResource(CATEGORY_ICONS[i]);
             btn.setBackground(null);
+            btn.setScaleType(android.widget.ImageView.ScaleType.CENTER_INSIDE);
             final int size = getResources().getDimensionPixelSize(android.R.dimen.app_icon_size);
             final LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(size, LinearLayout.LayoutParams.MATCH_PARENT);
             btn.setLayoutParams(lp);
-            btn.setGravity(Gravity.CENTER);
             btn.setOnClickListener(v -> showCategory(index));
             mTabContainer.addView(btn);
         }
