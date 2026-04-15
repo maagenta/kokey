@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"යතුර එබීමට කම්පනය කිරීම සක්‍රියයි"</string>
     <string name="sound_on_keypress">"යතුරු එබිම මත හඬ"</string>
     <string name="popup_on_keypress">"යතුරු එබීම මත උත්පතනය"</string>
     <string name="settings_screen_preferences">"අභිරුචි"</string>

@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"کلید دبانے پر وائبریٹ کریں"</string>
     <string name="sound_on_keypress">"کلید دبانے پر آواز"</string>
     <string name="popup_on_keypress">"کلید دبانے پر پاپ اپ"</string>
     <string name="settings_screen_preferences">"ترجیحات"</string>

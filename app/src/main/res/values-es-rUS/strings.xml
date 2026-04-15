@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Vibrar al pulsar teclas"</string>
     <string name="sound_on_keypress">"Sonar al pulsar las teclas"</string>
     <string name="popup_on_keypress">"Aviso emergente al pulsar tecla"</string>
     <string name="settings_screen_preferences">"Preferencias"</string>

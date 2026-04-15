@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Вибрирај на притисак тастера"</string>
     <string name="sound_on_keypress">"Звук на притисак тастера"</string>
     <string name="popup_on_keypress">"Искачући прозор приликом притиска тастера"</string>
     <string name="settings_screen_preferences">"Подешавања"</string>

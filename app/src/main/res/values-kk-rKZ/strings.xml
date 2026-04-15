@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Пернені басқан кездегі діріл"</string>
     <string name="sound_on_keypress">"Пернені басу кезіндегі дыбыс"</string>
     <string name="popup_on_keypress">"Басылған пернені үлкейтіп көрсету"</string>
     <string name="settings_screen_preferences">"Қалауларыңыз"</string>

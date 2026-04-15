@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"按鍵時震動"</string>
     <string name="sound_on_keypress">"按鍵聲音"</string>
     <string name="popup_on_keypress">"按鍵時彈出"</string>
     <string name="settings_screen_preferences">"偏好設定"</string>

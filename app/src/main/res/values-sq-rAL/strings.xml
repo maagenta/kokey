@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Lësho dridhje kur shtyp tastin"</string>
     <string name="sound_on_keypress">"Lësho tingull kur shtyp tastin"</string>
     <string name="popup_on_keypress">"Zmadhim germe kur shtyp"</string>
     <string name="settings_screen_preferences">"Preferencat"</string>

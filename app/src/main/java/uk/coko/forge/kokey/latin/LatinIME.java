@@ -664,13 +664,13 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
             final int end = mInputLogic.mConnection.getExpectedSelectionEnd() + steps;
             final int start = mInputLogic.mConnection.hasSelection() ? mInputLogic.mConnection.getExpectedSelectionStart() : end;
             mInputLogic.mConnection.setSelection(start, end);
-            hapticTickFeedback();
+
         } else {
             for (; steps < 0; steps++)
                 mInputLogic.sendDownUpKeyEvent(KeyEvent.KEYCODE_DPAD_LEFT);
             for (; steps > 0; steps--)
                 mInputLogic.sendDownUpKeyEvent(KeyEvent.KEYCODE_DPAD_RIGHT);
-            hapticTickFeedback();
+
         }
     }
 
@@ -684,11 +684,11 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
             final int end = mInputLogic.mConnection.getExpectedSelectionEnd();
             final int start = mInputLogic.mConnection.getExpectedSelectionStart() + steps;
             mInputLogic.mConnection.setSelection(start, end);
-            hapticTickFeedback();
+
         } else {
             for (; steps < 0; steps++)
                 mInputLogic.sendDownUpKeyEvent(KeyEvent.KEYCODE_DEL);
-            hapticTickFeedback();
+
         }
     }
 
@@ -810,7 +810,7 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         }
     }
 
-    private void hapticAndAudioFeedback(final int code, final int repeatCount) {
+    private void audioFeedback(final int code, final int repeatCount) {
         final MainKeyboardView keyboardView = mKeyboardSwitcher.getMainKeyboardView();
         if (keyboardView != null && keyboardView.isInDraggingFinger()) {
             // No need to feedback while finger is dragging.
@@ -828,16 +828,7 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
             }
         }
         final AudioAndHapticFeedbackManager feedbackManager = AudioAndHapticFeedbackManager.getInstance();
-        if (repeatCount == 0) {
-            // TODO: Reconsider how to perform haptic feedback when repeating key.
-            feedbackManager.performHapticFeedback(keyboardView);
-        }
         feedbackManager.performAudioFeedback(code);
-    }
-
-    private void hapticTickFeedback() {
-        final AudioAndHapticFeedbackManager feedbackManager = AudioAndHapticFeedbackManager.getInstance();
-        feedbackManager.performTickFeedback();
     }
 
     // Callback of the {@link KeyboardActionListener}. This is called when a key is depressed;
@@ -847,7 +838,7 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
             final boolean isSinglePointer) {
         mKeyboardSwitcher.onPressKey(primaryCode, isSinglePointer, getCurrentAutoCapsState(),
                 getCurrentRecapitalizeState());
-        hapticAndAudioFeedback(primaryCode, repeatCount);
+        audioFeedback(primaryCode, repeatCount);
     }
 
     // Callback of the {@link KeyboardActionListener}. This is called when a key is released;

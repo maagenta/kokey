@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Mag-vibrate sa keypress"</string>
     <string name="sound_on_keypress">"Tumunog sa keypress"</string>
     <string name="popup_on_keypress">"Mag-popup sa keypress"</string>
     <string name="settings_screen_preferences">"Mga Kagustuhan"</string>

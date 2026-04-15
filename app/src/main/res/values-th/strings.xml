@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"สั่นเมื่อกดปุ่ม"</string>
     <string name="sound_on_keypress">"ส่งเสียงเมื่อกดปุ่ม"</string>
     <string name="popup_on_keypress">"ป๊อปอัปเมื่อกดแป้น"</string>
     <string name="settings_screen_preferences">"ค่ากำหนด"</string>

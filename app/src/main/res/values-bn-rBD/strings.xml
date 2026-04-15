@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">কিপ্রেস কম্পন</string>
     <string name="sound_on_keypress">কিপ্রেসের শব্দ</string>
     <string name="popup_on_keypress">কিপ্রেস পপআপ</string>
     <string name="settings_screen_preferences">অভিরুচি</string>

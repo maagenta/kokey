@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Getar jika tombol ditekan"</string>
     <string name="sound_on_keypress">"Berbunyi jika tombol ditekan"</string>
     <string name="popup_on_keypress">"Muncul saat tombol ditekan"</string>
     <string name="settings_screen_preferences">"Preferensi"</string>

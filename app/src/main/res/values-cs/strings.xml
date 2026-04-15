@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Při stisku klávesy vibrovat"</string>
     <string name="sound_on_keypress">"Zvuk při stisku klávesy"</string>
     <string name="popup_on_keypress">"Detail znaku při stisku klávesy"</string>
     <string name="settings_screen_preferences">"Předvolby"</string>

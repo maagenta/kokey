@@ -31,9 +31,7 @@ import uk.coko.forge.kokey.latin.AudioAndHapticFeedbackManager;
  * "Preferences" settings sub screen.
  *
  * This settings sub screen handles the following input preferences.
- * - Vibrate on keypress
- * - Keypress vibration duration
- * - Sound on keypress
+ *- Sound on keypress
  * - Keypress sound volume
  * - Popup on keypress
  * - Key long press delay
@@ -51,11 +49,7 @@ public final class KeyPressSettingsFragment extends SubScreenFragment {
         // initialization method of these classes here. See {@link LatinIME#onCreate()}.
         AudioAndHapticFeedbackManager.init(context);
 
-        if (!AudioAndHapticFeedbackManager.getInstance().hasVibrator()) {
-            removePreference(Settings.PREF_VIBRATE_ON);
-        }
-
-        setupKeypressSoundVolumeSettings();
+setupKeypressSoundVolumeSettings();
         setupKeyLongpressTimeoutSettings();
     }
 

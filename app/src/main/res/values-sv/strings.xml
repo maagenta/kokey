@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Vibrera vid tangenttryck"</string>
     <string name="sound_on_keypress">"Knappljud"</string>
     <string name="popup_on_keypress">"Popup vid knapptryck"</string>
     <string name="settings_screen_preferences">"Inställningar"</string>

@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Товч дарахад чичрэх"</string>
     <string name="sound_on_keypress">"Товч дарахад дуу гаргах"</string>
     <string name="popup_on_keypress">"Товч дарахад попап гарна"</string>
     <string name="settings_screen_preferences">"Тохируулга"</string>

@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Vibruoti, kai paspaudžiami klavišai"</string>
     <string name="sound_on_keypress">"Klavišo paspaudimo garsas"</string>
     <string name="popup_on_keypress">"Iššoka paspaudus klavišą"</string>
     <string name="settings_screen_preferences">"Nuostatos"</string>

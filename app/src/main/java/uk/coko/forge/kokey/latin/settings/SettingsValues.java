@@ -38,8 +38,7 @@ public class SettingsValues {
     public final int mDisplayOrientation;
     // From preferences, in the same order as xml/prefs.xml:
     public final boolean mAutoCap;
-    public final boolean mVibrateOn;
-    public final boolean mSoundOn;
+public final boolean mSoundOn;
     public final boolean mKeyPreviewPopupOn;
     public final boolean mUseOnScreen;
     public final boolean mShowsLanguageSwitchKey;
@@ -73,8 +72,7 @@ public class SettingsValues {
 
         // Get the settings preferences
         mAutoCap = prefs.getBoolean(Settings.PREF_AUTO_CAP, true);
-        mVibrateOn = Settings.readVibrationEnabled(prefs, res);
-        mSoundOn = Settings.readKeypressSoundEnabled(prefs, res);
+mSoundOn = Settings.readKeypressSoundEnabled(prefs, res);
         mKeyPreviewPopupOn = Settings.readKeyPreviewPopupEnabled(prefs, res);
         mUseOnScreen = Settings.readUseOnScreenKeyboard(prefs);
         mShowsLanguageSwitchKey = Settings.readShowLanguageSwitchKey(prefs);

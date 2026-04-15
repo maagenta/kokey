@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Vibrazione tasti"</string>
     <string name="sound_on_keypress">"Suono tasti"</string>
     <string name="popup_on_keypress">"Popup tasti"</string>
     <string name="settings_screen_preferences">"Preferenze"</string>

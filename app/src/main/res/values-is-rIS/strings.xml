@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Titringur þegar ýtt er á lykla"</string>
     <string name="sound_on_keypress">"Hljóð þegar ýtt er á lykil"</string>
     <string name="popup_on_keypress">"Stækkaðir stafir við innslátt"</string>
     <string name="settings_screen_preferences">"Kjörstillingar"</string>

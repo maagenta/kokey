@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"કીપ્રેસ પર વાઇબ્રેટ કરો"</string>
     <string name="sound_on_keypress">"કીપ્રેસ પર ધ્વનિ"</string>
     <string name="popup_on_keypress">"કીપ્રેસ પર પોપઅપ"</string>
     <string name="settings_screen_preferences">"પસંદગી"</string>

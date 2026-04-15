@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Виброотклик клавиш"</string>
     <string name="sound_on_keypress">"Звук клавиш"</string>
     <string name="popup_on_keypress">"Увеличивать при нажатии"</string>
     <string name="settings_screen_preferences">"Настройки"</string>

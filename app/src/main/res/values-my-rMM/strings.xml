@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"ခလုတ်နှိပ်သည်နှင့် တုံခါစေပါ"</string>
     <string name="sound_on_keypress">"ခလုတ်နှိပ်လျှင် အသံမြည်"</string>
     <string name="popup_on_keypress">"ကီးနှိပ်လိုက်သည်နှင့် ပေါ်လာရန်"</string>
     <string name="settings_screen_preferences">"ရွေးချယ်စရာများ"</string>

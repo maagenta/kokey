@@ -51,12 +51,7 @@
         android:restrictionType="bool"
         android:defaultValue="false" />
     <!-- settings_screen_key_press -->
-    <restriction
-        android:key="vibrate_on"
-        android:title="@string/vibrate_on_keypress"
-        android:restrictionType="bool"
-        android:defaultValue="true" />
-    <restriction
+<restriction
         android:key="sound_on"
         android:title="@string/sound_on_keypress"
         android:restrictionType="bool"

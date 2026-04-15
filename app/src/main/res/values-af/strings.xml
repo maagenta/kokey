@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Vibreer met sleuteldruk"</string>
     <string name="sound_on_keypress">"Klank met sleuteldruk"</string>
     <string name="popup_on_keypress">"Opspring met sleuteldruk"</string>
     <string name="settings_screen_preferences">"Voorkeure"</string>

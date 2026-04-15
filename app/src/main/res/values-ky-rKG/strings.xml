@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Баскыч басылганда дирилдесин"</string>
     <string name="sound_on_keypress">"Баскыч басылганда чыккан үн"</string>
     <string name="popup_on_keypress">"Баскыч басылганда калкып чыкма"</string>
     <string name="settings_screen_preferences">"Мүмкүнчүлүктөрдү тандоо"</string>

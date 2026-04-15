@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"बटन दबाने पर कंपन करे"</string>
     <string name="sound_on_keypress">"बटन दबाने पर आवाज़"</string>
     <string name="popup_on_keypress">"कुंजी दबाने पर पॉपअप दिखाएं"</string>
     <string name="settings_screen_preferences">"प्राथमिकताएं"</string>

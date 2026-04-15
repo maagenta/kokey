@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Δόνηση κατά το πάτημα πλήκτρων"</string>
     <string name="sound_on_keypress">"Ήχος πλήκτρων"</string>
     <string name="popup_on_keypress">"Εμφάνιση με το πάτημα πλήκτρου"</string>
     <string name="settings_screen_preferences">"Προτιμήσεις"</string>

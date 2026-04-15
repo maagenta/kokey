@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"لرزش با فشار کلید"</string>
     <string name="sound_on_keypress">"صدا با فشار کلید"</string>
     <string name="popup_on_keypress">"بازشدن با فشار کلید"</string>
     <string name="settings_screen_preferences">"تنظیمات برگزیده"</string>

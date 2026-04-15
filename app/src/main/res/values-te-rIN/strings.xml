@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"కీని నొక్కినప్పుడు వైబ్రేట్"</string>
     <string name="sound_on_keypress">"కీని నొక్కినప్పుడు ధ్వని"</string>
     <string name="popup_on_keypress">"కీని నొక్కినప్పుడు పాప్‌అప్ చూపు"</string>
     <string name="settings_screen_preferences">"ప్రాధాన్యతలు"</string>

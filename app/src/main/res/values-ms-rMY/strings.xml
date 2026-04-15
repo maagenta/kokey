@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Getar pada tekanan kekunci"</string>
     <string name="sound_on_keypress">"Bunyi pada tekanan kekunci"</string>
     <string name="popup_on_keypress">"Pop timbul pada tekanan kunci"</string>
     <string name="settings_screen_preferences">"Pilihan"</string>

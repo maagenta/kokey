@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="vibrate_on_keypress">"Dlidlizelisa ngokucindezela inkinobho"</string>
     <string name="sound_on_keypress">"Umsindo wokucindezela ukhiye"</string>
     <string name="popup_on_keypress">"Ugaxekile ngokucindezela ukhiye"</string>
     <string name="settings_screen_preferences">"Izintandokazi"</string>

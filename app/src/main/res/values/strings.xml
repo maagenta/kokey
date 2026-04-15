@@ -18,8 +18,7 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Option to provide vibrate/haptic feedback on keypress -->
-    <string name="vibrate_on_keypress">Vibrate on keypress</string>
+
 
     <!-- Option to play back sound on keypress in soft keyboard -->
     <string name="sound_on_keypress">Sound on keypress</string>
@@ -96,8 +95,7 @@
     <!-- Title of the button to remove a language in the settings dialog [CHAR LIMIT=15] -->
     <string name="remove">Remove</string>
 
-    <!-- Title of the settings for keypress vibration duration [CHAR LIMIT=35] -->
-    <!-- Title of the settings for keypress sound volume [CHAR LIMIT=35] -->
+<!-- Title of the settings for keypress sound volume [CHAR LIMIT=35] -->
     <string name="prefs_keypress_sound_volume_settings">Keypress sound volume</string>
     <!-- Title of the settings for key long press delay [CHAR LIMIT=35] -->
     <string name="prefs_key_longpress_timeout_settings">Key long press delay</string>
