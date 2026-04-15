@@ -19,6 +19,9 @@
 -->
 
 <resources>
-    <style name="platformSettingsTheme" parent="@android:style/Theme.Material" />
+    <style name="platformSettingsTheme" parent="@android:style/Theme.Material">
+        <item name="android:colorAccent">#9E9E9E</item>
+        <item name="android:colorControlActivated">#9E9E9E</item>
+    </style>
     <style name="platformDialogTheme" parent="@android:style/Theme.DeviceDefault.Dialog" />
 </resources>

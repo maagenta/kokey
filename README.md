@@ -8,16 +8,15 @@
 
 Features:
 - Small size (<1MB)
+- Emoji panel
 - Adjustable keyboard height for more screen space
 - Number row
-- Swipe space to move pointer
-- Delete swipe
+- Swipe space to move cursor
 - Custom theme colors
-- Minimal permissions (only Vibrate)
+- Minimal permissions
 - Ads-free
 
-Feature it doesn't have and probably will never have:
-- Emojis
+Feature it doesn't have:
 - GIFs
 - Spell checker
 - Swipe typing
