@@ -45,7 +45,6 @@
     <string name="pref_enable_ime_switch">Skakel oor na ander sleutelborde</string>
     <string name="show_number_row">Wys aparte nommerry</string>
     <string name="space_swipe">Spasieveeg-wyserbeweging</string>
-    <string name="delete_swipe">Vee vee uit</string>
     <string name="setup_message">KoKey is nie geaktiveer nie. Klik OK om Tale &amp;  Invoerinstellings oop te maak. Jy sal KoKey in jou huidige sleutelbord moet kies om dit te gebruik.</string>
     <string name="settings_screen_key_press">Sleuteldruk</string>
     <string name="user_languages">Geaktiveerde sleutelbordtale</string>

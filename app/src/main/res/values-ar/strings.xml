@@ -46,7 +46,6 @@
     <string name="pref_enable_ime_switch">التبديل إلى لوحات المفاتيح الأخرى</string>
     <string name="show_number_row">إظهار الأرقام في صف منفصل</string>
     <string name="space_swipe">سحب مفتاح المسافة لنقل المؤشر</string>
-    <string name="delete_swipe">الحذف بالسحب</string>
     <string name="user_languages">لغات لوحة المفاتيح الممكّنة</string>
     <string name="add_language">إضافة لغة</string>
     <string name="remove_language">إزالة اللغة</string>

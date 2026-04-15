@@ -46,7 +46,6 @@
     <string name="pref_enable_ime_switch">Zu anderen Tastaturen wechseln</string>
     <string name="show_number_row">Zahlenreihe anzeigen</string>
     <string name="space_swipe">Cursor mit Leertaste-Wischen steuern</string>
-    <string name="delete_swipe">Durch Wischen löschen</string>
     <string name="setup_message">KoKey ist nicht aktiviert. Klicken Sie auf OK, um die Einstellungen für "Sprachen &amp; Eingabe" zu öffnen. Sie müssen KoKey in Ihrer aktuellen Bildschirmtastatur auswählen, um sie zu verwenden.</string>
     <string name="user_languages">Aktivierte Tastatursprachen</string>
     <string name="add_language">Sprache hinzufügen</string>

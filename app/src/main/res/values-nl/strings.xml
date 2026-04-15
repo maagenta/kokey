@@ -45,7 +45,6 @@
     <string name="pref_enable_ime_switch">Naar andere toetsenborden overschakelen</string>
     <string name="show_number_row">Aparte nummerrij</string>
     <string name="space_swipe">Spatie-swipe beweegt cursor</string>
-    <string name="delete_swipe">Verwijder swipe</string>
     <string name="setup_message">KoKey is niet ingeschakeld. Klik op OK om Talen &amp; Invoerinstellingen te openen. Selecteer KoKey als je het als huidig toetsenbord wilt gebruiken.</string>
     <string name="user_languages">Geactiveerde toetsenbord talen</string>
     <string name="add_language">Taal toevoegen</string>

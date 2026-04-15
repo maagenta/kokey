@@ -45,7 +45,6 @@
     <string name="pref_enable_ime_switch">Przycisk zmiany klawiatury</string>
     <string name="show_number_row">Pokaż oddzielny rząd z cyframi</string>
     <string name="space_swipe">Przesuń kursor przeciągając spację</string>
-    <string name="delete_swipe">Usuń poprzez przesunięcie</string>
     <string name="setup_message">KoKey nie jest włączona. Kliknij OK, żeby otworzyć ustawienia języka i wprowadzania. Następnie wybierz KoKey w ustawieniach klawiatury.</string>
     <string name="user_languages">Włączone języki</string>
     <string name="add_language">Dodaj język</string>

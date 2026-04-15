@@ -45,7 +45,6 @@
     <string name="pref_enable_ime_switch">"Passa a un'altra tastiera"</string>
     <string name="show_number_row">Mostra numeri in una riga separata</string>
     <string name="space_swipe">Muovi cursore scorrendo sulla barra spaziatrice</string>
-    <string name="delete_swipe">Cancella scorrendo sul tasto cancella</string>
     <string name="setup_message">KoKey non è abilitata. Premi OK per aprire le impostazioni di lingua ed inserimento. Dovrai selezionare KoKey come tastiera corrente per usarla.</string>
     <string name="user_languages">Lingue tastiera attive</string>
     <string name="add_language">Aggiungi lingua</string>

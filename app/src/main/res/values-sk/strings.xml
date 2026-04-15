@@ -44,7 +44,6 @@
     <string name="pref_enable_ime_switch">Prepínanie na iné klávesnice</string>
     <string name="show_number_row">Zobraziť samostatný číselný riadok</string>
     <string name="space_swipe">Hýb kurzorom šúchaním po medzerníku</string>
-    <string name="delete_swipe">Mazanie potiahnutím</string>
     <string name="setup_message">KoKey nie je aktivovaný. Kliknite na OK pre otvorenie nastavení Jazyka a Vstupu. Pre použitie musíte zvoliť KoKey namiesto Vašej súčasnej klávesnice.</string>
     <string name="user_languages">Povolené jazyky klávesnice</string>
     <string name="add_language">Pridať jazyk</string>

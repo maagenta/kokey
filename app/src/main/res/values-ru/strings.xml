@@ -50,7 +50,6 @@
     <string name="pref_enable_ime_switch">Переключение на другие клавиатуры</string>
     <string name="show_number_row">Показать ряд цифр</string>
     <string name="space_swipe">Перемещать курсор пробелом</string>
-    <string name="delete_swipe">Удалить смахиванием</string>
     <string name="setup_message">KoKey не включена. Нажмите «ОК», чтобы выбрать языки в настройках ввода. Вам нужно будет выбрать KoKey текущей клавиатурой, чтобы использовать её.</string>
     <string name="user_languages">Включённые языки</string>
     <string name="add_language">Добавить язык</string>

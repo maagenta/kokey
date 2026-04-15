@@ -47,7 +47,6 @@
     <string name="pref_enable_ime_switch">切换到其他键盘</string>
     <string name="show_number_row">显示单独的数字行</string>
     <string name="space_swipe">空格滑动光标移动</string>
-    <string name="delete_swipe">删除滑动</string>
     <string name="setup_message">KoKey未被启用。点击OK打开语言&amp;输入设定。您需要在当前键盘中选择“KoKey”来使用它。</string>
     <string name="user_languages">启用的键盘语言</string>
     <string name="add_language">添加语言</string>

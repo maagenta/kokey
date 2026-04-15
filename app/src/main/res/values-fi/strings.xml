@@ -45,7 +45,6 @@
     <string name="pref_enable_ime_switch">Vaihda toisiin näppäimistöihin</string>
     <string name="show_number_row">Näytä erillinen numerorivi</string>
     <string name="space_swipe">Liikuta kursoria pyyhkäisemällä välilyöntiä</string>
-    <string name="delete_swipe">Poista pyyhkäisemällä</string>
     <string name="setup_message">KoKey ei ole käytössä. Paina OK avataksesi Kielten ja syöttötapojen asetukset. Sinun pitää valita KoKey nykyisessä näppäimistössä käyttääksesi sitä.</string>
     <string name="user_languages">Käytössä olevat näppäimistön kielet</string>
     <string name="add_language">Lisää kieli</string>

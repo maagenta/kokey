@@ -44,7 +44,6 @@
     <string name="pref_enable_ime_switch">Canvia a altres teclats</string>
     <string name="show_number_row">Mostra una fila de números separada</string>
     <string name="space_swipe">Moviment del cursor amb lliscament espacial</string>
-    <string name="delete_swipe">Lliscar per suprimir</string>
     <string name="setup_message">KoKey no està habilitat. Feu clic a OK per obrir la configuració &amp; d\'idiomes i entrada. Haureu de seleccionar KoKey al vostre teclat actual per utilitzar-lo.</string>
     <string name="settings_screen_key_press">Premsa de tecles</string>
     <string name="user_languages">Idiomes de teclat activats</string>

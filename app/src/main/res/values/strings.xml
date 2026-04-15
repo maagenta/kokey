@@ -111,7 +111,6 @@
     <string name="pref_enable_ime_switch">Switch to other keyboards</string>
     <string name="show_number_row">Show separate number row</string>
     <string name="space_swipe">Space swipe cursor move</string>
-    <string name="delete_swipe">Delete swipe</string>
     <string name="setup_message">KoKey is not enabled. Click OK to open Languages &amp; Input settings. You will need to select KoKey in your current keyboard to use it.</string>
     <string name="user_languages">Enabled keyboard languages</string>
     <string name="add_language">Add language</string>

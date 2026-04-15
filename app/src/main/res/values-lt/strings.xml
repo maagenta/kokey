@@ -48,7 +48,6 @@
     <string name="pref_enable_ime_switch">Perjungti į kitas klaviatūras</string>
     <string name="show_number_row">Rodyti skaičių eilutę</string>
     <string name="space_swipe">Judinti kursorių tarpo klavišu</string>
-    <string name="delete_swipe">Trynimo klavišo braukimas</string>
     <string name="setup_message">KoKey yra neįjungta. Spauskite OK kad atidaryti Kalbos ir įvestis nustatymus. KoKey galėsite pasirinkti dabartinėje klaviatūroje.</string>
     <string name="user_languages">Įjungtos klaviatūros kalbos</string>
     <string name="add_language">Pridėti kalbą</string>

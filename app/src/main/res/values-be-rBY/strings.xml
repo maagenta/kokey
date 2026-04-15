@@ -46,7 +46,6 @@
     <string name="pref_enable_ime_switch">Пераключэнне на іншыя клавіятуры</string>
     <string name="show_number_row">Паказаць шэраг з лічбамі</string>
     <string name="space_swipe">Перамяшчэнне курсора прабелам</string>
-    <string name="delete_swipe">Выдаліць рух</string>
     <string name="setup_message">KoKey не ўключана. Націсніце «ОК», каб адкрыць мовы ў наладах ўводу. Вам трэба будзе абраць KoKey бягучай клавіятурай, каб выкарыстоўваць яе.</string>
     <string name="user_languages">Ўключаныя мовы</string>
     <string name="add_language">Дадаць мову</string>

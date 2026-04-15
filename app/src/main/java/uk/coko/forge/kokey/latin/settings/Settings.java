@@ -59,7 +59,6 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
     public static final String PREF_SHOW_SPECIAL_CHARS = "pref_show_special_chars";
     public static final String PREF_SHOW_NUMBER_ROW = "pref_show_number_row";
     public static final String PREF_SPACE_SWIPE = "pref_space_swipe";
-    public static final String PREF_DELETE_SWIPE = "pref_delete_swipe";
 
     private static final int UNDEFINED_PREFERENCE_VALUE_INT = -1;
 
@@ -146,7 +145,6 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
                     case PREF_SHOW_LANGUAGE_SWITCH_KEY:
                     case PREF_USE_ON_SCREEN:
                     case PREF_ENABLE_IME_SWITCH:
-                    case PREF_DELETE_SWIPE:
                     case PREF_SPACE_SWIPE:
                         Log.i(TAG, "Loading restriction: " + key + "=" + appRestrictions.getBoolean(key));
                         prefsEditor.putBoolean(key, appRestrictions.getBoolean(key));
@@ -220,10 +218,6 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
 
     public static boolean readSpaceSwipeEnabled(final SharedPreferences prefs) {
         return prefs.getBoolean(PREF_SPACE_SWIPE, false);
-    }
-
-    public static boolean readDeleteSwipeEnabled(final SharedPreferences prefs) {
-        return prefs.getBoolean(PREF_DELETE_SWIPE, false);
     }
 
     public static String readPrefSubtypes(final SharedPreferences prefs) {

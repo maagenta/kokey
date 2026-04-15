@@ -45,11 +45,6 @@
         android:title="@string/pref_enable_ime_switch"
         android:restrictionType="bool"
         android:defaultValue="false" />
-    <restriction
-        android:key="pref_delete_swipe"
-        android:title="@string/delete_swipe"
-        android:restrictionType="bool"
-        android:defaultValue="false" />
     <!-- settings_screen_key_press -->
     <restriction
         android:key="pref_key_longpress_timeout"

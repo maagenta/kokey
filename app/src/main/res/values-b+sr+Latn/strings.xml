@@ -40,6 +40,5 @@
     <string name="keyboard_color">Postavi boju tastature</string>
     <string name="show_number_row">Prikaži odvojeni red sa brojevima</string>
     <string name="space_swipe">Prevlačenjem preko razmaka pomera se selektor</string>
-    <string name="delete_swipe">Brisanje prevlačenjem</string>
     <string name="setup_message">KoKey nije omogućena. Kliknite OK da otvorite podešavanja jezika i unosa. Treba da selektujete KoKey kao vašu podrazumevanu tastaturu da biste je koristili.</string>
 </resources>

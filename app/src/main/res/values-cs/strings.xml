@@ -45,7 +45,6 @@
     <string name="pref_enable_ime_switch">Změna na jiné klávesnice</string>
     <string name="show_number_row">Zobrazit řádek s čísly</string>
     <string name="space_swipe">Pohybovat kurzorem táhnutím po mezerníku</string>
-    <string name="delete_swipe">Mazat text táhnutím po Backspace</string>
     <string name="setup_message">KoKey není povolený. Tlačítkem OK se dostanete do nabídky dostupných virtuálních klávesnic. Zde prosím povolte KoKey. Poté je nutné nastavit KoKey jako výchozí klávesnici.</string>
     <string name="user_languages">Povolené jazyky klávesnice</string>
     <string name="add_language">Přidat jazyk</string>

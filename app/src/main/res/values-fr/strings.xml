@@ -46,7 +46,6 @@
     <string name="pref_enable_ime_switch">Passer à d\'autres claviers</string>
     <string name="show_number_row">Afficher la ligne de chiffres</string>
     <string name="space_swipe">Glisser sur Espace pour déplacer le curseur</string>
-    <string name="delete_swipe">Glisser sur Effacer pour supprimer</string>
     <string name="setup_message">KoKey n\'est pas activé. Appuyez sur OK pour ouvir les parametres de langues et de saisies. Sélectionnez KoKey comme clavier pour l\'utiliser.</string>
     <string name="user_languages">Langues du clavier activées</string>
     <string name="add_language">Ajouter une langue</string>
