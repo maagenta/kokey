@@ -79,6 +79,7 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
 
     // Drawing preview placer view
     private final DrawingPreviewPlacerView mDrawingPreviewPlacerView;
+    private final int[] mOriginCoords = CoordinateUtils.newInstance();
 
     // More keys keyboard
     private final Paint mBackgroundDimAlphaPaint = new Paint();
@@ -340,7 +341,8 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
 
     @Override
     public void onShowMoreKeysPanel(final MoreKeysPanel panel) {
-        locatePreviewPlacerView();
+        getLocationInWindow(mOriginCoords);
+        mDrawingPreviewPlacerView.setKeyboardViewGeometry(mOriginCoords);
         // Dismiss another {@link MoreKeysPanel} that may be being showed.
         onDismissMoreKeysPanel();
         // Dismiss all key previews that may be being showed.

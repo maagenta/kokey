@@ -30,7 +30,6 @@ public final class KeyDrawParams {
     public int mHintLetterSize;
     public int mShiftedLetterHintSize;
     public int mHintLabelSize;
-    public int mPreviewTextSize;
 
     public int mTextColor;
     public int mTextInactivatedColor;
@@ -40,7 +39,6 @@ public final class KeyDrawParams {
     public int mHintLabelColor;
     public int mShiftedLetterHintInactivatedColor;
     public int mShiftedLetterHintActivatedColor;
-    public int mPreviewTextColor;
 
     public float mHintLabelVerticalAdjustment;
     public float mLabelOffCenterRatio;
@@ -59,7 +57,6 @@ public final class KeyDrawParams {
         mHintLetterSize = copyFrom.mHintLetterSize;
         mShiftedLetterHintSize = copyFrom.mShiftedLetterHintSize;
         mHintLabelSize = copyFrom.mHintLabelSize;
-        mPreviewTextSize = copyFrom.mPreviewTextSize;
 
         mTextColor = copyFrom.mTextColor;
         mTextInactivatedColor = copyFrom.mTextInactivatedColor;
@@ -69,7 +66,6 @@ public final class KeyDrawParams {
         mHintLabelColor = copyFrom.mHintLabelColor;
         mShiftedLetterHintInactivatedColor = copyFrom.mShiftedLetterHintInactivatedColor;
         mShiftedLetterHintActivatedColor = copyFrom.mShiftedLetterHintActivatedColor;
-        mPreviewTextColor = copyFrom.mPreviewTextColor;
 
         mHintLabelVerticalAdjustment = copyFrom.mHintLabelVerticalAdjustment;
         mLabelOffCenterRatio = copyFrom.mLabelOffCenterRatio;
@@ -96,7 +92,6 @@ public final class KeyDrawParams {
         mShiftedLetterHintSize = selectTextSize(keyHeight,
                 attr.mShiftedLetterHintRatio, mShiftedLetterHintSize);
         mHintLabelSize = selectTextSize(keyHeight, attr.mHintLabelRatio, mHintLabelSize);
-        mPreviewTextSize = selectTextSize(keyHeight, attr.mPreviewTextRatio, mPreviewTextSize);
 
         mTextColor = selectColor(attr.mTextColor, mTextColor);
         mTextInactivatedColor = selectColor(attr.mTextInactivatedColor, mTextInactivatedColor);
@@ -108,7 +103,6 @@ public final class KeyDrawParams {
                 attr.mShiftedLetterHintInactivatedColor, mShiftedLetterHintInactivatedColor);
         mShiftedLetterHintActivatedColor = selectColor(
                 attr.mShiftedLetterHintActivatedColor, mShiftedLetterHintActivatedColor);
-        mPreviewTextColor = selectColor(attr.mPreviewTextColor, mPreviewTextColor);
 
         mHintLabelVerticalAdjustment = selectFloatIfNonZero(
                 attr.mHintLabelVerticalAdjustment, mHintLabelVerticalAdjustment);

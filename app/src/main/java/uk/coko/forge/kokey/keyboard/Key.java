@@ -601,25 +601,6 @@ public class Key implements Comparable<Key> {
         return isShiftedLetterActivated() ? mHintLabel : mLabel;
     }
 
-    private boolean previewHasLetterSize() {
-        return (mLabelFlags & LABEL_FLAGS_FOLLOW_KEY_LETTER_RATIO) != 0
-                || StringUtils.codePointCount(getPreviewLabel()) == 1;
-    }
-
-    public final int selectPreviewTextSize(final KeyDrawParams params) {
-        if (previewHasLetterSize()) {
-            return params.mPreviewTextSize;
-        }
-        return params.mLetterSize;
-    }
-
-    public Typeface selectPreviewTypeface(final KeyDrawParams params) {
-        if (previewHasLetterSize()) {
-            return selectTypeface(params);
-        }
-        return Typeface.DEFAULT_BOLD;
-    }
-
     public final boolean isAlignHintLabelToBottom(final int defaultFlags) {
         return ((mLabelFlags | defaultFlags) & LABEL_FLAGS_ALIGN_HINT_LABEL_TO_BOTTOM) != 0;
     }
