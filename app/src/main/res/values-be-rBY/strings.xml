@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"Па націску на клавішы ўсплывае акно"</string>
     <string name="settings_screen_preferences">"Параметры"</string>
     <string name="settings_screen_key_press">Націск клавіш</string>
     <string name="settings_screen_appearance">Знешні выгляд</string>

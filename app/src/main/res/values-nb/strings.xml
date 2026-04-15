@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"Forgrunnsvindu ved tastetrykk"</string>
     <string name="settings_screen_preferences">"Innstillinger"</string>
     <string name="settings_screen_key_press">"Tastetrykk"</string>
     <string name="settings_screen_appearance">Utseende</string>

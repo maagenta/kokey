@@ -21,8 +21,6 @@
 
 
 
-    <!-- Option to control whether or not to show a popup with a larger font on each key press. -->
-    <string name="popup_on_keypress">Popup on keypress</string>
 
     <!-- Settings screen title for preferences [CHAR LIMIT=33]-->
     <string name="settings_screen_preferences">Preferences</string>

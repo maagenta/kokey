@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"விழை அழுத்தத்தின்போது பாப்அப் செய்"</string>
     <string name="settings_screen_preferences">"விருப்பங்கள்"</string>
     <string name="settings_screen_key_press">விசை அழுத்தல்</string>
     <string name="settings_screen_appearance">தோற்றம்</string>

@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"Handitu teklak, sakatzean"</string>
     <string name="settings_screen_preferences">"Hobespenak"</string>
     <string name="settings_screen_appearance">Itxura</string>
     <string name="settings_screen_theme">"Gaia"</string>

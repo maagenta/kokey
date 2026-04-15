@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"Pop-up bij toetsaanslag"</string>
     <string name="settings_screen_preferences">"Voorkeuren"</string>
     <string name="settings_screen_key_press">Toetsaanslag</string>
     <string name="settings_screen_appearance">Uiterlijk</string>

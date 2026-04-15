@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"Tuşa basıldığında pop-up aç"</string>
     <string name="settings_screen_preferences">"Tercihler"</string>
     <string name="settings_screen_key_press">Tuşa basma</string>
     <string name="settings_screen_appearance">Görünüm</string>

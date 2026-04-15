@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"انبثاق عند ضغط مفتاح"</string>
     <string name="settings_screen_preferences">"التفضيلات"</string>
     <string name="settings_screen_key_press">ضغط المفتاح</string>
     <string name="settings_screen_appearance">مظهر</string>

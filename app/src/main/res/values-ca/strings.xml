@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"Amplia en prémer tecles"</string>
     <string name="settings_screen_preferences">"Preferències"</string>
     <string name="settings_screen_appearance">Aspecte</string>
     <string name="settings_screen_theme">"Tema"</string>

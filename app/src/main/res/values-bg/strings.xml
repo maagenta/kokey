@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"Изск. прозорец при натискане на клавиш"</string>
     <string name="settings_screen_preferences">"Предпочитания"</string>
     <string name="settings_screen_key_press">Натискане на клавиш</string>
     <string name="settings_screen_appearance">Външен вид</string>

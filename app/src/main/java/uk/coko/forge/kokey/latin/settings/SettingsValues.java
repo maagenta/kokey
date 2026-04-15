@@ -38,7 +38,6 @@ public class SettingsValues {
     public final int mDisplayOrientation;
     // From preferences, in the same order as xml/prefs.xml:
     public final boolean mAutoCap;
-    public final boolean mKeyPreviewPopupOn;
     public final boolean mUseOnScreen;
     public final boolean mShowsLanguageSwitchKey;
     public final boolean mShowsEmojiKey;
@@ -53,7 +52,6 @@ public class SettingsValues {
     public final InputAttributes mInputAttributes;
 
     // Deduced settings
-    public final int mKeyPreviewPopupDismissDelay;
 
     // Debug settings
     public final float mKeyboardHeightScale;
@@ -70,7 +68,6 @@ public class SettingsValues {
 
         // Get the settings preferences
         mAutoCap = prefs.getBoolean(Settings.PREF_AUTO_CAP, true);
-        mKeyPreviewPopupOn = Settings.readKeyPreviewPopupEnabled(prefs, res);
         mUseOnScreen = Settings.readUseOnScreenKeyboard(prefs);
         mShowsLanguageSwitchKey = Settings.readShowLanguageSwitchKey(prefs);
         mShowsEmojiKey = Settings.readShowEmojiKey(prefs);
@@ -79,7 +76,6 @@ public class SettingsValues {
 
         // Compute other readable settings
         mKeyLongpressTimeout = Settings.readKeyLongpressTimeout(prefs, res);
-        mKeyPreviewPopupDismissDelay = res.getInteger(R.integer.config_key_preview_linger_timeout);
         mKeyboardHeightScale = Settings.readKeyboardHeight(prefs, DEFAULT_SIZE_SCALE);
         mBottomOffsetPortrait = Settings.readBottomOffsetPortrait(prefs);
         mDisplayOrientation = res.getConfiguration().orientation;

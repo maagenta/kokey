@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"Pop-up la apăsarea tastei"</string>
     <string name="settings_screen_preferences">"Preferințe"</string>
     <string name="settings_screen_key_press">Apăsarea tastelor</string>
     <string name="settings_screen_appearance">Aspect</string>

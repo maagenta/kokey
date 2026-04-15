@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"Popup vid knapptryck"</string>
     <string name="settings_screen_preferences">"Inställningar"</string>
     <string name="settings_screen_appearance">Utseende</string>
     <string name="settings_screen_theme">"Tema"</string>

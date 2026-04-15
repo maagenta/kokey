@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">কিপ্রেস পপআপ</string>
     <string name="settings_screen_preferences">অভিরুচি</string>
     <string name="settings_screen_key_press">কিপ্রেস</string>
     <string name="settings_screen_appearance">অবয়ব</string>

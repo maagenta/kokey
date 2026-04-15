@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"Pop-up bei Tastendruck"</string>
     <string name="settings_screen_key_press">Tastendruck</string>
     <string name="settings_screen_appearance">Aussehen</string>
     <string name="settings_screen_preferences">"Einstellungen"</string>

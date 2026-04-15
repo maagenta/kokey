@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"按键时弹出显示字符"</string>
     <string name="settings_screen_preferences">"偏好设置"</string>
     <string name="settings_screen_appearance">外观</string>
     <string name="settings_screen_key_press">"按键"</string>

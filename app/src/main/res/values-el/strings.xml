@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"Εμφάνιση με το πάτημα πλήκτρου"</string>
     <string name="settings_screen_preferences">"Προτιμήσεις"</string>
     <string name="settings_screen_key_press">Πάτημα κουμπιού</string>
     <string name="settings_screen_appearance">Εμφάνιση</string>

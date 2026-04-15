@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"යතුරු එබීම මත උත්පතනය"</string>
     <string name="settings_screen_preferences">"අභිරුචි"</string>
     <string name="settings_screen_key_press">යතුර එබීම</string>
     <string name="settings_screen_appearance">පෙනුම</string>

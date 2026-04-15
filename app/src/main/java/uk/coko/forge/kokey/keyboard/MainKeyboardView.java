@@ -41,9 +41,6 @@ import uk.coko.forge.kokey.R;
 import uk.coko.forge.kokey.keyboard.internal.DrawingPreviewPlacerView;
 import uk.coko.forge.kokey.keyboard.internal.DrawingProxy;
 import uk.coko.forge.kokey.keyboard.internal.KeyDrawParams;
-import uk.coko.forge.kokey.keyboard.internal.KeyPreviewChoreographer;
-import uk.coko.forge.kokey.keyboard.internal.KeyPreviewDrawParams;
-import uk.coko.forge.kokey.keyboard.internal.KeyPreviewView;
 import uk.coko.forge.kokey.keyboard.internal.MoreKeySpec;
 import uk.coko.forge.kokey.keyboard.internal.NonDistinctMultitouchHelper;
 import uk.coko.forge.kokey.keyboard.internal.TimerHandler;
@@ -82,11 +79,6 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
 
     // Drawing preview placer view
     private final DrawingPreviewPlacerView mDrawingPreviewPlacerView;
-    private final int[] mOriginCoords = CoordinateUtils.newInstance();
-
-    // Key preview
-    private final KeyPreviewDrawParams mKeyPreviewDrawParams;
-    private final KeyPreviewChoreographer mKeyPreviewChoreographer;
 
     // More keys keyboard
     private final Paint mBackgroundDimAlphaPaint = new Paint();
@@ -148,9 +140,6 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
                 R.styleable.MainKeyboardView_altCodeKeyWhileTypingFadeoutAnimator, 0);
         final int altCodeKeyWhileTypingFadeinAnimatorResId = mainKeyboardViewAttr.getResourceId(
                 R.styleable.MainKeyboardView_altCodeKeyWhileTypingFadeinAnimator, 0);
-
-        mKeyPreviewDrawParams = new KeyPreviewDrawParams(mainKeyboardViewAttr);
-        mKeyPreviewChoreographer = new KeyPreviewChoreographer(mKeyPreviewDrawParams);
 
         final int moreKeysKeyboardLayoutId = mainKeyboardViewAttr.getResourceId(
                 R.styleable.MainKeyboardView_moreKeysKeyboardLayout, 0);
@@ -262,21 +251,6 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
         mLanguageOnSpacebarTextSize = keyHeight * mLanguageOnSpacebarTextRatio;
     }
 
-    /**
-     * Enables or disables the key preview popup. This is a popup that shows a magnified
-     * version of the depressed key. By default the preview is enabled.
-     * @param previewEnabled whether or not to enable the key feedback preview
-     * @param delay the delay after which the preview is dismissed
-     */
-    public void setKeyPreviewPopupEnabled(final boolean previewEnabled, final int delay) {
-        mKeyPreviewDrawParams.setPopupEnabled(previewEnabled, delay);
-    }
-
-    private void locatePreviewPlacerView() {
-        getLocationInWindow(mOriginCoords);
-        mDrawingPreviewPlacerView.setKeyboardViewGeometry(mOriginCoords);
-    }
-
     private void installPreviewPlacerView() {
         final View rootView = getRootView();
         if (rootView == null) {
@@ -297,32 +271,6 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
     public void onKeyPressed(final Key key, final boolean withPreview) {
         key.onPressed();
         invalidateKey(key);
-        if (withPreview && !key.noKeyPreview()) {
-            showKeyPreview(key);
-        }
-    }
-
-    private void showKeyPreview(final Key key) {
-        final Keyboard keyboard = getKeyboard();
-        if (keyboard == null) {
-            return;
-        }
-        final KeyPreviewDrawParams previewParams = mKeyPreviewDrawParams;
-        if (!previewParams.isPopupEnabled()) {
-            previewParams.setVisibleOffset(-Math.round(keyboard.mVerticalGap));
-            return;
-        }
-
-        locatePreviewPlacerView();
-        getLocationInWindow(mOriginCoords);
-        final int backgroundColor = mTheme.mCustomColorSupport ? mCustomColor : Color.TRANSPARENT;
-        mKeyPreviewChoreographer.placeAndShowKeyPreview(key, keyboard.mIconsSet, getKeyDrawParams(),
-                mOriginCoords, mDrawingPreviewPlacerView, isHardwareAccelerated(), backgroundColor);
-    }
-
-    private void dismissKeyPreviewWithoutDelay(final Key key) {
-        mKeyPreviewChoreographer.dismissKeyPreview(key, false /* withAnimation */);
-        invalidateKey(key);
     }
 
     // Implements {@link DrawingProxy#onKeyReleased(Key,boolean)}.
@@ -330,22 +278,6 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
     public void onKeyReleased(final Key key, final boolean withAnimation) {
         key.onReleased();
         invalidateKey(key);
-        if (!key.noKeyPreview()) {
-            if (withAnimation) {
-                dismissKeyPreview(key);
-            } else {
-                dismissKeyPreviewWithoutDelay(key);
-            }
-        }
-    }
-
-    private void dismissKeyPreview(final Key key) {
-        if (isHardwareAccelerated()) {
-            mKeyPreviewChoreographer.dismissKeyPreview(key, true /* withAnimation */);
-            return;
-        }
-        // TODO: Implement preference option to control key preview method and duration.
-        mTimerHandler.postDismissKeyPreview(key, mKeyPreviewDrawParams.getLingerTimeout());
     }
 
     @Override
@@ -370,18 +302,9 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
         }
         Keyboard moreKeysKeyboard = mMoreKeysKeyboardCache.get(key);
         if (moreKeysKeyboard == null) {
-            // {@link KeyPreviewDrawParams#mPreviewVisibleWidth} should have been set at
-            // {@link KeyPreviewChoreographer#placeKeyPreview(Key,TextView,KeyboardIconsSet,KeyDrawParams,int,int[]},
-            // though there may be some chances that the value is zero. <code>width == 0</code>
-            // will cause zero-division error at
-            // {@link MoreKeysKeyboardParams#setParameters(int,int,int,int,int,int,boolean,int)}.
-            final boolean isSingleMoreKeyWithPreview = mKeyPreviewDrawParams.isPopupEnabled()
-                    && !key.noKeyPreview() && moreKeys.length == 1
-                    && mKeyPreviewDrawParams.getVisibleWidth() > 0;
             final MoreKeysKeyboard.Builder builder = new MoreKeysKeyboard.Builder(
-                    getContext(), key, getKeyboard(), isSingleMoreKeyWithPreview,
-                    mKeyPreviewDrawParams.getVisibleWidth(),
-                    mKeyPreviewDrawParams.getVisibleHeight(), newLabelPaint(key));
+                    getContext(), key, getKeyboard(), false /* isSingleMoreKeyWithPreview */,
+                    0 /* previewVisibleWidth */, 0 /* previewVisibleHeight */, newLabelPaint(key));
             moreKeysKeyboard = builder.build();
             mMoreKeysKeyboardCache.put(key, moreKeysKeyboard);
         }
@@ -393,21 +316,13 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
 
         final int[] lastCoords = CoordinateUtils.newInstance();
         tracker.getLastCoordinates(lastCoords);
-        final boolean keyPreviewEnabled = mKeyPreviewDrawParams.isPopupEnabled()
-                && !key.noKeyPreview();
-        // The more keys keyboard is usually horizontally aligned with the center of the parent key.
-        // If showMoreKeysKeyboardAtTouchedPoint is true and the key preview is disabled, the more
-        // keys keyboard is placed at the touch point of the parent key.
-        final int pointX = (mConfigShowMoreKeysKeyboardAtTouchedPoint && !keyPreviewEnabled)
+        // With no key preview, use touch point when showMoreKeysKeyboardAtTouchedPoint is set.
+        final int pointX = mConfigShowMoreKeysKeyboardAtTouchedPoint
                 ? CoordinateUtils.x(lastCoords)
                 : key.getX() + key.getWidth() / 2;
-        // The more keys keyboard is usually vertically aligned with the top edge of the parent key
-        // (plus vertical gap). If the key preview is enabled, the more keys keyboard is vertically
-        // aligned with the bottom edge of the visible part of the key preview.
-        // {@code mPreviewVisibleOffset} has been set appropriately in
-        // {@link KeyboardView#showKeyPreview(PointerTracker)}.
-        final int pointY = key.getY() + mKeyPreviewDrawParams.getVisibleOffset()
-                + Math.round(moreKeysKeyboard.mBottomPadding);
+        final Keyboard keyboard = getKeyboard();
+        final int visibleOffset = keyboard != null ? -Math.round(keyboard.mVerticalGap) : 0;
+        final int pointY = key.getY() + visibleOffset + Math.round(moreKeysKeyboard.mBottomPadding);
         moreKeysKeyboardView.showMoreKeysPanel(this, this, pointX, pointY, mKeyboardActionListener);
         return moreKeysKeyboardView;
     }
@@ -513,9 +428,6 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
 
     public void startDisplayLanguageOnSpacebar(final boolean subtypeChanged,
             final int languageOnSpacebarFormatType) {
-        if (subtypeChanged) {
-            KeyPreviewView.clearTextCache();
-        }
         mLanguageOnSpacebarFormatType = languageOnSpacebarFormatType;
         invalidateKey(mSpaceKey);
     }

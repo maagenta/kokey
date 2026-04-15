@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"بازشدن با فشار کلید"</string>
     <string name="settings_screen_preferences">"تنظیمات برگزیده"</string>
     <string name="settings_screen_key_press">فشردن دکمه</string>
     <string name="settings_screen_appearance">ظاهر</string>

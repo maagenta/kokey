@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"按鍵時顯示彈出式視窗"</string>
     <string name="settings_screen_preferences">"偏好設定"</string>
     <string name="settings_screen_theme">"主題背景"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g> 毫秒"</string>

@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"Muncul saat tombol ditekan"</string>
     <string name="settings_screen_preferences">"Preferensi"</string>
     <string name="settings_screen_appearance">Tampilan</string>
     <string name="settings_screen_key_press">Tombol ditekan</string>

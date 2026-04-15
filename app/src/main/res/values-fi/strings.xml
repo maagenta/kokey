@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"Ponnahdusikkuna painalluksella"</string>
     <string name="settings_screen_preferences">"Asetukset"</string>
     <string name="settings_screen_key_press">Näppäinpainallus</string>
     <string name="settings_screen_appearance">Ulkoasu</string>

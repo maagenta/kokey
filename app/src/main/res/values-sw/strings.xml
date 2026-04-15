@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"Ibuka kitufe kinapobonyezwa"</string>
     <string name="settings_screen_preferences">"Mapendeleo"</string>
     <string name="settings_screen_theme">"Mandhari"</string>
     <string name="abbreviation_unit_milliseconds">"Milisekunde <xliff:g id="MILLISECONDS">%s</xliff:g>"</string>

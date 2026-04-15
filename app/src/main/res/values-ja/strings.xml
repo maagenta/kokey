@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"キー押下時ポップアップ"</string>
     <string name="settings_screen_preferences">"設定"</string>
     <string name="settings_screen_key_press">キープレス</string>
     <string name="settings_screen_appearance">外観</string>

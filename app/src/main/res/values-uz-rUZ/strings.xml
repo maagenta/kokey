@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"Tugma bosilganda qalqib chiqish"</string>
     <string name="settings_screen_preferences">"Sozlamalar"</string>
     <string name="settings_screen_theme">"Mavzu"</string>
     <string name="settings_system_default">"Tizim standarti"</string>

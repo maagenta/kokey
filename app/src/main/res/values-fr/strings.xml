@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"Agrandir les caractères"</string>
     <string name="settings_screen_preferences">"Préférences"</string>
     <string name="settings_screen_key_press">Appui sur une touche</string>
     <string name="settings_screen_appearance">Apparence</string>

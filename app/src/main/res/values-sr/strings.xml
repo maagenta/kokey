@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"Искачући прозор приликом притиска тастера"</string>
     <string name="settings_screen_preferences">"Подешавања"</string>
     <string name="settings_screen_theme">"Тема"</string>
     <string name="settings_system_default">"Подразумевано"</string>

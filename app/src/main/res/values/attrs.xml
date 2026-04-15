@@ -90,19 +90,6 @@
         <attr name="longPressShiftLockTimeout" format="integer" />
         <!-- Ignore special key timeout while typing in millisecond. -->
         <attr name="ignoreAltCodeKeyTimeout" format="integer" />
-        <!-- Background resource for key press feedback.-->
-        <attr name="keyPreviewBackground" format="reference" />
-        <!-- Vertical offset of the key press feedback from the key. -->
-        <attr name="keyPreviewOffset" format="dimension" />
-        <!-- Height of the key press feedback popup. -->
-        <attr name="keyPreviewHeight" format="dimension" />
-        <!-- Min width of the key press feedback popup. -->
-        <attr name="keyPreviewWidth" format="dimension" />
-        <!-- TODO: consolidate key preview linger timeout with the key preview animation parameters. -->
-        <!-- Delay after key releasing and key press feedback dismissing in millisecond -->
-        <attr name="keyPreviewLingerTimeout" format="integer" />
-        <!-- Key preview dismiss animator -->
-        <attr name="keyPreviewDismissAnimator" format="reference" />
         <!-- Layout resource for more keys keyboard -->
         <attr name="moreKeysKeyboardLayout" format="reference" />
         <attr name="backgroundDimAlpha" format="integer" />
@@ -291,11 +278,6 @@
         <attr name="keyShiftedLetterHintInactivatedColor" format="color" />
         <attr name="keyShiftedLetterHintActivatedColor" format="color" />
 
-        <!-- Key preview visual parameters -->
-        <!-- The text color for key press feedback. -->
-        <attr name="keyPreviewTextColor" format="color" />
-        <!-- Size of the text for key press feedback popup, in the proportion of key height. -->
-        <attr name="keyPreviewTextRatio" format="fraction" />
     </declare-styleable>
 
     <declare-styleable name="Keyboard_Include">

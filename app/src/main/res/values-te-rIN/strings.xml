@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"కీని నొక్కినప్పుడు పాప్‌అప్ చూపు"</string>
     <string name="settings_screen_preferences">"ప్రాధాన్యతలు"</string>
     <string name="settings_screen_theme">"థీమ్"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g>మిసె"</string>

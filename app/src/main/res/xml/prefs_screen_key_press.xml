@@ -18,11 +18,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:latin="http://schemas.android.com/apk/res-auto"
     android:title="@string/settings_screen_key_press">
-    <SwitchPreference
-        android:key="popup_on"
-        android:title="@string/popup_on_keypress"
-        android:defaultValue="@bool/config_default_key_preview_popup"
-        android:persistent="true" />
     <uk.coko.forge.kokey.latin.settings.SeekBarDialogPreference
         android:key="pref_key_longpress_timeout"
         android:title="@string/prefs_key_longpress_timeout_settings"

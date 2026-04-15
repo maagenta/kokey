@@ -47,7 +47,6 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
     public static final String SCREEN_THEME = "screen_theme";
     // In the same order as xml/prefs.xml
     public static final String PREF_AUTO_CAP = "auto_cap";
-    public static final String PREF_POPUP_ON = "popup_on";
     public static final String PREF_SHOW_LANGUAGE_SWITCH_KEY = "pref_show_language_switch_key";
     public static final String PREF_SHOW_EMOJI_KEY = "pref_show_emoji_key";
     public static final String PREF_USE_ON_SCREEN = "pref_use_on_screen";
@@ -149,7 +148,6 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
                     case PREF_ENABLE_IME_SWITCH:
                     case PREF_DELETE_SWIPE:
                     case PREF_SPACE_SWIPE:
-                    case PREF_POPUP_ON:
                         Log.i(TAG, "Loading restriction: " + key + "=" + appRestrictions.getBoolean(key));
                         prefsEditor.putBoolean(key, appRestrictions.getBoolean(key));
                         break;
@@ -196,13 +194,6 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
 
 
     // Accessed from the settings interface, hence public
-    public static boolean readKeyPreviewPopupEnabled(final SharedPreferences prefs,
-            final Resources res) {
-        final boolean defaultKeyPreviewPopup = res.getBoolean(
-                R.bool.config_default_key_preview_popup);
-        return prefs.getBoolean(PREF_POPUP_ON, defaultKeyPreviewPopup);
-    }
-
     public static boolean readShowLanguageSwitchKey(final SharedPreferences prefs) {
         return prefs.getBoolean(PREF_SHOW_LANGUAGE_SWITCH_KEY, true);
     }

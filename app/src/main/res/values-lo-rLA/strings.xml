@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="popup_on_keypress">"ໂຕອັກສອນເວລາພິມ"</string>
     <string name="settings_screen_preferences">"​​ການ​ຕັ້ງ​ຄ່າ"</string>
     <string name="settings_screen_theme">"ຮູບແບບສີສັນ"</string>
     <string name="abbreviation_unit_milliseconds">"<xliff:g id="MILLISECONDS">%s</xliff:g>ms"</string>
