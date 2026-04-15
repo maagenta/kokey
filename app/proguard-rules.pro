@@ -16,7 +16,7 @@
 #   public *;
 #}
 
--keep class rkr.simplekeyboard.inputmethod.R
--keep class rkr.simplekeyboard.inputmethod.latin.settings.SettingsFragment
--keep class rkr.simplekeyboard.inputmethod.latin.settings.LanguagesSettingsFragment
--keep class rkr.simplekeyboard.inputmethod.latin.settings.SingleLanguageSettingsFragment
+-keep class uk.coko.forge.kokey.R
+-keep class uk.coko.forge.kokey.latin.settings.SettingsFragment
+-keep class uk.coko.forge.kokey.latin.settings.LanguagesSettingsFragment
+-keep class uk.coko.forge.kokey.latin.settings.SingleLanguageSettingsFragment

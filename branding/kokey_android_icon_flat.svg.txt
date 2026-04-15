@@ -1,0 +1,2 @@
+## Notes ##
+This is the kokey launcher-icon which is converted in an XML file in Android Studio

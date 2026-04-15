@@ -18,12 +18,12 @@
 */
 -->
 
-<rkr.simplekeyboard.inputmethod.latin.InputView
+<uk.coko.forge.kokey.latin.InputView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     style="?attr/inputViewStyle">
-    <rkr.simplekeyboard.inputmethod.keyboard.MainKeyboardView
+    <uk.coko.forge.kokey.keyboard.MainKeyboardView
         android:id="@+id/keyboard_view"
         android:layoutDirection="ltr"
         android:layout_gravity="bottom"
@@ -31,11 +31,11 @@
         android:fitsSystemWindows="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    <rkr.simplekeyboard.inputmethod.latin.EmojiPanelView
+    <uk.coko.forge.kokey.latin.EmojiPanelView
         android:id="@+id/emoji_view"
         android:visibility="gone"
         android:background="?attr/keyboardViewBackground"
         android:layout_gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-</rkr.simplekeyboard.inputmethod.latin.InputView>
+</uk.coko.forge.kokey.latin.InputView>

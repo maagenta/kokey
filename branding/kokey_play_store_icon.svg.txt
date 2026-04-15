@@ -1,0 +1,5 @@
+## Notes ##
+This is the icon for the Play Store. Fulfills the playstore requirements:
+
+- The canvas has to be 512x512
+- The product icon has to e 384x384
