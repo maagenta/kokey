@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Lyd ved tastetryk"</string>
     <string name="popup_on_keypress">"Pop op ved tastetryk"</string>
     <string name="settings_screen_preferences">"Præferencer"</string>
     <string name="settings_screen_theme">"Tema"</string>
@@ -36,7 +35,6 @@
     <string name="subtype_compact">"kompakt"</string>
     <string name="add">"Tilføj"</string>
     <string name="remove">"Fjern"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Lydstyrke ved tastetryk"</string>
     <string name="prefs_key_longpress_timeout_settings">"Forsinket langt tastetryk"</string>
     <string name="button_default">"Standard"</string>
 </resources>

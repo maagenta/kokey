@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Knappljud"</string>
     <string name="popup_on_keypress">"Popup vid knapptryck"</string>
     <string name="settings_screen_preferences">"Inställningar"</string>
     <string name="settings_screen_appearance">Utseende</string>
@@ -38,7 +37,6 @@
     <string name="subtype_compact">"kompakt"</string>
     <string name="add">"Lägg till"</string>
     <string name="remove">"Ta bort"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Ljudvolym för tangenter"</string>
     <string name="prefs_key_longpress_timeout_settings">"Fördröjning vid långt tryck"</string>
     <string name="button_default">"Standard"</string>
     <string name="prefs_keyboard_height_settings">Tangentbordets höjd</string>

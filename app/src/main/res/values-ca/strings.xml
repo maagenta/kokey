@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"So en prémer tecles"</string>
     <string name="popup_on_keypress">"Amplia en prémer tecles"</string>
     <string name="settings_screen_preferences">"Preferències"</string>
     <string name="settings_screen_appearance">Aspecte</string>
@@ -37,7 +36,6 @@
     <string name="subtype_compact">"compacte"</string>
     <string name="add">"Afegeix"</string>
     <string name="remove">"Elimina"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Volum so en prémer tecla"</string>
     <string name="prefs_key_longpress_timeout_settings">"Retard en mantenir premut"</string>
     <string name="button_default">"Predeterminat"</string>
     <string name="prefs_keyboard_height_settings">Alçada del teclat</string>

@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Hangjelzés gombnyomásra"</string>
     <string name="popup_on_keypress">"Nagyobb billentyű gombnyomásra"</string>
     <string name="settings_screen_preferences">"Beállítások"</string>
     <string name="settings_screen_key_press">Gombnyomás</string>
@@ -38,7 +37,6 @@
     <string name="subtype_compact">"kompakt"</string>
     <string name="add">"Hozzáadás"</string>
     <string name="remove">"Eltávolítás"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Gombnyomás hangereje"</string>
     <string name="prefs_key_longpress_timeout_settings">"Hosszú nyomás késleltetése"</string>
     <string name="button_default">"Alapértelmezett"</string>
     <string name="prefs_keyboard_height_settings">Billentyűzet magassága</string>

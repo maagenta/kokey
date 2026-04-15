@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"යතුරු එබිම මත හඬ"</string>
     <string name="popup_on_keypress">"යතුරු එබීම මත උත්පතනය"</string>
     <string name="settings_screen_preferences">"අභිරුචි"</string>
     <string name="settings_screen_key_press">යතුර එබීම</string>
@@ -39,7 +38,6 @@
     <string name="subtype_compact">"සංයුක්ත"</string>
     <string name="add">"එක් කරන්න"</string>
     <string name="remove">"ඉවත් කරන්න"</string>
-    <string name="prefs_keypress_sound_volume_settings">"යතුරු එබීම් හඬ තීව්‍රතාවය"</string>
     <string name="prefs_key_longpress_timeout_settings">"යතුරු දිගු එබීම් ප්‍රමාදය"</string>
     <string name="button_default">"සුපුරුදු"</string>
     <string name="prefs_keyboard_height_settings">යතුරුපුවරුවේ උස</string>

@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Ձայնը սեղմման ժամանակ"</string>
     <string name="popup_on_keypress">"Ելնող պատուհան՝ ստեղնի հպման դեպքում"</string>
     <string name="settings_screen_preferences">"Նախընտրանքներ"</string>
     <string name="settings_screen_theme">"Թեմա"</string>
@@ -37,7 +36,6 @@
     <string name="subtype_compact">"սեղմ"</string>
     <string name="add">"Ավելացնել"</string>
     <string name="remove">"Հեռացնել"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Սեղմման ձայնի բարձրությունը"</string>
     <string name="prefs_key_longpress_timeout_settings">"Ստեղնի երկար սեղմման ուշացում"</string>
     <string name="button_default">"Լռելյայնը"</string>
 </resources>

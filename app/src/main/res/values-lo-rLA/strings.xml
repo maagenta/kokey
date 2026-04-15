@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"ສຽງໃນການກົດປຸ່ມ"</string>
     <string name="popup_on_keypress">"ໂຕອັກສອນເວລາພິມ"</string>
     <string name="settings_screen_preferences">"​​ການ​ຕັ້ງ​ຄ່າ"</string>
     <string name="settings_screen_theme">"ຮູບແບບສີສັນ"</string>
@@ -37,7 +36,6 @@
     <string name="subtype_compact">"ກະ​ທັດ​ຮັດ"</string>
     <string name="add">"ເພີ່ມ"</string>
     <string name="remove">"ລຶບອອກ"</string>
-    <string name="prefs_keypress_sound_volume_settings">"ລະດັບສຽງຂອງການກົດປຸ່ມ"</string>
     <string name="prefs_key_longpress_timeout_settings">"ໄລຍະເວລາຂອງການກົດປຸ່ມ"</string>
     <string name="button_default">"ຄ່າເລີ່ມຕົ້ນ"</string>
 </resources>

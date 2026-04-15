@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"צלילים בעת לחיצה על מקשים"</string>
     <string name="popup_on_keypress">"חלון קופץ בלחיצה על מקש"</string>
     <string name="settings_screen_preferences">"העדפות"</string>
     <string name="settings_screen_key_press">לחיצת מקש</string>
@@ -39,7 +38,6 @@
     <string name="subtype_compact">"קומפקטית"</string>
     <string name="add">"הוסף"</string>
     <string name="remove">"הסר"</string>
-    <string name="prefs_keypress_sound_volume_settings">"עוצמת קול של לחיצת מקש"</string>
     <string name="prefs_key_longpress_timeout_settings">"השהיית לחיצה ארוכה על מקש"</string>
     <string name="button_default">"ברירת מחדל"</string>
     <string name="prefs_keyboard_height_settings">הסר שפה</string>

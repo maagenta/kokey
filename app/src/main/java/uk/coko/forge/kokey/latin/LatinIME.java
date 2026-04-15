@@ -22,14 +22,11 @@
 package uk.coko.forge.kokey.latin;
 
 import android.app.AlertDialog;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.inputmethodservice.InputMethodService;
-import android.media.AudioManager;
 import android.os.Build;
 import android.os.Debug;
 import android.os.IBinder;
@@ -81,7 +78,6 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     private static final boolean TRACE = false;
 
     private static final int EXTENDED_TOUCHABLE_REGION_HEIGHT = 100;
-    private static final int PERIOD_FOR_AUDIO_AND_HAPTIC_FEEDBACK_IN_KEY_REPEAT = 2;
     private static final int PENDING_IMS_CALLBACK_DURATION_MILLIS = 800;
     static final long DELAY_DEALLOCATE_MEMORY_MILLIS = TimeUnit.SECONDS.toMillis(10);
 
@@ -257,17 +253,11 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         mRichImm = RichInputMethodManager.getInstance();
         mRichImm.setSubtypeChangeHandler(this);
         KeyboardSwitcher.init(this);
-        AudioAndHapticFeedbackManager.init(this);
         super.onCreate();
 
         // TODO: Resolve mutual dependencies of {@link #loadSettings()} and
         // {@link #resetDictionaryFacilitatorIfNecessary()}.
         loadSettings();
-
-        // Register to receive ringer mode change.
-        final IntentFilter filter = new IntentFilter();
-        filter.addAction(AudioManager.RINGER_MODE_CHANGED_ACTION);
-        registerReceiver(mRingerModeChangeReceiver, filter);
     }
 
     private void loadSettings() {
@@ -275,14 +265,11 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         final EditorInfo editorInfo = getCurrentInputEditorInfo();
         final InputAttributes inputAttributes = new InputAttributes(editorInfo, isFullscreenMode());
         mSettings.loadSettings(inputAttributes);
-        final SettingsValues currentSettingsValues = mSettings.getCurrent();
-        AudioAndHapticFeedbackManager.getInstance().onSettingsChanged(currentSettingsValues);
     }
 
     @Override
     public void onDestroy() {
         mSettings.onDestroy();
-        unregisterReceiver(mRingerModeChangeReceiver);
         super.onDestroy();
     }
 
@@ -810,27 +797,6 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         }
     }
 
-    private void audioFeedback(final int code, final int repeatCount) {
-        final MainKeyboardView keyboardView = mKeyboardSwitcher.getMainKeyboardView();
-        if (keyboardView != null && keyboardView.isInDraggingFinger()) {
-            // No need to feedback while finger is dragging.
-            return;
-        }
-        if (repeatCount > 0) {
-            if (code == Constants.CODE_DELETE && !mInputLogic.mConnection.canDeleteCharacters()) {
-                // No need to feedback when repeat delete key will have no effect.
-                return;
-            }
-            // TODO: Use event time that the last feedback has been generated instead of relying on
-            // a repeat count to thin out feedback.
-            if (repeatCount % PERIOD_FOR_AUDIO_AND_HAPTIC_FEEDBACK_IN_KEY_REPEAT == 0) {
-                return;
-            }
-        }
-        final AudioAndHapticFeedbackManager feedbackManager = AudioAndHapticFeedbackManager.getInstance();
-        feedbackManager.performAudioFeedback(code);
-    }
-
     // Callback of the {@link KeyboardActionListener}. This is called when a key is depressed;
     // release matching call is {@link #onReleaseKey(int,boolean)} below.
     @Override
@@ -838,7 +804,6 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
             final boolean isSinglePointer) {
         mKeyboardSwitcher.onPressKey(primaryCode, isSinglePointer, getCurrentAutoCapsState(),
                 getCurrentRecapitalizeState());
-        audioFeedback(primaryCode, repeatCount);
     }
 
     // Callback of the {@link KeyboardActionListener}. This is called when a key is released;
@@ -848,17 +813,6 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         mKeyboardSwitcher.onReleaseKey(primaryCode, withSliding, getCurrentAutoCapsState(),
                 getCurrentRecapitalizeState());
     }
-
-    // receive ringer mode change.
-    private final BroadcastReceiver mRingerModeChangeReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(final Context context, final Intent intent) {
-            final String action = intent.getAction();
-            if (action.equals(AudioManager.RINGER_MODE_CHANGED_ACTION)) {
-                AudioAndHapticFeedbackManager.getInstance().onRingerModeChanged();
-            }
-        }
-    };
 
     public void toggleEmojiPanel() {
         mKeyboardSwitcher.toggleEmojiPanel();

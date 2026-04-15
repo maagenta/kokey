@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Звук клавиш"</string>
     <string name="popup_on_keypress">"Увеличивать при нажатии"</string>
     <string name="settings_screen_preferences">"Настройки"</string>
     <string name="settings_screen_key_press">Нажатие клавиши</string>
@@ -40,7 +39,6 @@
  
     <string name="add">"Добавить"</string>
     <string name="remove">"Удалить"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Звук при нажатии клавиш"</string>
     <string name="prefs_key_longpress_timeout_settings">"Долгое нажатие"</string>
     <string name="button_default">"По умолчанию"</string>
     <string name="prefs_keyboard_height_settings">Высота клавиатуры</string>

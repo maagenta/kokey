@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"बटन दबाने पर आवाज़"</string>
     <string name="popup_on_keypress">"कुंजी दबाने पर पॉपअप दिखाएं"</string>
     <string name="settings_screen_preferences">"प्राथमिकताएं"</string>
     <string name="settings_screen_theme">"थीम"</string>
@@ -37,7 +36,6 @@
     <string name="subtype_compact">"संक्षिप्त"</string>
     <string name="add">"जोड़ें"</string>
     <string name="remove">"निकालें"</string>
-    <string name="prefs_keypress_sound_volume_settings">"बटन दबाने पर आवाज़ का स्तर"</string>
     <string name="prefs_key_longpress_timeout_settings">"बटन दबाए रखने की समयाविधि"</string>
     <string name="button_default">"सामान्य"</string>
 </resources>

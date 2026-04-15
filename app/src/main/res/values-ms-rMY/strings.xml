@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Bunyi pada tekanan kekunci"</string>
     <string name="popup_on_keypress">"Pop timbul pada tekanan kunci"</string>
     <string name="settings_screen_preferences">"Pilihan"</string>
     <string name="settings_screen_theme">"Tema"</string>
@@ -37,7 +36,6 @@
     <string name="subtype_compact">"Sarat"</string>
     <string name="add">"Tambah"</string>
     <string name="remove">"Alih Keluar"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Kelantangan bunyi tekan kekunci"</string>
     <string name="prefs_key_longpress_timeout_settings">"Lengah tekan lama kekunci"</string>
     <string name="button_default">"Lalai"</string>
 </resources>

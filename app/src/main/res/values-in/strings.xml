@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Berbunyi jika tombol ditekan"</string>
     <string name="popup_on_keypress">"Muncul saat tombol ditekan"</string>
     <string name="settings_screen_preferences">"Preferensi"</string>
     <string name="settings_screen_appearance">Tampilan</string>
@@ -39,7 +38,6 @@
     <string name="subtype_compact">"Rapat"</string>
     <string name="add">"Tambahkan"</string>
     <string name="remove">"Hapus"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Volume suara saat tekan tombol"</string>
     <string name="prefs_key_longpress_timeout_settings">"Penundaan tekan lama tombol"</string>
     <string name="button_default">"Default"</string>
     <string name="prefs_keyboard_height_settings">Atur Ketinggian Keyboard</string>

@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Skaņa, nospiežot taustiņu"</string>
     <string name="popup_on_keypress">"Parādās, nospiežot taustiņu"</string>
     <string name="settings_screen_preferences">"Preferences"</string>
     <string name="settings_screen_theme">"Motīvs"</string>
@@ -37,7 +36,6 @@
     <string name="subtype_compact">"kompaktā"</string>
     <string name="add">"Pievienot"</string>
     <string name="remove">"Noņemt"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Taustiņu nosp. skaņas skaļums"</string>
     <string name="prefs_key_longpress_timeout_settings">"Taustiņa ilgās nosp. noildze"</string>
     <string name="button_default">"Noklusējums"</string>
 </resources>

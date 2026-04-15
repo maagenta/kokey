@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"キー操作音"</string>
     <string name="popup_on_keypress">"キー押下時ポップアップ"</string>
     <string name="settings_screen_preferences">"設定"</string>
     <string name="settings_screen_key_press">キープレス</string>
@@ -40,7 +39,6 @@
     <string name="subtype_compact">"コンパクト"</string>
     <string name="add">"追加"</string>
     <string name="remove">"削除"</string>
-    <string name="prefs_keypress_sound_volume_settings">"キー操作音の音量"</string>
     <string name="prefs_key_longpress_timeout_settings">"キーの長押し時間"</string>
     <string name="button_default">"デフォルト"</string>
     <string name="prefs_keyboard_height_settings">キーボードの高さ</string>

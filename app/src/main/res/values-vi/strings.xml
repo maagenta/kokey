@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Âm thanh khi nhấn phím"</string>
     <string name="popup_on_keypress">"Bật lên khi nhấn phím"</string>
     <string name="settings_screen_preferences">"Tùy chọn"</string>
     <string name="settings_screen_key_press">"Nhấn phím"</string>
@@ -39,7 +38,6 @@
     <string name="subtype_compact">"Viết tắt"</string>
     <string name="add">"Thêm"</string>
     <string name="remove">"Xóa"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Âm lượng khi nhấn phím"</string>
     <string name="prefs_key_longpress_timeout_settings">"Thời gian trễ nhấn và giữ phím"</string>
     <string name="button_default">"Mặc định"</string>
     <string name="prefs_keyboard_height_settings">"Chiều cao bàn phím"</string>

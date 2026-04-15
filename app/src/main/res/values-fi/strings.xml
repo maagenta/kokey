@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Toista ääni näppäimiä painettaessa"</string>
     <string name="popup_on_keypress">"Ponnahdusikkuna painalluksella"</string>
     <string name="settings_screen_preferences">"Asetukset"</string>
     <string name="settings_screen_key_press">Näppäinpainallus</string>
@@ -38,7 +37,6 @@
     <string name="subtype_compact">"tiivis"</string>
     <string name="add">"Lisää"</string>
     <string name="remove">"Poista"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Näppäinpainalluksen äänenvoimakkuus"</string>
     <string name="prefs_key_longpress_timeout_settings">"Pitkän painalluksen viive"</string>
     <string name="button_default">"Oletusarvot"</string>
     <string name="prefs_keyboard_height_settings">Näppäimistön korkeus</string>

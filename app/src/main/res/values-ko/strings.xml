@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"키를 누를 때 소리 발생"</string>
     <string name="popup_on_keypress">"키를 누를 때 팝업"</string>
     <string name="settings_screen_preferences">"환경설정"</string>
     <string name="settings_screen_appearance">모습</string>
@@ -39,7 +38,6 @@
     <string name="subtype_compact">"컴팩트"</string>
     <string name="add">"추가"</string>
     <string name="remove">"삭제"</string>
-    <string name="prefs_keypress_sound_volume_settings">"키를 누를 때 소리 볼륨"</string>
     <string name="prefs_key_longpress_timeout_settings">"키 길게 누르기 지연"</string>
     <string name="button_default">"기본값"</string>
     <string name="prefs_bottom_offset_portrait_settings">하단 오프셋</string>

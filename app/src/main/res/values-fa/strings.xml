@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"صدا با فشار کلید"</string>
     <string name="popup_on_keypress">"بازشدن با فشار کلید"</string>
     <string name="settings_screen_preferences">"تنظیمات برگزیده"</string>
     <string name="settings_screen_key_press">فشردن دکمه</string>
@@ -39,7 +38,6 @@
     <string name="subtype_compact">"فشرده"</string>
     <string name="add">"افزودن"</string>
     <string name="remove">"حذف"</string>
-    <string name="prefs_keypress_sound_volume_settings">"میزان صدای فشردن کلید"</string>
     <string name="prefs_key_longpress_timeout_settings">"تأخیر فشار طولانی کلید"</string>
     <string name="button_default">"پیش‌فرض"</string>
     <string name="prefs_keyboard_height_settings">ارتفاع صفحه کلید</string>

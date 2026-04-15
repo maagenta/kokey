@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"కీని నొక్కినప్పుడు ధ్వని"</string>
     <string name="popup_on_keypress">"కీని నొక్కినప్పుడు పాప్‌అప్ చూపు"</string>
     <string name="settings_screen_preferences">"ప్రాధాన్యతలు"</string>
     <string name="settings_screen_theme">"థీమ్"</string>
@@ -37,7 +36,6 @@
     <string name="subtype_compact">"కాంపాక్ట్"</string>
     <string name="add">"జోడించండి"</string>
     <string name="remove">"తీసివేయి"</string>
-    <string name="prefs_keypress_sound_volume_settings">"కీని నొక్కినప్పుడు చేసే ధ్వని వాల్యూమ్"</string>
     <string name="prefs_key_longpress_timeout_settings">"కీని ఎక్కువసేపు నొక్కి ఉంచాల్సిన సమయంలో ఆలస్యం"</string>
     <string name="button_default">"డిఫాల్ట్"</string>
 </resources>

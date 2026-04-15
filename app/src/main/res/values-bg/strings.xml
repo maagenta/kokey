@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Звук при натиск. на клавиш"</string>
     <string name="popup_on_keypress">"Изск. прозорец при натискане на клавиш"</string>
     <string name="settings_screen_preferences">"Предпочитания"</string>
     <string name="settings_screen_key_press">Натискане на клавиш</string>
@@ -40,7 +39,6 @@
     <string name="subtype_bds">"БДС"</string>
     <string name="add">"Добавяне"</string>
     <string name="remove">"Премахване"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Сила на звука при натиск. на клавиш"</string>
     <string name="prefs_key_longpress_timeout_settings">"Забавяне при продълж. натискане"</string>
     <string name="button_default">"Стандартно"</string>
     <string name="prefs_keyboard_height_settings">Височина на клавиатурата</string>

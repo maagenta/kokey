@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Soinua teklak sakatzean"</string>
     <string name="popup_on_keypress">"Handitu teklak, sakatzean"</string>
     <string name="settings_screen_preferences">"Hobespenak"</string>
     <string name="settings_screen_appearance">Itxura</string>
@@ -37,7 +36,6 @@
     <string name="subtype_compact">"trinkoa"</string>
     <string name="add">"Gehitu"</string>
     <string name="remove">"Kendu"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Tekla sakatzearen bolumena"</string>
     <string name="prefs_key_longpress_timeout_settings">"Luze sakatzearen atzerapena"</string>
     <string name="button_default">"Lehenetsia"</string>
     <string name="prefs_keyboard_height_settings">Teklatuaren altuera</string>

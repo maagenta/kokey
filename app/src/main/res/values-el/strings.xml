@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Ήχος πλήκτρων"</string>
     <string name="popup_on_keypress">"Εμφάνιση με το πάτημα πλήκτρου"</string>
     <string name="settings_screen_preferences">"Προτιμήσεις"</string>
     <string name="settings_screen_key_press">Πάτημα κουμπιού</string>
@@ -39,7 +38,6 @@
     <string name="subtype_compact">"Συμπαγές"</string>
     <string name="add">"Προσθήκη"</string>
     <string name="remove">"Κατάργηση"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Ένταση ήχου πατήματος πλήκτρου"</string>
     <string name="prefs_key_longpress_timeout_settings">"Καθυστέρηση παρατεταμένου πατήματος"</string>
     <string name="button_default">"Προεπιλογή"</string>
     <string name="prefs_keyboard_height_settings">Ύψος πληκτρολογίου</string>

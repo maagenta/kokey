@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"按键音效"</string>
     <string name="popup_on_keypress">"按键时弹出显示字符"</string>
     <string name="settings_screen_preferences">"偏好设置"</string>
     <string name="settings_screen_appearance">外观</string>
@@ -40,7 +39,6 @@
     <string name="subtype_compact">"紧凑型"</string>
     <string name="add">"添加"</string>
     <string name="remove">"删除"</string>
-    <string name="prefs_keypress_sound_volume_settings">"按键音量"</string>
     <string name="prefs_key_longpress_timeout_settings">"按键长按延迟"</string>
     <string name="button_default">"默认"</string>
     <string name="prefs_keyboard_height_settings">键盘高度</string>

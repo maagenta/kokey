@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Heli klahvivajutusel"</string>
     <string name="popup_on_keypress">"Klahvivajutusel kuva hüpik"</string>
     <string name="settings_screen_preferences">"Eelistused"</string>
     <string name="settings_screen_key_press">Nupu vajutus</string>
@@ -38,7 +37,6 @@
     <string name="subtype_compact">"kompaktne"</string>
     <string name="add">"Lisa"</string>
     <string name="remove">"Eemalda"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Klahvivajutuse helitugevus"</string>
     <string name="prefs_key_longpress_timeout_settings">"Pika klahvivajutuse viide"</string>
     <string name="button_default">"Vaikeväärtus"</string>
     <string name="prefs_keyboard_height_settings">Klaviatuuri kõrgus</string>

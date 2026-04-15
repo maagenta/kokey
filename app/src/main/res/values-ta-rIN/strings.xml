@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"விசையழுத்தத்தின்போது ஒலியெழுப்பு"</string>
     <string name="popup_on_keypress">"விழை அழுத்தத்தின்போது பாப்அப் செய்"</string>
     <string name="settings_screen_preferences">"விருப்பங்கள்"</string>
     <string name="settings_screen_key_press">விசை அழுத்தல்</string>
@@ -39,7 +38,6 @@
     <string name="subtype_compact">"வசதியான"</string>
     <string name="add">"சேர்"</string>
     <string name="remove">"அகற்று"</string>
-    <string name="prefs_keypress_sound_volume_settings">"விசையழுத்த ஒலியளவு"</string>
     <string name="prefs_key_longpress_timeout_settings">"விசைக்கான நீண்ட அழுத்த நேரம்"</string>
     <string name="button_default">"இயல்புநிலை"</string>
     <string name="prefs_keyboard_height_settings">விசைப்பலகை உயரம்</string>

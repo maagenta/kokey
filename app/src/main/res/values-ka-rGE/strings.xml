@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"ხმა კლავიშზე დაჭერისას"</string>
     <string name="popup_on_keypress">"გადიდება ღილაკზე დაჭერისას"</string>
     <string name="settings_screen_preferences">"პარამეტრები"</string>
     <string name="settings_screen_theme">"თემა"</string>
@@ -37,7 +36,6 @@
     <string name="subtype_compact">"კომპაქტური"</string>
     <string name="add">"დამატება"</string>
     <string name="remove">"ამოშლა"</string>
-    <string name="prefs_keypress_sound_volume_settings">"კლავიშზე დაჭერის ხმა"</string>
     <string name="prefs_key_longpress_timeout_settings">"კლავიშზე გრძელი დაჭერის დაყოვნება"</string>
     <string name="button_default">"ნაგულისხმევი"</string>
 </resources>

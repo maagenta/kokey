@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"សំឡេង​នៅ​ពេល​ចុច​គ្រាប់ចុច"</string>
     <string name="popup_on_keypress">"លេច​ឡើង​នៅ​​ពេល​ចុច​គ្រាប់​ចុច"</string>
     <string name="settings_screen_preferences">"ចំណូលចិត្ត"</string>
     <string name="settings_screen_theme">"រូបរាង"</string>
@@ -37,7 +36,6 @@
     <string name="subtype_compact">"បង្រួម"</string>
     <string name="add">"បន្ថែម"</string>
     <string name="remove">"លុប​ចេញ"</string>
-    <string name="prefs_keypress_sound_volume_settings">"កម្រិត​សំឡេង​ពេល​ចុច​គ្រាប់​ចុច"</string>
     <string name="prefs_key_longpress_timeout_settings">"ពន្យារពេល​​​ចុច​គ្រាប់​ចុច​ឲ្យ​​យូរ"</string>
     <string name="button_default">"លំនាំដើម"</string>
 </resources>

@@ -37,7 +37,6 @@ import java.util.concurrent.locks.ReentrantLock;
 import uk.coko.forge.kokey.R;
 import uk.coko.forge.kokey.compat.PreferenceManagerCompat;
 import uk.coko.forge.kokey.keyboard.KeyboardTheme;
-import uk.coko.forge.kokey.latin.AudioAndHapticFeedbackManager;
 import uk.coko.forge.kokey.latin.InputAttributes;
 import uk.coko.forge.kokey.latin.RichInputMethodManager;
 
@@ -48,14 +47,12 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
     public static final String SCREEN_THEME = "screen_theme";
     // In the same order as xml/prefs.xml
     public static final String PREF_AUTO_CAP = "auto_cap";
-public static final String PREF_SOUND_ON = "sound_on";
     public static final String PREF_POPUP_ON = "popup_on";
     public static final String PREF_SHOW_LANGUAGE_SWITCH_KEY = "pref_show_language_switch_key";
     public static final String PREF_SHOW_EMOJI_KEY = "pref_show_emoji_key";
     public static final String PREF_USE_ON_SCREEN = "pref_use_on_screen";
     public static final String PREF_ENABLE_IME_SWITCH = "pref_enable_ime_switch";
     public static final String PREF_ENABLED_SUBTYPES = "pref_enabled_subtypes";
-    public static final String PREF_KEYPRESS_SOUND_VOLUME = "pref_keypress_sound_volume";
     public static final String PREF_KEY_LONGPRESS_TIMEOUT = "pref_key_longpress_timeout";
     public static final String PREF_KEYBOARD_HEIGHT = "pref_keyboard_height";
     public static final String PREF_BOTTOM_OFFSET_PORTRAIT = "pref_bottom_offset_portrait";
@@ -65,7 +62,6 @@ public static final String PREF_SOUND_ON = "sound_on";
     public static final String PREF_SPACE_SWIPE = "pref_space_swipe";
     public static final String PREF_DELETE_SWIPE = "pref_delete_swipe";
 
-    private static final float UNDEFINED_PREFERENCE_VALUE_FLOAT = -1.0f;
     private static final int UNDEFINED_PREFERENCE_VALUE_INT = -1;
 
     private Context mContext;
@@ -153,12 +149,10 @@ public static final String PREF_SOUND_ON = "sound_on";
                     case PREF_ENABLE_IME_SWITCH:
                     case PREF_DELETE_SWIPE:
                     case PREF_SPACE_SWIPE:
-                    case PREF_SOUND_ON:
                     case PREF_POPUP_ON:
                         Log.i(TAG, "Loading restriction: " + key + "=" + appRestrictions.getBoolean(key));
                         prefsEditor.putBoolean(key, appRestrictions.getBoolean(key));
                         break;
-                    case PREF_KEYPRESS_SOUND_VOLUME:
                     case PREF_KEYBOARD_HEIGHT:
                         Log.i(TAG, "Loading restriction: " + key + "=" + appRestrictions.getInt(key));
                         prefsEditor.putFloat(key, appRestrictions.getInt(key) / 100f);
@@ -202,13 +196,7 @@ public static final String PREF_SOUND_ON = "sound_on";
 
 
     // Accessed from the settings interface, hence public
-    public static boolean readKeypressSoundEnabled(final SharedPreferences prefs,
-            final Resources res) {
-        return prefs.getBoolean(PREF_SOUND_ON,
-                res.getBoolean(R.bool.config_default_sound_enabled));
-    }
-
-public static boolean readKeyPreviewPopupEnabled(final SharedPreferences prefs,
+    public static boolean readKeyPreviewPopupEnabled(final SharedPreferences prefs,
             final Resources res) {
         final boolean defaultKeyPreviewPopup = res.getBoolean(
                 R.bool.config_default_key_preview_popup);
@@ -253,19 +241,6 @@ public static boolean readKeyPreviewPopupEnabled(final SharedPreferences prefs,
 
     public static void writePrefSubtypes(final SharedPreferences prefs, final String prefSubtypes) {
         prefs.edit().putString(PREF_ENABLED_SUBTYPES, prefSubtypes).apply();
-    }
-
-    public static float readKeypressSoundVolume(final SharedPreferences prefs) {
-        final float volume = prefs.getFloat(
-                PREF_KEYPRESS_SOUND_VOLUME, UNDEFINED_PREFERENCE_VALUE_FLOAT);
-        return (volume != UNDEFINED_PREFERENCE_VALUE_FLOAT) ? volume
-                : readDefaultKeypressSoundVolume();
-    }
-
-    private static final float DEFAULT_KEYPRESS_SOUND_VOLUME = 0.5f;
-
-    public static float readDefaultKeypressSoundVolume() {
-        return DEFAULT_KEYPRESS_SOUND_VOLUME;
     }
 
     public static int readKeyLongpressTimeout(final SharedPreferences prefs,

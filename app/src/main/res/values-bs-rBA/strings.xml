@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Zvuk pri pritisku tipke"</string>
     <string name="popup_on_keypress">"Iskačuči prozor pri pritisku na tipku"</string>
     <string name="settings_screen_preferences">"Karakteristike"</string>
     <string name="settings_screen_theme">"Tema"</string>
@@ -37,7 +36,6 @@
     <string name="subtype_compact">"kompaktan"</string>
     <string name="add">"Dodaj"</string>
     <string name="remove">"Ukloni"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Jačina zvuka pritisnute tipke"</string>
     <string name="prefs_key_longpress_timeout_settings">"Odgoda dugog pritiska tipke"</string>
     <string name="button_default">"Zadano"</string>
 </resources>

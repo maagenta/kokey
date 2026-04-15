@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Баскыч басылганда чыккан үн"</string>
     <string name="popup_on_keypress">"Баскыч басылганда калкып чыкма"</string>
     <string name="settings_screen_preferences">"Мүмкүнчүлүктөрдү тандоо"</string>
     <string name="settings_screen_theme">"Тема"</string>
@@ -37,7 +36,6 @@
     <string name="subtype_compact">"Чакан"</string>
     <string name="add">"Кошуу"</string>
     <string name="remove">"Алып салуу"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Басылган баскычтын үнүнүн катуулугу"</string>
     <string name="prefs_key_longpress_timeout_settings">"Баскычты көпкө басуунун узактыгы"</string>
     <string name="button_default">"Демейки"</string>
 </resources>

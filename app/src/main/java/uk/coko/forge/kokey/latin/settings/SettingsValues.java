@@ -38,7 +38,6 @@ public class SettingsValues {
     public final int mDisplayOrientation;
     // From preferences, in the same order as xml/prefs.xml:
     public final boolean mAutoCap;
-public final boolean mSoundOn;
     public final boolean mKeyPreviewPopupOn;
     public final boolean mUseOnScreen;
     public final boolean mShowsLanguageSwitchKey;
@@ -54,7 +53,6 @@ public final boolean mSoundOn;
     public final InputAttributes mInputAttributes;
 
     // Deduced settings
-    public final float mKeypressSoundVolume;
     public final int mKeyPreviewPopupDismissDelay;
 
     // Debug settings
@@ -72,7 +70,6 @@ public final boolean mSoundOn;
 
         // Get the settings preferences
         mAutoCap = prefs.getBoolean(Settings.PREF_AUTO_CAP, true);
-mSoundOn = Settings.readKeypressSoundEnabled(prefs, res);
         mKeyPreviewPopupOn = Settings.readKeyPreviewPopupEnabled(prefs, res);
         mUseOnScreen = Settings.readUseOnScreenKeyboard(prefs);
         mShowsLanguageSwitchKey = Settings.readShowLanguageSwitchKey(prefs);
@@ -82,7 +79,6 @@ mSoundOn = Settings.readKeypressSoundEnabled(prefs, res);
 
         // Compute other readable settings
         mKeyLongpressTimeout = Settings.readKeyLongpressTimeout(prefs, res);
-        mKeypressSoundVolume = Settings.readKeypressSoundVolume(prefs);
         mKeyPreviewPopupDismissDelay = res.getInteger(R.integer.config_key_preview_linger_timeout);
         mKeyboardHeightScale = Settings.readKeyboardHeight(prefs, DEFAULT_SIZE_SCALE);
         mBottomOffsetPortrait = Settings.readBottomOffsetPortrait(prefs);

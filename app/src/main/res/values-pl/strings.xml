@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Dźwięk przy naciśnięciu"</string>
     <string name="popup_on_keypress">"Powiększ przy naciśnięciu"</string>
     <string name="settings_screen_preferences">"Ustawienia"</string>
     <string name="settings_screen_key_press">Wciśnięcie klawisza</string>
@@ -38,7 +37,6 @@
     <string name="subtype_compact">"kompaktowa"</string>
     <string name="add">"Dodaj"</string>
     <string name="remove">"Usuń"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Głośność przy naciśniętym klawiszu"</string>
     <string name="prefs_key_longpress_timeout_settings">"Opóźnienie przy długim naciśnięciu"</string>
     <string name="button_default">"Domyślne"</string>
     <string name="prefs_keyboard_height_settings">Wysokość klawiatury</string>

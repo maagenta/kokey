@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"की दाबताना आवाज"</string>
     <string name="popup_on_keypress">"की दाबताना पॉपअप"</string>
     <string name="settings_screen_preferences">"प्राधान्ये"</string>
     <string name="settings_screen_theme">"थीम"</string>
@@ -37,7 +36,6 @@
     <string name="subtype_compact">"संक्षिप्त"</string>
     <string name="add">"जोडा"</string>
     <string name="remove">"काढा"</string>
-    <string name="prefs_keypress_sound_volume_settings">"की दाबल्यावर आवाजाची तीव्रता"</string>
     <string name="prefs_key_longpress_timeout_settings">"की जास्त दाबण्यात विलंब"</string>
     <string name="button_default">"डीफॉल्ट"</string>
 </resources>

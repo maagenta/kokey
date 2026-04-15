@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Som ao tocar a tecla"</string>
     <string name="popup_on_keypress">"Exibir pop-up ao digitar"</string>
     <string name="settings_screen_preferences">"Preferências"</string>
     <string name="settings_screen_key_press">Premir tecla</string>
@@ -38,7 +37,6 @@
     <string name="subtype_compact">"compacto"</string>
     <string name="add">"Adicionar"</string>
     <string name="remove">"Remover"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Volume ao tocar na tela"</string>
     <string name="prefs_key_longpress_timeout_settings">"Atraso ao pressionar teclas"</string>
     <string name="button_default">"Padrão"</string>
     <string name="prefs_keyboard_height_settings">Altura do teclado</string>

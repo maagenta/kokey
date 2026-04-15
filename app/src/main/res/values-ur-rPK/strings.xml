@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"کلید دبانے پر آواز"</string>
     <string name="popup_on_keypress">"کلید دبانے پر پاپ اپ"</string>
     <string name="settings_screen_preferences">"ترجیحات"</string>
     <string name="settings_screen_theme">"تھیم"</string>
@@ -37,7 +36,6 @@
     <string name="subtype_compact">"کمپیکٹ"</string>
     <string name="add">"شامل کریں"</string>
     <string name="remove">"ہٹائیں"</string>
-    <string name="prefs_keypress_sound_volume_settings">"کلید دبانے پر آواز کا والیوم"</string>
     <string name="prefs_key_longpress_timeout_settings">"کلید کو دیر تک دبانے کی تاخیر"</string>
     <string name="button_default">"ڈیفالٹ"</string>
     <string name="prefs_keyboard_height_settings">کی بورڈ کی اونچائی</string>

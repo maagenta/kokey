@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Zvuk při stisku klávesy"</string>
     <string name="popup_on_keypress">"Detail znaku při stisku klávesy"</string>
     <string name="settings_screen_preferences">"Předvolby"</string>
     <string name="settings_screen_key_press">Stisk klávesy</string>
@@ -38,7 +37,6 @@
     <string name="subtype_compact">"kompaktní"</string>
     <string name="add">"Přidat"</string>
     <string name="remove">"Odebrat"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Hlasitost stisknutí klávesy"</string>
     <string name="prefs_key_longpress_timeout_settings">"Prodleva dlouhého stisknutí"</string>
     <string name="button_default">"Výchozí"</string>
     <string name="prefs_keyboard_height_settings">Výška klávesnice</string>

@@ -51,16 +51,6 @@
         android:restrictionType="bool"
         android:defaultValue="false" />
     <!-- settings_screen_key_press -->
-<restriction
-        android:key="sound_on"
-        android:title="@string/sound_on_keypress"
-        android:restrictionType="bool"
-        android:defaultValue="false" />
-    <restriction
-        android:key="pref_keypress_sound_volume"
-        android:title="@string/pref_enable_ime_switch"
-        android:restrictionType="integer"
-        android:defaultValue="50" />
     <restriction
         android:key="popup_on"
         android:title="@string/popup_on_keypress"

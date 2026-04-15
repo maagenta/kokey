@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Zvuk na pritisak tastera"</string>
     <string name="popup_on_keypress">"Iskačući prozor prilikom pritiska tastera"</string>
     <string name="settings_screen_preferences">"Podešavanja"</string>
     <string name="settings_screen_theme">"Tema"</string>
@@ -36,7 +35,6 @@
     <string name="subtype_compact">"kompaktna"</string>
     <string name="add">"Dodaj"</string>
     <string name="remove">"Ukloni"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Jačina zvuka pri pritisku"</string>
     <string name="prefs_key_longpress_timeout_settings">"Odlaganje pri dugom pritisku"</string>
     <string name="button_default">"Podrazumevano"</string>
     <string name="prefs_keyboard_height_settings">Visina tastature</string>

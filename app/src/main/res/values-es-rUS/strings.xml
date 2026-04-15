@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Sonar al pulsar las teclas"</string>
     <string name="popup_on_keypress">"Aviso emergente al pulsar tecla"</string>
     <string name="settings_screen_preferences">"Preferencias"</string>
     <string name="settings_screen_theme">"Tema"</string>
@@ -36,7 +35,6 @@
     <string name="subtype_compact">"compacto"</string>
     <string name="add">"Agregar"</string>
     <string name="remove">"Eliminar"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Volumen al presionar teclas"</string>
     <string name="prefs_key_longpress_timeout_settings">"Demora al mantener presionado"</string>
     <string name="button_default">"Predeterminado"</string>
 </resources>

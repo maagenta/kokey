@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">কিপ্রেসের শব্দ</string>
     <string name="popup_on_keypress">কিপ্রেস পপআপ</string>
     <string name="settings_screen_preferences">অভিরুচি</string>
     <string name="settings_screen_key_press">কিপ্রেস</string>
@@ -43,7 +42,6 @@
     <string name="subtype_akkhor">অক্ষর</string>
     <string name="add">যোগ করুন</string>
     <string name="remove">অপসারণ করুন</string>
-    <string name="prefs_keypress_sound_volume_settings">কিপ্রেস শব্দের ভলিউম</string>
     <string name="prefs_key_longpress_timeout_settings">দীর্ঘ কিপ্রেসের বিলম্ব</string>
     <string name="button_default">ডিফল্ট</string>
     <string name="prefs_keyboard_height_settings">কিবোর্ডের উচ্চতা</string>

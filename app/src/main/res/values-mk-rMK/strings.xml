@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Звук на притискање копче"</string>
     <string name="popup_on_keypress">"Појавен прозорец на притискање копче"</string>
     <string name="settings_screen_preferences">"Претпочитани поставки"</string>
     <string name="settings_screen_key_press">Притискање на копчињата</string>
@@ -38,7 +37,6 @@
     <string name="subtype_compact">"Компактна"</string>
     <string name="add">"Додај"</string>
     <string name="remove">"Отстрани"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Копче за јачина на звук"</string>
     <string name="prefs_key_longpress_timeout_settings">"Доцнење на долго притискање копче"</string>
     <string name="button_default">"Стандардно"</string>
     <string name="prefs_keyboard_height_settings">Висина на тастатурата</string>

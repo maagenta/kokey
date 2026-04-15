@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Lësho tingull kur shtyp tastin"</string>
     <string name="popup_on_keypress">"Zmadhim germe kur shtyp"</string>
     <string name="settings_screen_preferences">"Preferencat"</string>
     <string name="settings_screen_appearance">Pamja</string>
@@ -38,7 +37,6 @@
     <string name="subtype_compact">"kompakte"</string>
     <string name="add">"Shto"</string>
     <string name="remove">"Hiq"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Volumi i tingullit të tastit"</string>
     <string name="prefs_key_longpress_timeout_settings">"Vonesa e shtypjes së gjatë të tastit"</string>
     <string name="button_default">"I parazgjedhur"</string>
     <string name="prefs_keyboard_height_settings">Lartësia e tastierës</string>

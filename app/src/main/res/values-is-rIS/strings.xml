@@ -19,7 +19,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sound_on_keypress">"Hljóð þegar ýtt er á lykil"</string>
     <string name="popup_on_keypress">"Stækkaðir stafir við innslátt"</string>
     <string name="settings_screen_preferences">"Kjörstillingar"</string>
     <string name="settings_screen_theme">"Þema"</string>
@@ -36,7 +35,6 @@
     <string name="subtype_compact">"lítið"</string>
     <string name="add">"Bæta við"</string>
     <string name="remove">"Fjarlægja"</string>
-    <string name="prefs_keypress_sound_volume_settings">"Styrkur lyklahljóða"</string>
     <string name="prefs_key_longpress_timeout_settings">"Töf áður en lykli er haldið inni"</string>
     <string name="button_default">"Sjálfgefið"</string>
 </resources>
