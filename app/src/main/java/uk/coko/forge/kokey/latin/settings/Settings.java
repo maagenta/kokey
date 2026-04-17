@@ -59,6 +59,9 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
     public static final String PREF_SHOW_SPECIAL_CHARS = "pref_show_special_chars";
     public static final String PREF_SHOW_NUMBER_ROW = "pref_show_number_row";
     public static final String PREF_SPACE_SWIPE = "pref_space_swipe";
+    public static final String PREF_EMOJI_RENDERING = "pref_emoji_rendering";
+    public static final String EMOJI_RENDERING_SMOOTH = "smooth";
+    public static final String EMOJI_RENDERING_LIGHT = "light";
 
     private static final int UNDEFINED_PREFERENCE_VALUE_INT = -1;
 
@@ -218,6 +221,11 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
 
     public static boolean readSpaceSwipeEnabled(final SharedPreferences prefs) {
         return prefs.getBoolean(PREF_SPACE_SWIPE, false);
+    }
+
+    public static boolean readEmojiSmoothRendering(final SharedPreferences prefs) {
+        final String value = prefs.getString(PREF_EMOJI_RENDERING, EMOJI_RENDERING_SMOOTH);
+        return EMOJI_RENDERING_SMOOTH.equals(value);
     }
 
     public static String readPrefSubtypes(final SharedPreferences prefs) {

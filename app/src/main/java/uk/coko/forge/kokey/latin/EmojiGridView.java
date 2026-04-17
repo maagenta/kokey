@@ -20,7 +20,8 @@ public final class EmojiGridView extends View {
         void onEmojiClick(String emoji);
     }
 
-    private List<Bitmap> mBitmaps = Collections.emptyList();
+    private List<Bitmap> mBitmaps = null;
+    private EmojiLoader mLoader = null;
     private List<String> mEmojis = Collections.emptyList();
     private int mColumns = 6;
     private int mCellSize = 1;
@@ -56,8 +57,20 @@ public final class EmojiGridView extends View {
     public void setData(final List<String> emojis, final List<Bitmap> bitmaps) {
         mEmojis = emojis;
         mBitmaps = bitmaps;
+        mLoader = null;
         mScrollY = 0;
-        final int rows = (mBitmaps.size() + mColumns - 1) / mColumns;
+        final int rows = (emojis.size() + mColumns - 1) / mColumns;
+        mTotalHeight = rows * mCellSize;
+        invalidate();
+    }
+
+    public void setData(final List<String> emojis, final EmojiLoader loader) {
+        mEmojis = emojis;
+        mBitmaps = null;
+        mLoader = loader;
+        loader.setEmojis(emojis, mCellSize);
+        mScrollY = 0;
+        final int rows = (emojis.size() + mColumns - 1) / mColumns;
         mTotalHeight = rows * mCellSize;
         invalidate();
     }
@@ -69,17 +82,19 @@ public final class EmojiGridView extends View {
 
     @Override
     protected void onDraw(final Canvas canvas) {
-        if (mBitmaps.isEmpty()) return;
+        final int count = mEmojis.size();
+        if (count == 0) return;
         final int firstRow = mScrollY / mCellSize;
         final int lastRow = (mScrollY + getHeight()) / mCellSize;
         for (int row = firstRow; row <= lastRow; row++) {
             for (int col = 0; col < mColumns; col++) {
                 final int index = row * mColumns + col;
-                if (index >= mBitmaps.size()) return;
-                canvas.drawBitmap(mBitmaps.get(index),
-                        col * mCellSize,
-                        row * mCellSize - mScrollY,
-                        mPaint);
+                if (index >= count) return;
+                final Bitmap bmp = mBitmaps != null ? mBitmaps.get(index)
+                        : mLoader != null ? mLoader.get(index) : null;
+                if (bmp != null) {
+                    canvas.drawBitmap(bmp, col * mCellSize, row * mCellSize - mScrollY, mPaint);
+                }
             }
         }
     }

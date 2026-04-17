@@ -1,17 +1,15 @@
 package uk.coko.forge.kokey.latin;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.XmlResourceParser;
 import android.graphics.Bitmap;
-import android.graphics.Canvas;
 import android.os.Build;
-import android.text.Layout;
-import android.text.StaticLayout;
-import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 
+import uk.coko.forge.kokey.compat.PreferenceManagerCompat;
 
 import org.xmlpull.v1.XmlPullParser;
 
@@ -20,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import uk.coko.forge.kokey.R;
+import uk.coko.forge.kokey.latin.settings.Settings;
 
 public final class EmojiPanelView extends android.widget.FrameLayout {
 
@@ -53,10 +52,20 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
     private LinearLayout mTabContainer;
 
     private List<List<String>> mCategoryEmojis;
+    // Smooth mode: pre-rendered bitmaps per category
     private List<List<Bitmap>> mCategoryBitmaps;
-    private int mCurrentCategory = 0;
+    // Light mode: lazy loaders per category
+    private List<EmojiLazyLoader> mCategoryLoaders;
 
     private LatinIME mLatinIME;
+
+    private final SharedPreferences.OnSharedPreferenceChangeListener mPrefListener =
+            (prefs, key) -> {
+                if (Settings.PREF_EMOJI_RENDERING.equals(key)) {
+                    recycleCache();
+                    preload();
+                }
+            };
 
     public EmojiPanelView(final Context context, final AttributeSet attrs) {
         super(context, attrs);
@@ -64,30 +73,79 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
 
     public void setLatinIME(final LatinIME latinIME) {
         mLatinIME = latinIME;
-        // Start pre-rendering as soon as the keyboard is created
         preload();
+    }
+
+    @Override
+    protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        PreferenceManagerCompat.getDeviceSharedPreferences(getContext())
+                .registerOnSharedPreferenceChangeListener(mPrefListener);
+    }
+
+    @Override
+    protected void onDetachedFromWindow() {
+        PreferenceManagerCompat.getDeviceSharedPreferences(getContext())
+                .unregisterOnSharedPreferenceChangeListener(mPrefListener);
+        super.onDetachedFromWindow();
+    }
+
+    private void recycleCache() {
+        if (mCategoryBitmaps != null) {
+            for (final List<Bitmap> bitmaps : mCategoryBitmaps) {
+                for (final Bitmap b : bitmaps) {
+                    if (b != null && !b.isRecycled()) b.recycle();
+                }
+            }
+            mCategoryBitmaps = null;
+        }
+        if (mCategoryLoaders != null) {
+            for (final EmojiLazyLoader loader : mCategoryLoaders) {
+                loader.recycle();
+            }
+            mCategoryLoaders = null;
+        }
+        mCategoryEmojis = null;
     }
 
     private void preload() {
         if (mCategoryEmojis != null) return;
+
+        final boolean smooth = Settings.getInstance().getCurrent().mEmojiSmoothRendering;
         final int bitmapSize = mBitmapSize;
-        new Thread(() -> {
-            final List<List<String>> categoryEmojis = new ArrayList<>();
-            final List<List<Bitmap>> categoryBitmaps = new ArrayList<>();
-            for (final String category : CATEGORIES) {
-                final List<String> emojis = loadCategory(category);
-                final List<Bitmap> bitmaps = new ArrayList<>(emojis.size());
-                for (final String emoji : emojis) {
-                    bitmaps.add(renderEmoji(emoji, bitmapSize));
+
+        if (smooth) {
+            new Thread(() -> {
+                final List<List<String>> categoryEmojis = new ArrayList<>();
+                final List<List<Bitmap>> categoryBitmaps = new ArrayList<>();
+                for (final String category : CATEGORIES) {
+                    final List<String> emojis = loadCategory(category);
+                    final List<Bitmap> bitmaps = new ArrayList<>(emojis.size());
+                    for (final String emoji : emojis) {
+                        bitmaps.add(EmojiRenderer.render(emoji, bitmapSize));
+                    }
+                    categoryEmojis.add(emojis);
+                    categoryBitmaps.add(bitmaps);
                 }
-                categoryEmojis.add(emojis);
-                categoryBitmaps.add(bitmaps);
-            }
-            post(() -> {
-                mCategoryEmojis = categoryEmojis;
-                mCategoryBitmaps = categoryBitmaps;
-            });
-        }).start();
+                post(() -> {
+                    mCategoryEmojis = categoryEmojis;
+                    mCategoryBitmaps = categoryBitmaps;
+                });
+            }).start();
+        } else {
+            new Thread(() -> {
+                final List<List<String>> categoryEmojis = new ArrayList<>();
+                final List<EmojiLazyLoader> categoryLoaders = new ArrayList<>();
+                for (final String category : CATEGORIES) {
+                    categoryEmojis.add(loadCategory(category));
+                    categoryLoaders.add(new EmojiLazyLoader(mEmojiGridView::postInvalidate));
+                }
+                post(() -> {
+                    mCategoryEmojis = categoryEmojis;
+                    mCategoryLoaders = categoryLoaders;
+                });
+            }).start();
+        }
     }
 
     @Override
@@ -118,17 +176,15 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
 
     public void initialize() {
         if (mCategoryEmojis != null) {
-            // Already loaded — show immediately
             buildTabs();
             showCategory(0);
         } else {
-            // Still loading — wait and retry
             post(this::initialize);
         }
     }
 
     private void buildTabs() {
-        if (mTabContainer.getChildCount() > 0) return; // already built
+        if (mTabContainer.getChildCount() > 0) return;
         for (int i = 0; i < CATEGORIES.length; i++) {
             final int index = i;
             final android.widget.ImageButton btn = new android.widget.ImageButton(getContext());
@@ -144,32 +200,15 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
     }
 
     private void showCategory(final int index) {
-        mCurrentCategory = index;
-        mEmojiGridView.setData(mCategoryEmojis.get(index), mCategoryBitmaps.get(index));
+        if (mCategoryBitmaps != null) {
+            mEmojiGridView.setData(mCategoryEmojis.get(index), mCategoryBitmaps.get(index));
+        } else {
+            mEmojiGridView.setData(mCategoryEmojis.get(index), mCategoryLoaders.get(index));
+        }
         mEmojiGridView.scrollToTop();
         for (int i = 0; i < mTabContainer.getChildCount(); i++) {
             mTabContainer.getChildAt(i).setAlpha(i == index ? 1.0f : 0.4f);
         }
-    }
-
-    private static Bitmap renderEmoji(final String emoji, final int size) {
-        final TextPaint paint = new TextPaint(android.graphics.Paint.ANTI_ALIAS_FLAG);
-        paint.setTextSize(size * 0.75f);
-        final StaticLayout layout = StaticLayout.Builder
-                .obtain(emoji, 0, emoji.length(), paint, size)
-                .setAlignment(Layout.Alignment.ALIGN_CENTER)
-                .setMaxLines(1)
-                .build();
-        final Bitmap soft = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888);
-        final Canvas canvas = new Canvas(soft);
-        canvas.translate(0, (size - layout.getHeight()) / 2f);
-        layout.draw(canvas);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            final Bitmap hard = soft.copy(Bitmap.Config.HARDWARE, false);
-            soft.recycle();
-            return hard;
-        }
-        return soft;
     }
 
     private List<String> loadCategory(final String category) {

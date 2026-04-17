@@ -21,6 +21,7 @@ package uk.coko.forge.kokey.latin.settings;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.ListPreference;
 
 import uk.coko.forge.kokey.R;
 import uk.coko.forge.kokey.keyboard.KeyboardLayoutSet;
@@ -47,6 +48,8 @@ public final class PreferencesSettingsFragment extends SubScreenFragment {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.BAKLAVA) {
             removePreference(Settings.PREF_USE_ON_SCREEN);
         }
+
+        updateEmojiRenderingSummary(getSharedPreferences());
     }
 
     @Override
@@ -55,5 +58,17 @@ public final class PreferencesSettingsFragment extends SubScreenFragment {
                 key.equals(Settings.PREF_SHOW_NUMBER_ROW)) {
             KeyboardLayoutSet.onKeyboardThemeChanged();
         }
+        if (key.equals(Settings.PREF_EMOJI_RENDERING)) {
+            updateEmojiRenderingSummary(prefs);
+        }
+    }
+
+    private void updateEmojiRenderingSummary(final SharedPreferences prefs) {
+        final ListPreference pref = (ListPreference) findPreference(Settings.PREF_EMOJI_RENDERING);
+        if (pref == null) return;
+        final boolean smooth = Settings.readEmojiSmoothRendering(prefs);
+        pref.setSummary(smooth
+                ? R.string.emoji_rendering_smooth_summary
+                : R.string.emoji_rendering_light_summary);
     }
 }

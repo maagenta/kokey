@@ -52,4 +52,11 @@
         android:key="pref_space_swipe"
         android:title="@string/space_swipe"
         android:defaultValue="false" />
+    <ListPreference
+        android:key="pref_emoji_rendering"
+        android:title="@string/pref_emoji_rendering"
+        android:entries="@array/emoji_rendering_entries"
+        android:entryValues="@array/emoji_rendering_values"
+        android:defaultValue="smooth"
+        android:persistent="true" />
 </PreferenceScreen>

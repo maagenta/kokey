@@ -20,8 +20,22 @@
 
 <resources>
     <style name="platformSettingsTheme" parent="@android:style/Theme.Material.Light">
-        <item name="android:colorAccent">#757575</item>
-        <item name="android:colorControlActivated">#757575</item>
+        <item name="android:colorAccent">#424242</item>
+        <item name="android:colorControlActivated">#424242</item>
+        <item name="android:colorControlHighlight">#0A000000</item>
+
+        <item name="android:windowAnimationStyle">@style/NoAnimationStyle</item>
+    </style>
+
+    <style name="NoAnimationStyle" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@animator/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@animator/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@animator/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@animator/fade_out</item>
+        <item name="android:fragmentOpenEnterAnimation">@animator/fade_in</item>
+        <item name="android:fragmentOpenExitAnimation">@animator/fade_out</item>
+        <item name="android:fragmentCloseEnterAnimation">@animator/fade_in</item>
+        <item name="android:fragmentCloseExitAnimation">@animator/fade_out</item>
     </style>
     <style name="platformDialogTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog" />
 </resources>

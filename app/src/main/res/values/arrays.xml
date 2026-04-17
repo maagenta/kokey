@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emoji_rendering_entries">
+        <item>@string/emoji_rendering_smooth_title</item>
+        <item>@string/emoji_rendering_light_title</item>
+    </string-array>
+    <string-array name="emoji_rendering_values">
+        <item>smooth</item>
+        <item>light</item>
+    </string-array>
+</resources>
