@@ -75,6 +75,10 @@ public final class EmojiGridView extends View {
         invalidate();
     }
 
+    public boolean hasData() {
+        return !mEmojis.isEmpty();
+    }
+
     public void scrollToTop() {
         mScrollY = 0;
         invalidate();

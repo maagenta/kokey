@@ -1,0 +1,1606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<emoji_data>
+
+    <dictionary>
+        <w id="1">flag</w>
+        <w id="2">face</w>
+        <w id="3">person</w>
+        <w id="4">heart</w>
+        <w id="5">button</w>
+        <w id="6">hand</w>
+        <w id="7">circle</w>
+        <w id="8">smiling</w>
+        <w id="9">eyes</w>
+        <w id="10">black</w>
+        <w id="11">white</w>
+        <w id="12">cat</w>
+        <w id="13">car</w>
+        <w id="14">red</w>
+        <w id="15">arrow</w>
+        <w id="16">mouth</w>
+        <w id="17">open</w>
+        <w id="18">hands</w>
+        <w id="19">raised</w>
+        <w id="20">index</w>
+        <w id="21">pointing</w>
+        <w id="22">man</w>
+        <w id="23">woman</w>
+        <w id="24">blue</w>
+        <w id="25">ball</w>
+        <w id="26">speaker</w>
+        <w id="27">grinning</w>
+        <w id="28">down</w>
+        <w id="29">closed</w>
+        <w id="30">green</w>
+        <w id="31">mark</w>
+        <w id="32">sign</w>
+        <w id="33">left</w>
+        <w id="34">family</w>
+        <w id="35">light</w>
+        <w id="36">bell</w>
+        <w id="37">orange</w>
+        <w id="38">mouse</w>
+        <w id="39">box</w>
+        <w id="40">bar</w>
+        <w id="41">fire</w>
+        <w id="42">vertical</w>
+        <w id="43">musical</w>
+        <w id="44">volume</w>
+        <w id="45">symbol</w>
+        <w id="46">double</w>
+        <w id="47">kissing</w>
+        <w id="48">heavy</w>
+        <w id="49">two</w>
+        <w id="50">hearts</w>
+        <w id="51">point</w>
+        <w id="52">oncoming</w>
+        <w id="53">baby</w>
+        <w id="54">boy</w>
+        <w id="55">girl</w>
+        <w id="56">police</w>
+        <w id="57">dog</w>
+        <w id="58">hot</w>
+        <w id="59">cake</w>
+        <w id="60">truck</w>
+        <w id="61">small</w>
+        <w id="62">playing</w>
+        <w id="63">medal</w>
+        <w id="64">cross</w>
+        <w id="65">camera</w>
+        <w id="66">book</w>
+        <w id="67">square</w>
+        <w id="68">triangle</w>
+        <w id="69">smile</w>
+        <w id="70">tongue</w>
+        <w id="71">out</w>
+        <w id="72">crossed</w>
+        <w id="73">frowning</w>
+        <w id="74">japanese</w>
+        <w id="75">monkey</w>
+        <w id="76">yellow</w>
+        <w id="77">purple</w>
+        <w id="78">backhand</w>
+        <w id="79">right</w>
+        <w id="80">fist</w>
+        <w id="81">construction</w>
+        <w id="82">holding</w>
+        <w id="83">fish</w>
+        <w id="84">water</w>
+        <w id="85">egg</w>
+        <w id="86">rice</w>
+        <w id="87">bottle</w>
+        <w id="88">glass</w>
+        <w id="89">ice</w>
+        <w id="90">bus</w>
+        <w id="91">stop</w>
+        <w id="92">building</w>
+        <w id="93">house</w>
+        <w id="94">mountain</w>
+        <w id="95">airplane</w>
+        <w id="96">train</w>
+        <w id="97">magnet</w>
+        <w id="98">shopping</w>
+        <w id="99">cart</w>
+        <w id="100">extinguisher</w>
+        <w id="101">people</w>
+        <w id="102">place</w>
+        <w id="103">machine</w>
+        <w id="104">sound</w>
+        <w id="105">slash</w>
+        <w id="106">film</w>
+        <w id="107">telephone</w>
+        <w id="108">mailbox</w>
+        <w id="109">card</w>
+        <w id="110">lower</w>
+        <w id="111">banknote</w>
+        <w id="112">brown</w>
+        <w id="113">mobile</w>
+        <w id="114">fast</w>
+        <w id="115">guinea</w>
+        <w id="116">wheelchair</w>
+        <w id="117">sweat</w>
+        <w id="118">kiss</w>
+        <w id="119">food</w>
+        <w id="120">stuck</w>
+        <w id="121">eye</w>
+        <w id="122">money</w>
+        <w id="123">over</w>
+        <w id="124">roll</w>
+        <w id="125">mask</w>
+        <w id="126">bandage</w>
+        <w id="127">hat</w>
+        <w id="128">crying</w>
+        <w id="129">nose</w>
+        <w id="130">horns</w>
+        <w id="131">evil</w>
+        <w id="132">ribbon</w>
+        <w id="133">waving</w>
+        <w id="134">fingers</w>
+        <w id="135">ring</w>
+        <w id="136">love</w>
+        <w id="137">facing</w>
+        <w id="138">older</w>
+        <w id="139">old</w>
+        <w id="140">pregnant</w>
+        <w id="141">pig</w>
+        <w id="142">horse</w>
+        <w id="143">dragon</w>
+        <w id="144">fried</w>
+        <w id="145">fondue</w>
+        <w id="146">beverage</w>
+        <w id="147">tea</w>
+        <w id="148">jar</w>
+        <w id="149">automobile</w>
+        <w id="150">taxi</w>
+        <w id="151">racing</w>
+        <w id="152">pickup</w>
+        <w id="153">auto</w>
+        <w id="154">rickshaw</w>
+        <w id="155">skate</w>
+        <w id="156">railway</w>
+        <w id="157">track</w>
+        <w id="158">office</w>
+        <w id="159">post</w>
+        <w id="160">sunrise</w>
+        <w id="161">umbrella</w>
+        <w id="162">parachute</w>
+        <w id="163">flying</w>
+        <w id="164">boat</w>
+        <w id="165">high</w>
+        <w id="166">wheel</w>
+        <w id="167">hook</w>
+        <w id="168">ladder</w>
+        <w id="169">door</w>
+        <w id="170">mirror</w>
+        <w id="171">lamp</w>
+        <w id="172">trap</w>
+        <w id="173">razor</w>
+        <w id="174">safety</w>
+        <w id="175">bucket</w>
+        <w id="176">game</w>
+        <w id="177">arts</w>
+        <w id="178">stone</w>
+        <w id="179">lotus</w>
+        <w id="180">one</w>
+        <w id="181">low</w>
+        <w id="182">note</w>
+        <w id="183">phone</w>
+        <w id="184">computer</w>
+        <w id="185">stethoscope</w>
+        <w id="186">hammer</w>
+        <w id="187">key</w>
+        <w id="188">locked</w>
+        <w id="189">lock</w>
+        <w id="190">pen</w>
+        <w id="191">mail</w>
+        <w id="192">chart</w>
+        <w id="193">calendar</w>
+        <w id="194">star</w>
+        <w id="195">pointed</w>
+        <w id="196">transgender</w>
+        <w id="197">phones</w>
+        <w id="198">entry</w>
+        <w id="199">check</w>
+        <w id="200">rightwards</w>
+        <w id="201">republic</w>
+        <w id="202">st</w>
+        <w id="203">united</w>
+        <w id="204">smiley</w>
+        <w id="205">squinting</w>
+        <w id="206">laughing</w>
+        <w id="207">rolling</w>
+        <w id="208">tears</w>
+        <w id="209">joy</w>
+        <w id="210">slightly</w>
+        <w id="211">winking</w>
+        <w id="212">heart-eyes</w>
+        <w id="213">hugging</w>
+        <w id="214">without</w>
+        <w id="215">smirk</w>
+        <w id="216">relieved</w>
+        <w id="217">head</w>
+        <w id="218">sunglasses</w>
+        <w id="219">cold</w>
+        <w id="220">disappointed</w>
+        <w id="221">scream</w>
+        <w id="222">weary</w>
+        <w id="223">steam</w>
+        <w id="224">angry</w>
+        <w id="225">imp</w>
+        <w id="226">skull</w>
+        <w id="227">alien</w>
+        <w id="228">pouting</w>
+        <w id="229">broken</w>
+        <w id="230">exclamation</w>
+        <w id="231">ornament</w>
+        <w id="232">revolving</w>
+        <w id="233">beating</w>
+        <w id="234">heartbeat</w>
+        <w id="235">growing</w>
+        <w id="236">heartpulse</w>
+        <w id="237">sparkling</w>
+        <w id="238">cupid</w>
+        <w id="239">gift</w>
+        <w id="240">decoration</w>
+        <w id="241">middle</w>
+        <w id="242">ok</w>
+        <w id="243">finger</w>
+        <w id="244">thumbs</w>
+        <w id="245">raising</w>
+        <w id="246">leg</w>
+        <w id="247">ear</w>
+        <w id="248">silhouette</w>
+        <w id="249">adult</w>
+        <w id="250">gesturing</w>
+        <w id="251">bow</w>
+        <w id="252">worker</w>
+        <w id="253">feeding</w>
+        <w id="254">claus</w>
+        <w id="255">couple</w>
+        <w id="256">rabbit</w>
+    </dictionary>
+
+    <emojis>
+        <e v="3" c="smileys" t="27,2">😀</e>
+        <e v="3" c="smileys" t="27,2,big,9,204">😃</e>
+        <e v="3" c="smileys" t="27,2,8,9,69">😄</e>
+        <e v="3" c="smileys" t="beaming,2,8,9,grin">😁</e>
+        <e v="3" c="smileys" t="27,205,2,satisfied,206">😆</e>
+        <e v="3" c="smileys" t="27,2,117,69">😅</e>
+        <e v="3" c="smileys" t="207,floor,206,rofl">🤣</e>
+        <e v="3" c="smileys" t="2,208,209">😂</e>
+        <e v="3" c="smileys" t="210,8,2">🙂</e>
+        <e v="3" c="smileys" t="upside-down,2,upside,28">🙃</e>
+        <e v="3" c="smileys" t="211,2,wink">😉</e>
+        <e v="3" c="smileys" t="8,2,9,blush">😊</e>
+        <e v="3" c="smileys" t="8,2,halo,innocent">😇</e>
+        <e v="3" c="smileys" t="8,2,212,4,9">😍</e>
+        <e v="3" c="smileys" t="2,blowing,118,47,4">😘</e>
+        <e v="3" c="smileys" t="47,2">😗</e>
+        <e v="3" c="smileys" t="8,2,relaxed">☺</e>
+        <e v="3" c="smileys" t="47,2,29,9">😚</e>
+        <e v="3" c="smileys" t="47,2,8,9">😙</e>
+        <e v="3" c="smileys" t="2,savoring,119,yum">😋</e>
+        <e v="3" c="smileys" t="2,70,120,71">😛</e>
+        <e v="3" c="smileys" t="211,2,70,120,71,121">😜</e>
+        <e v="3" c="smileys" t="zany,2">🤪</e>
+        <e v="3" c="smileys" t="205,2,70,120,71,29,9">😝</e>
+        <e v="3" c="smileys" t="money-mouth,2,122,16">🤑</e>
+        <e v="3" c="smileys" t="8,2,17,18,213,hugs">🤗</e>
+        <e v="3" c="smileys" t="2,6,123,16">🤭</e>
+        <e v="3" c="smileys" t="shushing,2">🤫</e>
+        <e v="3" c="smileys" t="thinking,2">🤔</e>
+        <e v="3" c="smileys" t="zipper-mouth,2,zipper,16">🤐</e>
+        <e v="3" c="smileys" t="2,19,eyebrow">🤨</e>
+        <e v="3" c="smileys" t="neutral,2">😐</e>
+        <e v="3" c="smileys" t="expressionless,2">😑</e>
+        <e v="3" c="smileys" t="2,214,16">😶</e>
+        <e v="3" c="smileys" t="smirking,2,215">😏</e>
+        <e v="3" c="smileys" t="unamused,2">😒</e>
+        <e v="3" c="smileys" t="2,207,9,124">🙄</e>
+        <e v="3" c="smileys" t="grimacing,2">😬</e>
+        <e v="3" c="smileys" t="lying,2">🤥</e>
+        <e v="3" c="smileys" t="216,2">😌</e>
+        <e v="3" c="smileys" t="pensive,2">😔</e>
+        <e v="3" c="smileys" t="sleepy,2">😪</e>
+        <e v="3" c="smileys" t="drooling,2">🤤</e>
+        <e v="3" c="smileys" t="sleeping,2">😴</e>
+        <e v="3" c="smileys" t="2,medical,125">😷</e>
+        <e v="3" c="smileys" t="2,thermometer">🤒</e>
+        <e v="3" c="smileys" t="2,head-bandage,217,126">🤕</e>
+        <e v="3" c="smileys" t="nauseated,2">🤢</e>
+        <e v="3" c="smileys" t="2,vomiting">🤮</e>
+        <e v="3" c="smileys" t="sneezing,2">🤧</e>
+        <e v="3" c="smileys" t="2,crossed-out,9,dizzy,72,71,knocked">😵</e>
+        <e v="3" c="smileys" t="exploding,217">🤯</e>
+        <e v="3" c="smileys" t="cowboy,127,2">🤠</e>
+        <e v="3" c="smileys" t="8,2,218">😎</e>
+        <e v="3" c="smileys" t="nerd,2">🤓</e>
+        <e v="3" c="smileys" t="2,monocle">🧐</e>
+        <e v="3" c="smileys" t="confused,2">😕</e>
+        <e v="3" c="smileys" t="worried,2">😟</e>
+        <e v="3" c="smileys" t="210,73,2">🙁</e>
+        <e v="3" c="smileys" t="73,2,11">☹</e>
+        <e v="3" c="smileys" t="2,17,16">😮</e>
+        <e v="3" c="smileys" t="hushed,2">😯</e>
+        <e v="3" c="smileys" t="astonished,2">😲</e>
+        <e v="3" c="smileys" t="flushed,2">😳</e>
+        <e v="3" c="smileys" t="73,2,17,16">😦</e>
+        <e v="3" c="smileys" t="anguished,2">😧</e>
+        <e v="3" c="smileys" t="fearful,2">😨</e>
+        <e v="3" c="smileys" t="anxious,2,117,219">😰</e>
+        <e v="3" c="smileys" t="sad,but,216,2,220">😥</e>
+        <e v="3" c="smileys" t="128,2,cry">😢</e>
+        <e v="3" c="smileys" t="loudly,128,2,sob">😭</e>
+        <e v="3" c="smileys" t="2,screaming,fear,221">😱</e>
+        <e v="3" c="smileys" t="confounded,2">😖</e>
+        <e v="3" c="smileys" t="persevering,2,persevere">😣</e>
+        <e v="3" c="smileys" t="220,2">😞</e>
+        <e v="3" c="smileys" t="downcast,2,117">😓</e>
+        <e v="3" c="smileys" t="222,2">😩</e>
+        <e v="3" c="smileys" t="tired,2">😫</e>
+        <e v="3" c="smileys" t="2,223,from,129,triumph">😤</e>
+        <e v="3" c="smileys" t="enraged,2,rage,pout">😡</e>
+        <e v="3" c="smileys" t="224,2">😠</e>
+        <e v="3" c="smileys" t="2,symbols,16,cursing">🤬</e>
+        <e v="3" c="smileys" t="8,2,130,225">😈</e>
+        <e v="3" c="smileys" t="224,2,130,225">👿</e>
+        <e v="3" c="smileys" t="226">💀</e>
+        <e v="3" c="smileys" t="226,crossbones">☠</e>
+        <e v="3" c="smileys" t="pile,poo,poop,hankey,shit">💩</e>
+        <e v="3" c="smileys" t="clown,2">🤡</e>
+        <e v="3" c="smileys" t="ogre,74">👹</e>
+        <e v="3" c="smileys" t="goblin,74">👺</e>
+        <e v="3" c="smileys" t="ghost">👻</e>
+        <e v="3" c="smileys" t="227">👽</e>
+        <e v="3" c="smileys" t="227,monster,space,invader">👾</e>
+        <e v="3" c="smileys" t="robot,2">🤖</e>
+        <e v="3" c="smileys" t="27,12,204">😺</e>
+        <e v="3" c="smileys" t="27,12,8,9,69">😸</e>
+        <e v="3" c="smileys" t="12,208,209">😹</e>
+        <e v="3" c="smileys" t="8,12,212,4,9">😻</e>
+        <e v="3" c="smileys" t="12,wry,69,215">😼</e>
+        <e v="3" c="smileys" t="47,12">😽</e>
+        <e v="3" c="smileys" t="222,12,221">🙀</e>
+        <e v="3" c="smileys" t="128,12,2">😿</e>
+        <e v="3" c="smileys" t="228,12">😾</e>
+        <e v="3" c="smileys" t="see-no-evil,75,see,131">🙈</e>
+        <e v="3" c="smileys" t="hear-no-evil,75,hear,131">🙉</e>
+        <e v="3" c="smileys" t="speak-no-evil,75,speak,131">🙊</e>
+        <e v="3" c="smileys" t="14,4">❤</e>
+        <e v="3" c="smileys" t="37,4">🧡</e>
+        <e v="3" c="smileys" t="76,4">💛</e>
+        <e v="3" c="smileys" t="30,4">💚</e>
+        <e v="3" c="smileys" t="24,4">💙</e>
+        <e v="3" c="smileys" t="77,4">💜</e>
+        <e v="3" c="smileys" t="10,4">🖤</e>
+        <e v="3" c="smileys" t="229,4">💔</e>
+        <e v="3" c="smileys" t="4,230,48,31,231">❣</e>
+        <e v="3" c="smileys" t="49,50">💕</e>
+        <e v="3" c="smileys" t="232,50">💞</e>
+        <e v="3" c="smileys" t="233,4,234">💓</e>
+        <e v="3" c="smileys" t="235,4,236">💗</e>
+        <e v="3" c="smileys" t="237,4">💖</e>
+        <e v="3" c="smileys" t="4,15,238">💘</e>
+        <e v="3" c="smileys" t="4,132,239">💝</e>
+        <e v="3" c="smileys" t="4,240">💟</e>
+        <e v="3" c="people" t="133,6,wave">👋</e>
+        <e v="3" c="people" t="19,back,6">🤚</e>
+        <e v="3" c="people" t="6,134,splayed,19">🖐</e>
+        <e v="3" c="people" t="19,6">✋</e>
+        <e v="3" c="people" t="vulcan,salute,19,6,part,between,241,135,134">🖖</e>
+        <e v="3" c="people" t="242,6">👌</e>
+        <e v="3" c="people" t="victory,6">✌</e>
+        <e v="3" c="people" t="72,134">🤞</e>
+        <e v="3" c="people" t="love-you,gesture,136,you">🤟</e>
+        <e v="3" c="people" t="32,130,metal">🤘</e>
+        <e v="3" c="people" t="call,me,6">🤙</e>
+        <e v="3" c="people" t="78,20,21,33,51">👈</e>
+        <e v="3" c="people" t="78,20,21,79,51">👉</e>
+        <e v="3" c="people" t="78,20,21,51">👆</e>
+        <e v="3" c="people" t="241,243,fu,reversed,6,extended">🖕</e>
+        <e v="3" c="people" t="78,20,21,28,51">👇</e>
+        <e v="3" c="people" t="20,21,51">☝</e>
+        <e v="3" c="people" t="244,thumbsup,+1">👍</e>
+        <e v="3" c="people" t="244,28,thumbsdown">👎</e>
+        <e v="3" c="people" t="19,80">✊</e>
+        <e v="3" c="people" t="52,80,punch,facepunch">👊</e>
+        <e v="3" c="people" t="left-facing,80,33,137">🤛</e>
+        <e v="3" c="people" t="right-facing,80,79,137">🤜</e>
+        <e v="3" c="people" t="clapping,18,clap">👏</e>
+        <e v="3" c="people" t="245,18,19">🙌</e>
+        <e v="3" c="people" t="17,18">👐</e>
+        <e v="3" c="people" t="palms,together">🤲</e>
+        <e v="3" c="people" t="handshake">🤝</e>
+        <e v="3" c="people" t="folded,18,pray">🙏</e>
+        <e v="3" c="people" t="writing,6">✍</e>
+        <e v="3" c="people" t="nail,polish,care">💅</e>
+        <e v="3" c="people" t="selfie">🤳</e>
+        <e v="3" c="people" t="flexed,biceps,muscle">💪</e>
+        <e v="3" c="people" t="246">🦵</e>
+        <e v="3" c="people" t="foot">🦶</e>
+        <e v="3" c="people" t="247">👂</e>
+        <e v="3" c="people" t="129">👃</e>
+        <e v="3" c="people" t="9">👀</e>
+        <e v="3" c="people" t="121">👁</e>
+        <e v="3" c="people" t="70">👅</e>
+        <e v="3" c="people" t="118,31">💋</e>
+        <e v="3" c="people" t="bust,248">👤</e>
+        <e v="3" c="people" t="busts,248">👥</e>
+        <e v="3" c="people" t="53">👶</e>
+        <e v="3" c="people" t="child">🧒</e>
+        <e v="3" c="people" t="54">👦</e>
+        <e v="3" c="people" t="55">👧</e>
+        <e v="3" c="people" t="3,249">🧑</e>
+        <e v="3" c="people" t="3,blond,hair,haired">👱</e>
+        <e v="3" c="people" t="22">👨</e>
+        <e v="3" c="people" t="3,beard,bearded">🧔</e>
+        <e v="3" c="people" t="23">👩</e>
+        <e v="3" c="people" t="138,3,249">🧓</e>
+        <e v="3" c="people" t="139,22,138">👴</e>
+        <e v="3" c="people" t="139,23,138">👵</e>
+        <e v="3" c="people" t="3,73">🙍</e>
+        <e v="3" c="people" t="3,228,2">🙎</e>
+        <e v="3" c="people" t="3,250,good">🙅</e>
+        <e v="3" c="people" t="3,250,242">🙆</e>
+        <e v="3" c="people" t="3,tipping,6,information,desk">💁</e>
+        <e v="3" c="people" t="3,245,6">🙋</e>
+        <e v="3" c="people" t="3,bowing,251">🙇</e>
+        <e v="3" c="people" t="3,facepalming,facepalm">🤦</e>
+        <e v="3" c="people" t="3,shrugging,shrug">🤷</e>
+        <e v="3" c="people" t="56,officer,cop">👮</e>
+        <e v="3" c="people" t="detective,sleuth,spy">🕵</e>
+        <e v="3" c="people" t="guard">💂</e>
+        <e v="3" c="people" t="81,252">👷</e>
+        <e v="3" c="people" t="prince">🤴</e>
+        <e v="3" c="people" t="princess">👸</e>
+        <e v="3" c="people" t="3,veil">👰</e>
+        <e v="3" c="people" t="3,tuxedo">🤵</e>
+        <e v="3" c="people" t="140,23">🤰</e>
+        <e v="3" c="people" t="breast-feeding,breast,253">🤱</e>
+        <e v="3" c="people" t="53,angel">👼</e>
+        <e v="3" c="people" t="santa,254">🎅</e>
+        <e v="3" c="people" t="mrs,254">🤶</e>
+        <e v="3" c="people" t="mage">🧙</e>
+        <e v="3" c="people" t="elf">🧝</e>
+        <e v="3" c="people" t="vampire">🧛</e>
+        <e v="3" c="people" t="zombie">🧟</e>
+        <e v="3" c="people" t="genie">🧞</e>
+        <e v="3" c="people" t="merperson">🧜</e>
+        <e v="3" c="people" t="fairy">🧚</e>
+        <e v="3" c="people" t="23,22,82,18,255">👫</e>
+        <e v="3" c="people" t="men,82,18,49">👬</e>
+        <e v="3" c="people" t="women,82,18,49">👭</e>
+        <e v="3" c="people" t="118,couplekiss">💏</e>
+        <e v="3" c="people" t="255,4">💑</e>
+        <e v="3" c="people" t="34,22,23,54">👨‍👩‍👦</e>
+        <e v="3" c="people" t="34,22,23,55">👨‍👩‍👧</e>
+        <e v="3" c="people" t="34,22,23,55,54">👨‍👩‍👧‍👦</e>
+        <e v="3" c="people" t="34,22,54">👨‍👦</e>
+        <e v="3" c="people" t="34,22,55">👨‍👧</e>
+        <e v="3" c="people" t="34,23,54">👩‍👦</e>
+        <e v="3" c="people" t="34,23,55">👩‍👧</e>
+        <e v="3" c="animals" t="57,2">🐶</e>
+        <e v="3" c="animals" t="12,2">🐱</e>
+        <e v="3" c="animals" t="38,2">🐭</e>
+        <e v="3" c="animals" t="hamster">🐹</e>
+        <e v="3" c="animals" t="256,2">🐰</e>
+        <e v="3" c="animals" t="fox,2">🦊</e>
+        <e v="3" c="animals" t="bear">🐻</e>
+        <e v="3" c="animals" t="panda,2">🐼</e>
+        <e v="3" c="animals" t="koala">🐨</e>
+        <e v="3" c="animals" t="tiger,2">🐯</e>
+        <e v="3" c="animals" t="lion,2">🦁</e>
+        <e v="3" c="animals" t="cow,2">🐮</e>
+        <e v="3" c="animals" t="141,2">🐷</e>
+        <e v="3" c="animals" t="141,129">🐽</e>
+        <e v="3" c="animals" t="frog">🐸</e>
+        <e v="3" c="animals" t="75,2">🐵</e>
+        <e v="3" c="animals" t="chicken">🐔</e>
+        <e v="3" c="animals" t="penguin">🐧</e>
+        <e v="3" c="animals" t="bird">🐦</e>
+        <e v="3" c="animals" t="53,chick">🐤</e>
+        <e v="3" c="animals" t="duck">🦆</e>
+        <e v="3" c="animals" t="eagle">🦅</e>
+        <e v="3" c="animals" t="owl">🦉</e>
+        <e v="3" c="animals" t="bat">🦇</e>
+        <e v="3" c="animals" t="wolf">🐺</e>
+        <e v="3" c="animals" t="boar">🐗</e>
+        <e v="3" c="animals" t="142,2">🐴</e>
+        <e v="3" c="animals" t="unicorn,2">🦄</e>
+        <e v="3" c="animals" t="honeybee,bee">🐝</e>
+        <e v="3" c="animals" t="bug">🐛</e>
+        <e v="3" c="animals" t="butterfly">🦋</e>
+        <e v="3" c="animals" t="snail">🐌</e>
+        <e v="3" c="animals" t="lady,beetle">🐞</e>
+        <e v="3" c="animals" t="ant">🐜</e>
+        <e v="3" c="animals" t="scorpion">🦂</e>
+        <e v="3" c="animals" t="turtle">🐢</e>
+        <e v="3" c="animals" t="snake">🐍</e>
+        <e v="3" c="animals" t="lizard">🦎</e>
+        <e v="3" c="animals" t="sauropod">🦕</e>
+        <e v="3" c="animals" t="t-rex,rex">🦖</e>
+        <e v="3" c="animals" t="octopus">🐙</e>
+        <e v="3" c="animals" t="squid">🦑</e>
+        <e v="3" c="animals" t="shrimp">🦐</e>
+        <e v="3" c="animals" t="crab">🦀</e>
+        <e v="3" c="animals" t="blowfish">🐡</e>
+        <e v="3" c="animals" t="tropical,83">🐠</e>
+        <e v="3" c="animals" t="83">🐟</e>
+        <e v="3" c="animals" t="dolphin,flipper">🐬</e>
+        <e v="3" c="animals" t="spouting,whale">🐳</e>
+        <e v="3" c="animals" t="whale,whale2">🐋</e>
+        <e v="3" c="animals" t="shark">🦈</e>
+        <e v="3" c="animals" t="crocodile">🐊</e>
+        <e v="3" c="animals" t="leopard">🐆</e>
+        <e v="3" c="animals" t="tiger,tiger2">🐅</e>
+        <e v="3" c="animals" t="zebra">🦓</e>
+        <e v="3" c="animals" t="elephant">🐘</e>
+        <e v="3" c="animals" t="hippopotamus">🦛</e>
+        <e v="3" c="animals" t="rhinoceros">🦏</e>
+        <e v="3" c="animals" t="camel,dromedary">🐪</e>
+        <e v="3" c="animals" t="two-hump,camel,49,hump">🐫</e>
+        <e v="3" c="animals" t="giraffe">🦒</e>
+        <e v="3" c="animals" t="84,buffalo">🐃</e>
+        <e v="3" c="animals" t="ox">🐂</e>
+        <e v="3" c="animals" t="cow,cow2">🐄</e>
+        <e v="3" c="animals" t="142,racehorse">🐎</e>
+        <e v="3" c="animals" t="141,pig2">🐖</e>
+        <e v="3" c="animals" t="ram">🐏</e>
+        <e v="3" c="animals" t="ewe,sheep">🐑</e>
+        <e v="3" c="animals" t="goat">🐐</e>
+        <e v="3" c="animals" t="deer">🦌</e>
+        <e v="3" c="animals" t="57,dog2">🐕</e>
+        <e v="3" c="animals" t="poodle">🐩</e>
+        <e v="3" c="animals" t="12,cat2">🐈</e>
+        <e v="3" c="animals" t="rooster">🐓</e>
+        <e v="3" c="animals" t="turkey">🦃</e>
+        <e v="3" c="animals" t="swan">🦢</e>
+        <e v="3" c="animals" t="dove,peace">🕊</e>
+        <e v="3" c="animals" t="256,rabbit2">🐇</e>
+        <e v="3" c="animals" t="38,mouse2">🐁</e>
+        <e v="3" c="animals" t="rat">🐀</e>
+        <e v="3" c="animals" t="chipmunk">🐿</e>
+        <e v="3" c="animals" t="paw,prints,feet">🐾</e>
+        <e v="3" c="animals" t="143">🐉</e>
+        <e v="3" c="animals" t="143,2">🐲</e>
+        <e v="3" c="food" t="grapes">🍇</e>
+        <e v="3" c="food" t="melon">🍈</e>
+        <e v="3" c="food" t="watermelon">🍉</e>
+        <e v="3" c="food" t="tangerine,37,mandarin">🍊</e>
+        <e v="3" c="food" t="lemon">🍋</e>
+        <e v="3" c="food" t="banana">🍌</e>
+        <e v="3" c="food" t="pineapple">🍍</e>
+        <e v="3" c="food" t="mango">🥭</e>
+        <e v="3" c="food" t="14,apple">🍎</e>
+        <e v="3" c="food" t="30,apple">🍏</e>
+        <e v="3" c="food" t="pear">🍐</e>
+        <e v="3" c="food" t="peach">🍑</e>
+        <e v="3" c="food" t="cherries">🍒</e>
+        <e v="3" c="food" t="strawberry">🍓</e>
+        <e v="3" c="food" t="kiwi,fruit">🥝</e>
+        <e v="3" c="food" t="tomato">🍅</e>
+        <e v="3" c="food" t="coconut">🥥</e>
+        <e v="3" c="food" t="avocado">🥑</e>
+        <e v="3" c="food" t="eggplant">🍆</e>
+        <e v="3" c="food" t="potato">🥔</e>
+        <e v="3" c="food" t="carrot">🥕</e>
+        <e v="3" c="food" t="247,corn">🌽</e>
+        <e v="3" c="food" t="58,pepper">🌶</e>
+        <e v="3" c="food" t="cucumber">🥒</e>
+        <e v="3" c="food" t="leafy,30">🥬</e>
+        <e v="3" c="food" t="broccoli">🥦</e>
+        <e v="3" c="food" t="garlic">🧄</e>
+        <e v="3" c="food" t="onion">🧅</e>
+        <e v="3" c="food" t="mushroom">🍄</e>
+        <e v="3" c="food" t="peanuts">🥜</e>
+        <e v="3" c="food" t="chestnut">🌰</e>
+        <e v="3" c="food" t="bread">🍞</e>
+        <e v="3" c="food" t="croissant">🥐</e>
+        <e v="3" c="food" t="baguette,bread">🥖</e>
+        <e v="3" c="food" t="flatbread">🫓</e>
+        <e v="3" c="food" t="pretzel">🥨</e>
+        <e v="3" c="food" t="bagel">🥯</e>
+        <e v="3" c="food" t="cheese,wedge">🧀</e>
+        <e v="3" c="food" t="85,egg2">🥚</e>
+        <e v="3" c="food" t="cooking,85,144">🍳</e>
+        <e v="3" c="food" t="butter">🧈</e>
+        <e v="3" c="food" t="pancakes">🥞</e>
+        <e v="3" c="food" t="waffle">🧇</e>
+        <e v="3" c="food" t="bacon">🥓</e>
+        <e v="3" c="food" t="cut,meat">🥩</e>
+        <e v="3" c="food" t="poultry,246">🍗</e>
+        <e v="3" c="food" t="meat,bone">🍖</e>
+        <e v="3" c="food" t="58,57,hotdog">🌭</e>
+        <e v="3" c="food" t="hamburger">🍔</e>
+        <e v="3" c="food" t="french,fries">🍟</e>
+        <e v="3" c="food" t="pizza">🍕</e>
+        <e v="3" c="food" t="tamale">🫔</e>
+        <e v="3" c="food" t="taco">🌮</e>
+        <e v="3" c="food" t="burrito">🌯</e>
+        <e v="3" c="food" t="145">🫕</e>
+        <e v="3" c="food" t="stuffed,flatbread">🥙</e>
+        <e v="3" c="food" t="falafel">🧆</e>
+        <e v="3" c="food" t="85,egg2">🥚</e>
+        <e v="3" c="food" t="cooking,85,144">🍳</e>
+        <e v="3" c="food" t="shallow,pan,119">🥘</e>
+        <e v="3" c="food" t="pot,119,stew">🍲</e>
+        <e v="3" c="food" t="145">🫕</e>
+        <e v="3" c="food" t="steaming,bowl,ramen">🍜</e>
+        <e v="3" c="food" t="spaghetti">🍝</e>
+        <e v="3" c="food" t="curry,86">🍛</e>
+        <e v="3" c="food" t="sushi">🍣</e>
+        <e v="3" c="food" t="bento,39">🍱</e>
+        <e v="3" c="food" t="dumpling">🥟</e>
+        <e v="3" c="food" t="oyster">🦪</e>
+        <e v="3" c="food" t="144,shrimp">🍤</e>
+        <e v="3" c="food" t="86,25">🍙</e>
+        <e v="3" c="food" t="cooked,86">🍚</e>
+        <e v="3" c="food" t="86,cracker">🍘</e>
+        <e v="3" c="food" t="83,59,swirl">🍥</e>
+        <e v="3" c="food" t="moon,59">🥮</e>
+        <e v="3" c="food" t="oden">🍢</e>
+        <e v="3" c="food" t="cupcake">🧁</e>
+        <e v="3" c="food" t="shortcake,59">🍰</e>
+        <e v="3" c="food" t="birthday,59">🎂</e>
+        <e v="3" c="food" t="custard">🍮</e>
+        <e v="3" c="food" t="lollipop">🍭</e>
+        <e v="3" c="food" t="candy">🍬</e>
+        <e v="3" c="food" t="chocolate,40">🍫</e>
+        <e v="3" c="food" t="popcorn">🍿</e>
+        <e v="3" c="food" t="doughnut">🍩</e>
+        <e v="3" c="food" t="cookie">🍪</e>
+        <e v="3" c="food" t="chestnut">🌰</e>
+        <e v="3" c="food" t="peanuts">🥜</e>
+        <e v="3" c="food" t="honey,pot">🍯</e>
+        <e v="3" c="food" t="53,87">🍼</e>
+        <e v="3" c="food" t="88,milk">🥛</e>
+        <e v="3" c="food" t="58,146,coffee">☕</e>
+        <e v="3" c="food" t="teapot">🫖</e>
+        <e v="3" c="food" t="teacup,214,handle,147">🍵</e>
+        <e v="3" c="food" t="146,39">🧃</e>
+        <e v="3" c="food" t="cup,straw">🥤</e>
+        <e v="3" c="food" t="bubble,147">🧋</e>
+        <e v="3" c="food" t="sake">🍶</e>
+        <e v="3" c="food" t="beer,mug">🍺</e>
+        <e v="3" c="food" t="clinking,beer,mugs,beers">🍻</e>
+        <e v="3" c="food" t="clinking,glasses">🥂</e>
+        <e v="3" c="food" t="wine,88">🍷</e>
+        <e v="3" c="food" t="tumbler,88">🥃</e>
+        <e v="3" c="food" t="cocktail,88">🍸</e>
+        <e v="3" c="food" t="tropical,drink">🍹</e>
+        <e v="3" c="food" t="mate">🧉</e>
+        <e v="3" c="food" t="87,popping,cork,champagne">🍾</e>
+        <e v="3" c="food" t="89,cube">🧊</e>
+        <e v="3" c="food" t="spoon">🥄</e>
+        <e v="3" c="food" t="fork,knife">🍴</e>
+        <e v="3" c="food" t="fork,knife,plate,cutlery">🍽</e>
+        <e v="3" c="food" t="chopsticks">🥢</e>
+        <e v="3" c="food" t="148">🫙</e>
+        <e v="3" c="travel" t="149,13,14">🚗</e>
+        <e v="3" c="travel" t="150">🚕</e>
+        <e v="3" c="travel" t="sport,utility,vehicle,24,13">🚙</e>
+        <e v="3" c="travel" t="90">🚌</e>
+        <e v="3" c="travel" t="trolleybus">🚎</e>
+        <e v="3" c="travel" t="151,13">🏎</e>
+        <e v="3" c="travel" t="56,13">🚓</e>
+        <e v="3" c="travel" t="ambulance">🚑</e>
+        <e v="3" c="travel" t="41,engine">🚒</e>
+        <e v="3" c="travel" t="minibus">🚐</e>
+        <e v="3" c="travel" t="152,60">🛻</e>
+        <e v="3" c="travel" t="delivery,60">🚚</e>
+        <e v="3" c="travel" t="articulated,lorry">🚛</e>
+        <e v="3" c="travel" t="tractor">🚜</e>
+        <e v="3" c="travel" t="motorcycle,151">🏍</e>
+        <e v="3" c="travel" t="motor,scooter">🛵</e>
+        <e v="3" c="travel" t="153,154">🛺</e>
+        <e v="3" c="travel" t="bicycle,bike">🚲</e>
+        <e v="3" c="travel" t="kick,scooter">🛴</e>
+        <e v="3" c="travel" t="skateboard">🛹</e>
+        <e v="3" c="travel" t="roller,155">🛼</e>
+        <e v="3" c="travel" t="90,91,busstop">🚏</e>
+        <e v="3" c="travel" t="motorway">🛣</e>
+        <e v="3" c="travel" t="156,157">🛤</e>
+        <e v="3" c="travel" t="hindu,temple">🛕</e>
+        <e v="3" c="travel" t="92,81">🏗</e>
+        <e v="3" c="travel" t="houses,93,buildings">🏘</e>
+        <e v="3" c="travel" t="derelict,93,92">🏚</e>
+        <e v="3" c="travel" t="93">🏠</e>
+        <e v="3" c="travel" t="93,garden">🏡</e>
+        <e v="3" c="travel" t="158,92">🏢</e>
+        <e v="3" c="travel" t="74,159,158">🏣</e>
+        <e v="3" c="travel" t="159,158,european">🏤</e>
+        <e v="3" c="travel" t="hospital">🏥</e>
+        <e v="3" c="travel" t="bank">🏦</e>
+        <e v="3" c="travel" t="hotel">🏨</e>
+        <e v="3" c="travel" t="136,hotel">🏩</e>
+        <e v="3" c="travel" t="convenience,store">🏪</e>
+        <e v="3" c="travel" t="school">🏫</e>
+        <e v="3" c="travel" t="department,store">🏬</e>
+        <e v="3" c="travel" t="factory">🏭</e>
+        <e v="3" c="travel" t="74,castle">🏯</e>
+        <e v="3" c="travel" t="castle,european">🏰</e>
+        <e v="3" c="travel" t="wedding">💒</e>
+        <e v="3" c="travel" t="tokyo,tower">🗼</e>
+        <e v="3" c="travel" t="statue,liberty">🗽</e>
+        <e v="3" c="travel" t="church">⛪</e>
+        <e v="3" c="travel" t="mosque">🕌</e>
+        <e v="3" c="travel" t="hindu,temple">🛕</e>
+        <e v="3" c="travel" t="synagogue">🕍</e>
+        <e v="3" c="travel" t="shinto,shrine">⛩</e>
+        <e v="3" c="travel" t="kaaba">🕋</e>
+        <e v="3" c="travel" t="fountain">⛲</e>
+        <e v="3" c="travel" t="tent">⛺</e>
+        <e v="3" c="travel" t="foggy">🌁</e>
+        <e v="3" c="travel" t="night,stars">🌃</e>
+        <e v="3" c="travel" t="cityscape">🏙</e>
+        <e v="3" c="travel" t="160,123,mountains">🌄</e>
+        <e v="3" c="travel" t="160">🌅</e>
+        <e v="3" c="travel" t="cityscape,dusk,city,sunset">🌆</e>
+        <e v="3" c="travel" t="sunset,city,160">🌇</e>
+        <e v="3" c="travel" t="bridge,night">🌉</e>
+        <e v="3" c="travel" t="snow-capped,94,snow,capped">🏔</e>
+        <e v="3" c="travel" t="94">⛰</e>
+        <e v="3" c="travel" t="volcano">🌋</e>
+        <e v="3" c="travel" t="mount,fuji">🗻</e>
+        <e v="3" c="travel" t="camping">🏕</e>
+        <e v="3" c="travel" t="beach,161">🏖</e>
+        <e v="3" c="travel" t="92,81">🏗</e>
+        <e v="3" c="travel" t="desert,island">🏝</e>
+        <e v="3" c="travel" t="desert">🏜</e>
+        <e v="3" c="travel" t="national,park">🏞</e>
+        <e v="3" c="travel" t="95">✈</e>
+        <e v="3" c="travel" t="61,95">🛩</e>
+        <e v="3" c="travel" t="95,departure,flight">🛫</e>
+        <e v="3" c="travel" t="95,arrival,arriving,flight">🛬</e>
+        <e v="3" c="travel" t="162">🪂</e>
+        <e v="3" c="travel" t="seat">💺</e>
+        <e v="3" c="travel" t="rocket">🚀</e>
+        <e v="3" c="travel" t="163,saucer">🛸</e>
+        <e v="3" c="travel" t="helicopter">🚁</e>
+        <e v="3" c="travel" t="canoe">🛶</e>
+        <e v="3" c="travel" t="sailboat,164">⛵</e>
+        <e v="3" c="travel" t="speedboat">🚤</e>
+        <e v="3" c="travel" t="motor,164">🛥</e>
+        <e v="3" c="travel" t="passenger,ship">🛳</e>
+        <e v="3" c="travel" t="ferry">⛴</e>
+        <e v="3" c="travel" t="ship">🚢</e>
+        <e v="3" c="travel" t="locomotive,223">🚂</e>
+        <e v="3" c="travel" t="156,13">🚃</e>
+        <e v="3" c="travel" t="high-speed,96,bullettrain,side,165,speed">🚄</e>
+        <e v="3" c="travel" t="bullet,96,bullettrain,front">🚅</e>
+        <e v="3" c="travel" t="96,train2">🚆</e>
+        <e v="3" c="travel" t="metro">🚇</e>
+        <e v="3" c="travel" t="35,rail">🚈</e>
+        <e v="3" c="travel" t="station">🚉</e>
+        <e v="3" c="travel" t="tram">🚊</e>
+        <e v="3" c="travel" t="monorail">🚝</e>
+        <e v="3" c="travel" t="94,156">🚞</e>
+        <e v="3" c="travel" t="tram,13,96">🚋</e>
+        <e v="3" c="travel" t="90">🚌</e>
+        <e v="3" c="travel" t="52,90">🚍</e>
+        <e v="3" c="travel" t="trolleybus">🚎</e>
+        <e v="3" c="travel" t="minibus">🚐</e>
+        <e v="3" c="travel" t="ambulance">🚑</e>
+        <e v="3" c="travel" t="41,engine">🚒</e>
+        <e v="3" c="travel" t="56,13">🚓</e>
+        <e v="3" c="travel" t="52,56,13">🚔</e>
+        <e v="3" c="travel" t="150">🚕</e>
+        <e v="3" c="travel" t="52,150">🚖</e>
+        <e v="3" c="travel" t="149,13,14">🚗</e>
+        <e v="3" c="travel" t="52,149">🚘</e>
+        <e v="3" c="travel" t="sport,utility,vehicle,24,13">🚙</e>
+        <e v="3" c="travel" t="152,60">🛻</e>
+        <e v="3" c="travel" t="delivery,60">🚚</e>
+        <e v="3" c="travel" t="153,154">🛺</e>
+        <e v="3" c="travel" t="fuel,pump,fuelpump">⛽</e>
+        <e v="3" c="travel" t="166">🛞</e>
+        <e v="3" c="travel" t="56,13,35,rotating">🚨</e>
+        <e v="3" c="travel" t="horizontal,traffic,35">🚥</e>
+        <e v="3" c="travel" t="42,traffic,35">🚦</e>
+        <e v="3" c="travel" t="91,32">🛑</e>
+        <e v="3" c="travel" t="81">🚧</e>
+        <e v="3" c="travel" t="anchor">⚓</e>
+        <e v="3" c="travel" t="135,buoy">🛟</e>
+        <e v="3" c="travel" t="167">🪝</e>
+        <e v="3" c="travel" t="97">🧲</e>
+        <e v="3" c="travel" t="168">🪜</e>
+        <e v="3" c="travel" t="fuel,pump,fuelpump">⛽</e>
+        <e v="3" c="travel" t="98,99">🛒</e>
+        <e v="3" c="travel" t="169">🚪</e>
+        <e v="3" c="travel" t="170">🪞</e>
+        <e v="3" c="travel" t="window">🪟</e>
+        <e v="3" c="travel" t="couch,171">🛋</e>
+        <e v="3" c="travel" t="chair">🪑</e>
+        <e v="3" c="travel" t="toilet">🚽</e>
+        <e v="3" c="travel" t="plunger">🪠</e>
+        <e v="3" c="travel" t="shower">🚿</e>
+        <e v="3" c="travel" t="bathtub">🛁</e>
+        <e v="3" c="travel" t="38,172">🪤</e>
+        <e v="3" c="travel" t="173">🪒</e>
+        <e v="3" c="travel" t="lotion,87">🧴</e>
+        <e v="3" c="travel" t="174,pin">🧷</e>
+        <e v="3" c="travel" t="broom">🧹</e>
+        <e v="3" c="travel" t="basket">🧺</e>
+        <e v="3" c="travel" t="124,paper">🧻</e>
+        <e v="3" c="travel" t="175">🪣</e>
+        <e v="3" c="travel" t="soap">🧼</e>
+        <e v="3" c="travel" t="bubbles">🫧</e>
+        <e v="3" c="travel" t="toothbrush">🪥</e>
+        <e v="3" c="travel" t="sponge">🧽</e>
+        <e v="3" c="travel" t="41,100">🧯</e>
+        <e v="3" c="travel" t="98,99">🛒</e>
+        <e v="3" c="activities" t="soccer,25">⚽</e>
+        <e v="3" c="activities" t="basketball">🏀</e>
+        <e v="3" c="activities" t="american,football">🏈</e>
+        <e v="3" c="activities" t="baseball">⚾</e>
+        <e v="3" c="activities" t="softball">🥎</e>
+        <e v="3" c="activities" t="tennis">🎾</e>
+        <e v="3" c="activities" t="volleyball">🏐</e>
+        <e v="3" c="activities" t="rugby,football">🏉</e>
+        <e v="3" c="activities" t="163,disc">🥏</e>
+        <e v="3" c="activities" t="pool,25,8ball">🎱</e>
+        <e v="3" c="activities" t="ping,pong,table,tennis,paddle,25">🏓</e>
+        <e v="3" c="activities" t="badminton,racquet,shuttlecock">🏸</e>
+        <e v="3" c="activities" t="89,hockey,stick,puck">🏒</e>
+        <e v="3" c="activities" t="field,hockey,stick,25">🏑</e>
+        <e v="3" c="activities" t="lacrosse">🥍</e>
+        <e v="3" c="activities" t="cricket,176,bat,25">🏏</e>
+        <e v="3" c="activities" t="boomerang">🪃</e>
+        <e v="3" c="activities" t="goal,net">🥅</e>
+        <e v="3" c="activities" t="1,hole,golf">⛳</e>
+        <e v="3" c="activities" t="kite">🪁</e>
+        <e v="3" c="activities" t="251,15">🏹</e>
+        <e v="3" c="activities" t="fishing,pole,83">🎣</e>
+        <e v="3" c="activities" t="diving,125">🤿</e>
+        <e v="3" c="activities" t="boxing,glove">🥊</e>
+        <e v="3" c="activities" t="martial,177,uniform">🥋</e>
+        <e v="3" c="activities" t="running,shirt,sash">🎽</e>
+        <e v="3" c="activities" t="skateboard">🛹</e>
+        <e v="3" c="activities" t="roller,155">🛼</e>
+        <e v="3" c="activities" t="sled">🛷</e>
+        <e v="3" c="activities" t="89,155">⛸</e>
+        <e v="3" c="activities" t="curling,178">🥌</e>
+        <e v="3" c="activities" t="skis,ski">🎿</e>
+        <e v="3" c="activities" t="skier">⛷</e>
+        <e v="3" c="activities" t="snowboarder">🏂</e>
+        <e v="3" c="activities" t="162">🪂</e>
+        <e v="3" c="activities" t="3,lifting,weights,weight,lifter">🏋</e>
+        <e v="3" c="activities" t="101,wrestling">🤼</e>
+        <e v="3" c="activities" t="3,cartwheeling">🤸</e>
+        <e v="3" c="activities" t="3,fencing">🤺</e>
+        <e v="3" c="activities" t="3,bouncing,25">⛹</e>
+        <e v="3" c="activities" t="3,62,handball">🤾</e>
+        <e v="3" c="activities" t="3,golfing,golfer">🏌</e>
+        <e v="3" c="activities" t="142,151">🏇</e>
+        <e v="3" c="activities" t="3,179,position">🧘</e>
+        <e v="3" c="activities" t="3,surfing,surfer">🏄</e>
+        <e v="3" c="activities" t="3,swimming,swimmer">🏊</e>
+        <e v="3" c="activities" t="3,62,84,polo">🤽</e>
+        <e v="3" c="activities" t="3,rowing,164,rowboat">🚣</e>
+        <e v="3" c="activities" t="3,climbing">🧗</e>
+        <e v="3" c="activities" t="3,94,biking,bicyclist">🚵</e>
+        <e v="3" c="activities" t="3,biking,bicyclist">🚴</e>
+        <e v="3" c="activities" t="trophy">🏆</e>
+        <e v="3" c="activities" t="1st,102,63">🥇</e>
+        <e v="3" c="activities" t="2nd,102,63">🥈</e>
+        <e v="3" c="activities" t="3rd,102,63">🥉</e>
+        <e v="3" c="activities" t="sports,63">🏅</e>
+        <e v="3" c="activities" t="military,63">🎖</e>
+        <e v="3" c="activities" t="reminder,132">🎗</e>
+        <e v="3" c="activities" t="ticket">🎫</e>
+        <e v="3" c="activities" t="admission,tickets">🎟</e>
+        <e v="3" c="activities" t="circus,tent">🎪</e>
+        <e v="3" c="activities" t="3,juggling">🤹</e>
+        <e v="3" c="activities" t="performing,177">🎭</e>
+        <e v="3" c="activities" t="artist,palette,art">🎨</e>
+        <e v="3" c="activities" t="clapper,board">🎬</e>
+        <e v="3" c="activities" t="microphone">🎤</e>
+        <e v="3" c="activities" t="headphone,headphones">🎧</e>
+        <e v="3" c="activities" t="43,score">🎼</e>
+        <e v="3" c="activities" t="43,keyboard">🎹</e>
+        <e v="3" c="activities" t="drum">🥁</e>
+        <e v="3" c="activities" t="long,drum">🪘</e>
+        <e v="3" c="activities" t="saxophone">🎷</e>
+        <e v="3" c="activities" t="trumpet">🎺</e>
+        <e v="3" c="activities" t="guitar">🎸</e>
+        <e v="3" c="activities" t="banjo">🪕</e>
+        <e v="3" c="activities" t="violin">🎻</e>
+        <e v="3" c="activities" t="176,die">🎲</e>
+        <e v="3" c="activities" t="chess,pawn">♟</e>
+        <e v="3" c="activities" t="bullseye,dart">🎯</e>
+        <e v="3" c="activities" t="bowling">🎳</e>
+        <e v="3" c="activities" t="video,176">🎮</e>
+        <e v="3" c="activities" t="slot,103">🎰</e>
+        <e v="3" c="activities" t="puzzle,piece,jigsaw">🧩</e>
+        <e v="3" c="activities" t="magic,wand">🪄</e>
+        <e v="3" c="activities" t="joker,10">🃏</e>
+        <e v="3" c="activities" t="mahjong,14,143">🀄</e>
+        <e v="3" c="activities" t="flower,62,cards">🎴</e>
+        <e v="3" c="activities" t="performing,177">🎭</e>
+        <e v="3" c="activities" t="artist,palette,art">🎨</e>
+        <e v="3" c="activities" t="framed,picture,frame">🖼</e>
+        <e v="3" c="activities" t="slot,103">🎰</e>
+        <e v="3" c="objects" t="glasses,eyeglasses">👓</e>
+        <e v="3" c="objects" t="218,dark">🕶</e>
+        <e v="3" c="objects" t="goggles">🥽</e>
+        <e v="3" c="objects" t="29,161">🌂</e>
+        <e v="3" c="objects" t="161,17">☂</e>
+        <e v="3" c="objects" t="thread">🧵</e>
+        <e v="3" c="objects" t="yarn">🧶</e>
+        <e v="3" c="objects" t="dress">👗</e>
+        <e v="3" c="objects" t="kimono">👘</e>
+        <e v="3" c="objects" t="sari">🥻</e>
+        <e v="3" c="objects" t="one-piece,swimsuit,180,piece">🩱</e>
+        <e v="3" c="objects" t="briefs,swim,brief">🩲</e>
+        <e v="3" c="objects" t="shorts">🩳</e>
+        <e v="3" c="objects" t="bikini">👙</e>
+        <e v="3" c="objects" t="woman’s,clothes,womans">👚</e>
+        <e v="3" c="objects" t="purse">👛</e>
+        <e v="3" c="objects" t="handbag">👜</e>
+        <e v="3" c="objects" t="clutch,bag,pouch">👝</e>
+        <e v="3" c="objects" t="backpack,school,satchel">🎒</e>
+        <e v="3" c="objects" t="luggage">🧳</e>
+        <e v="3" c="objects" t="woman’s,127,womans">👒</e>
+        <e v="3" c="objects" t="top,127,tophat">🎩</e>
+        <e v="3" c="objects" t="billed,cap">🧢</e>
+        <e v="3" c="objects" t="rescue,worker’s,helmet,11,64,252,workers">⛑</e>
+        <e v="3" c="objects" t="prayer,beads">📿</e>
+        <e v="3" c="objects" t="lipstick">💄</e>
+        <e v="3" c="objects" t="135">💍</e>
+        <e v="3" c="objects" t="gem,178">💎</e>
+        <e v="3" c="objects" t="muted,26,mute">🔇</e>
+        <e v="3" c="objects" t="26,181,44">🔈</e>
+        <e v="3" c="objects" t="26,medium,44,104">🔉</e>
+        <e v="3" c="objects" t="26,165,44,loud,104">🔊</e>
+        <e v="3" c="objects" t="loudspeaker">📢</e>
+        <e v="3" c="objects" t="megaphone,mega">📣</e>
+        <e v="3" c="objects" t="postal,horn">📯</e>
+        <e v="3" c="objects" t="36">🔔</e>
+        <e v="3" c="objects" t="36,105">🔕</e>
+        <e v="3" c="objects" t="43,182">🎵</e>
+        <e v="3" c="objects" t="43,notes">🎶</e>
+        <e v="3" c="objects" t="studio,microphone">🎙</e>
+        <e v="3" c="objects" t="level,slider">🎚</e>
+        <e v="3" c="objects" t="control,knobs">🎛</e>
+        <e v="3" c="objects" t="radio">📻</e>
+        <e v="3" c="objects" t="television,tv">📺</e>
+        <e v="3" c="objects" t="65">📷</e>
+        <e v="3" c="objects" t="65,flash">📸</e>
+        <e v="3" c="objects" t="video,65">📹</e>
+        <e v="3" c="objects" t="movie,65">🎥</e>
+        <e v="3" c="objects" t="106,projector">📽</e>
+        <e v="3" c="objects" t="106,frames,strip">🎞</e>
+        <e v="3" c="objects" t="107,receiver">📞</e>
+        <e v="3" c="objects" t="107,183">☎</e>
+        <e v="3" c="objects" t="pager">📟</e>
+        <e v="3" c="objects" t="fax,103">📠</e>
+        <e v="3" c="objects" t="battery">🔋</e>
+        <e v="3" c="objects" t="electric,plug">🔌</e>
+        <e v="3" c="objects" t="laptop,184">💻</e>
+        <e v="3" c="objects" t="desktop,184">🖥</e>
+        <e v="3" c="objects" t="printer">🖨</e>
+        <e v="3" c="objects" t="184,38,three,5">🖱</e>
+        <e v="3" c="objects" t="trackball">🖲</e>
+        <e v="3" c="objects" t="floppy,disk">💾</e>
+        <e v="3" c="objects" t="optical,disk,cd">💿</e>
+        <e v="3" c="objects" t="dvd">📀</e>
+        <e v="3" c="objects" t="abacus">🧮</e>
+        <e v="3" c="objects" t="movie,65">🎥</e>
+        <e v="3" c="objects" t="106,projector">📽</e>
+        <e v="3" c="objects" t="106,frames,strip">🎞</e>
+        <e v="3" c="objects" t="107,receiver">📞</e>
+        <e v="3" c="objects" t="107,183">☎</e>
+        <e v="3" c="objects" t="pager">📟</e>
+        <e v="3" c="objects" t="fax,103">📠</e>
+        <e v="3" c="objects" t="35,bulb">💡</e>
+        <e v="3" c="objects" t="flashlight">🔦</e>
+        <e v="3" c="objects" t="candle">🕯</e>
+        <e v="3" c="objects" t="diya,171">🪔</e>
+        <e v="3" c="objects" t="175">🪣</e>
+        <e v="3" c="objects" t="97">🧲</e>
+        <e v="3" c="objects" t="telescope">🔭</e>
+        <e v="3" c="objects" t="microscope">🔬</e>
+        <e v="3" c="objects" t="185">🩺</e>
+        <e v="3" c="objects" t="x-ray,ray">🩻</e>
+        <e v="3" c="objects" t="pill">💊</e>
+        <e v="3" c="objects" t="syringe">💉</e>
+        <e v="3" c="objects" t="drop,blood">🩸</e>
+        <e v="3" c="objects" t="adhesive,126">🩹</e>
+        <e v="3" c="objects" t="crutch">🩼</e>
+        <e v="3" c="objects" t="185">🩺</e>
+        <e v="3" c="objects" t="38,172">🪤</e>
+        <e v="3" c="objects" t="173">🪒</e>
+        <e v="3" c="objects" t="lotion,87">🧴</e>
+        <e v="3" c="objects" t="174,pin">🧷</e>
+        <e v="3" c="objects" t="broom">🧹</e>
+        <e v="3" c="objects" t="basket">🧺</e>
+        <e v="3" c="objects" t="124,paper">🧻</e>
+        <e v="3" c="objects" t="soap">🧼</e>
+        <e v="3" c="objects" t="bubbles">🫧</e>
+        <e v="3" c="objects" t="toothbrush">🪥</e>
+        <e v="3" c="objects" t="sponge">🧽</e>
+        <e v="3" c="objects" t="41,100">🧯</e>
+        <e v="3" c="objects" t="98,99">🛒</e>
+        <e v="3" c="objects" t="169">🚪</e>
+        <e v="3" c="objects" t="170">🪞</e>
+        <e v="3" c="objects" t="window">🪟</e>
+        <e v="3" c="objects" t="couch,171">🛋</e>
+        <e v="3" c="objects" t="chair">🪑</e>
+        <e v="3" c="objects" t="toilet">🚽</e>
+        <e v="3" c="objects" t="plunger">🪠</e>
+        <e v="3" c="objects" t="shower">🚿</e>
+        <e v="3" c="objects" t="bathtub">🛁</e>
+        <e v="3" c="objects" t="98,99">🛒</e>
+        <e v="3" c="objects" t="toolbox">🧰</e>
+        <e v="3" c="objects" t="screwdriver">🪛</e>
+        <e v="3" c="objects" t="wrench">🔧</e>
+        <e v="3" c="objects" t="186">🔨</e>
+        <e v="3" c="objects" t="186,pick">⚒</e>
+        <e v="3" c="objects" t="186,wrench">🛠</e>
+        <e v="3" c="objects" t="pick">⛏</e>
+        <e v="3" c="objects" t="carpentry,saw">🪚</e>
+        <e v="3" c="objects" t="nut,bolt">🔩</e>
+        <e v="3" c="objects" t="gear">⚙</e>
+        <e v="3" c="objects" t="clamp,compression">🗜</e>
+        <e v="3" c="objects" t="11,cane,probing">🦯</e>
+        <e v="3" c="objects" t="link">🔗</e>
+        <e v="3" c="objects" t="chains">⛓</e>
+        <e v="3" c="objects" t="167">🪝</e>
+        <e v="3" c="objects" t="97">🧲</e>
+        <e v="3" c="objects" t="168">🪜</e>
+        <e v="3" c="objects" t="187">🔑</e>
+        <e v="3" c="objects" t="139,187">🗝</e>
+        <e v="3" c="objects" t="188,187,29,189">🔐</e>
+        <e v="3" c="objects" t="188,190,189,ink">🔏</e>
+        <e v="3" c="objects" t="unlocked,unlock">🔓</e>
+        <e v="3" c="objects" t="188,189">🔒</e>
+        <e v="3" c="objects" t="169">🚪</e>
+        <e v="3" c="objects" t="package">📦</e>
+        <e v="3" c="objects" t="29,108,19,1">📫</e>
+        <e v="3" c="objects" t="29,108,lowered,1">📪</e>
+        <e v="3" c="objects" t="17,108,19,1,191">📬</e>
+        <e v="3" c="objects" t="17,108,lowered,1,191">📭</e>
+        <e v="3" c="objects" t="postbox">📮</e>
+        <e v="3" c="objects" t="ballot,39">🗳</e>
+        <e v="3" c="objects" t="inbox,tray">📥</e>
+        <e v="3" c="objects" t="outbox,tray">📤</e>
+        <e v="3" c="objects" t="e-mail,email,191">📧</e>
+        <e v="3" c="objects" t="136,letter">💌</e>
+        <e v="3" c="objects" t="memo,pencil">📝</e>
+        <e v="3" c="objects" t="page,137">📄</e>
+        <e v="3" c="objects" t="page,curl">📃</e>
+        <e v="3" c="objects" t="clipboard">📋</e>
+        <e v="3" c="objects" t="40,192">📊</e>
+        <e v="3" c="objects" t="192,increasing,upwards,trend">📈</e>
+        <e v="3" c="objects" t="192,decreasing,downwards,trend">📉</e>
+        <e v="3" c="objects" t="spiral,notepad,182,pad">🗒</e>
+        <e v="3" c="objects" t="spiral,193,pad">🗓</e>
+        <e v="3" c="objects" t="tear-off,193,tear,off">📆</e>
+        <e v="3" c="objects" t="193,date">📅</e>
+        <e v="3" c="objects" t="wastebasket">🗑</e>
+        <e v="3" c="objects" t="109,20">📇</e>
+        <e v="3" c="objects" t="pushpin">📌</e>
+        <e v="3" c="objects" t="round,pushpin">📍</e>
+        <e v="3" c="objects" t="linked,paperclips">🖇</e>
+        <e v="3" c="objects" t="paperclip">📎</e>
+        <e v="3" c="objects" t="190,110,33,ballpoint">🖊</e>
+        <e v="3" c="objects" t="fountain,190,110,33">🖋</e>
+        <e v="3" c="objects" t="10,nib">✒</e>
+        <e v="3" c="objects" t="paintbrush,110,33">🖌</e>
+        <e v="3" c="objects" t="crayon,110,33">🖍</e>
+        <e v="3" c="objects" t="straight,ruler">📏</e>
+        <e v="3" c="objects" t="triangular,ruler">📐</e>
+        <e v="3" c="objects" t="scissors">✂</e>
+        <e v="3" c="objects" t="109,file,39">🗃</e>
+        <e v="3" c="objects" t="file,cabinet">🗄</e>
+        <e v="3" c="objects" t="109,20,dividers">🗂</e>
+        <e v="3" c="objects" t="notebook">📓</e>
+        <e v="3" c="objects" t="notebook,decorative,cover">📔</e>
+        <e v="3" c="objects" t="ledger">📒</e>
+        <e v="3" c="objects" t="29,66">📕</e>
+        <e v="3" c="objects" t="30,66">📗</e>
+        <e v="3" c="objects" t="24,66">📘</e>
+        <e v="3" c="objects" t="37,66">📙</e>
+        <e v="3" c="objects" t="books">📚</e>
+        <e v="3" c="objects" t="17,66">📖</e>
+        <e v="3" c="objects" t="bookmark">🔖</e>
+        <e v="3" c="objects" t="label">🏷</e>
+        <e v="3" c="objects" t="122,bag,moneybag">💰</e>
+        <e v="3" c="objects" t="yen,111">💴</e>
+        <e v="3" c="objects" t="dollar,111">💵</e>
+        <e v="3" c="objects" t="euro,111">💶</e>
+        <e v="3" c="objects" t="pound,111">💷</e>
+        <e v="3" c="objects" t="122,wings">💸</e>
+        <e v="3" c="objects" t="credit,109">💳</e>
+        <e v="3" c="objects" t="receipt">🧾</e>
+        <e v="3" c="objects" t="envelope">✉</e>
+        <e v="3" c="objects" t="envelope,15">📩</e>
+        <e v="3" c="objects" t="world,map">🗺</e>
+        <e v="3" c="symbols" t="14,4">❤</e>
+        <e v="3" c="symbols" t="37,4">🧡</e>
+        <e v="3" c="symbols" t="76,4">💛</e>
+        <e v="3" c="symbols" t="30,4">💚</e>
+        <e v="3" c="symbols" t="24,4">💙</e>
+        <e v="3" c="symbols" t="77,4">💜</e>
+        <e v="3" c="symbols" t="10,4">🖤</e>
+        <e v="3" c="symbols" t="11,4">🤍</e>
+        <e v="3" c="symbols" t="112,4">🤎</e>
+        <e v="3" c="symbols" t="229,4">💔</e>
+        <e v="3" c="symbols" t="4,230,48,31,231">❣</e>
+        <e v="3" c="symbols" t="49,50">💕</e>
+        <e v="3" c="symbols" t="232,50">💞</e>
+        <e v="3" c="symbols" t="233,4,234">💓</e>
+        <e v="3" c="symbols" t="235,4,236">💗</e>
+        <e v="3" c="symbols" t="237,4">💖</e>
+        <e v="3" c="symbols" t="4,15,238">💘</e>
+        <e v="3" c="symbols" t="4,132,239">💝</e>
+        <e v="3" c="symbols" t="4,240">💟</e>
+        <e v="3" c="symbols" t="peace,45">☮</e>
+        <e v="3" c="symbols" t="latin,64">✝</e>
+        <e v="3" c="symbols" t="194,crescent">☪</e>
+        <e v="3" c="symbols" t="om,45">🕉</e>
+        <e v="3" c="symbols" t="166,dharma">☸</e>
+        <e v="3" c="symbols" t="194,david">✡</e>
+        <e v="3" c="symbols" t="dotted,six-pointed,194,six,195">🔯</e>
+        <e v="3" c="symbols" t="menorah,nine,branches">🕎</e>
+        <e v="3" c="symbols" t="yin,yang">☯</e>
+        <e v="3" c="symbols" t="orthodox,64">☦</e>
+        <e v="3" c="symbols" t="102,worship">🛐</e>
+        <e v="3" c="symbols" t="ophiuchus">⛎</e>
+        <e v="3" c="symbols" t="aries">♈</e>
+        <e v="3" c="symbols" t="taurus">♉</e>
+        <e v="3" c="symbols" t="gemini">♊</e>
+        <e v="3" c="symbols" t="cancer">♋</e>
+        <e v="3" c="symbols" t="leo">♌</e>
+        <e v="3" c="symbols" t="virgo">♍</e>
+        <e v="3" c="symbols" t="libra">♎</e>
+        <e v="3" c="symbols" t="scorpio,scorpius">♏</e>
+        <e v="3" c="symbols" t="sagittarius">♐</e>
+        <e v="3" c="symbols" t="capricorn">♑</e>
+        <e v="3" c="symbols" t="aquarius">♒</e>
+        <e v="3" c="symbols" t="pisces">♓</e>
+        <e v="3" c="symbols" t="id,5">🆔</e>
+        <e v="3" c="symbols" t="196,45">⚧</e>
+        <e v="3" c="symbols" t="48,dollar,32">💲</e>
+        <e v="3" c="symbols" t="currency,exchange">💱</e>
+        <e v="3" c="symbols" t="trident,emblem">🔱</e>
+        <e v="3" c="symbols" t="fleur-de-lis,fleur,de,lis">⚜</e>
+        <e v="3" c="symbols" t="atm,32">🏧</e>
+        <e v="3" c="symbols" t="hundred,points,100">💯</e>
+        <e v="3" c="symbols" t="180,under,eighteen,underage">🔞</e>
+        <e v="3" c="symbols" t="113,197">📵</e>
+        <e v="3" c="symbols" t="prohibited,198,32">🚫</e>
+        <e v="3" c="symbols" t="bicycles">🚳</e>
+        <e v="3" c="symbols" t="smoking">🚭</e>
+        <e v="3" c="symbols" t="littering,not,litter">🚯</e>
+        <e v="3" c="symbols" t="non-potable,84,non,potable">🚱</e>
+        <e v="3" c="symbols" t="pedestrians">🚷</e>
+        <e v="3" c="symbols" t="113,197">📵</e>
+        <e v="3" c="symbols" t="64,31">❌</e>
+        <e v="3" c="symbols" t="hollow,14,7">⭕</e>
+        <e v="3" c="symbols" t="91,32">🛑</e>
+        <e v="3" c="symbols" t="198">⛔</e>
+        <e v="3" c="symbols" t="name,badge">📛</e>
+        <e v="3" c="symbols" t="prohibited,198,32">🚫</e>
+        <e v="3" c="symbols" t="anger,45">💢</e>
+        <e v="3" c="symbols" t="58,springs,hotsprings">♨</e>
+        <e v="3" c="symbols" t="cyclone">🌀</e>
+        <e v="3" c="symbols" t="36">🔔</e>
+        <e v="3" c="symbols" t="36,105">🔕</e>
+        <e v="3" c="symbols" t="43,182">🎵</e>
+        <e v="3" c="symbols" t="43,notes">🎶</e>
+        <e v="3" c="symbols" t="199,31,5,11">✅</e>
+        <e v="3" c="symbols" t="199,39,ballot">☑</e>
+        <e v="3" c="symbols" t="199,31,48">✔</e>
+        <e v="3" c="symbols" t="multiply,48,multiplication">✖</e>
+        <e v="3" c="symbols" t="64,31,5,negative,squared">❎</e>
+        <e v="3" c="symbols" t="10,67,5">🔲</e>
+        <e v="3" c="symbols" t="11,67,5">🔳</e>
+        <e v="3" c="symbols" t="14,68,195,61">🔺</e>
+        <e v="3" c="symbols" t="14,68,195,28,61">🔻</e>
+        <e v="3" c="symbols" t="diamond,dot,shape,inside">💠</e>
+        <e v="3" c="symbols" t="radio,5">🔘</e>
+        <e v="3" c="symbols" t="10,67,5">🔲</e>
+        <e v="3" c="symbols" t="11,67,5">🔳</e>
+        <e v="3" c="symbols" t="10,7">⚫</e>
+        <e v="3" c="symbols" t="11,7">⚪</e>
+        <e v="3" c="symbols" t="112,7">🟤</e>
+        <e v="3" c="symbols" t="77,7">🟣</e>
+        <e v="3" c="symbols" t="24,7,large">🔵</e>
+        <e v="3" c="symbols" t="30,7">🟢</e>
+        <e v="3" c="symbols" t="76,7">🟡</e>
+        <e v="3" c="symbols" t="37,7">🟠</e>
+        <e v="3" c="symbols" t="14,7">🔴</e>
+        <e v="3" c="symbols" t="play,5,15,forward">▶</e>
+        <e v="3" c="symbols" t="fast-forward,5,114,forward">⏩</e>
+        <e v="3" c="symbols" t="next,157,5,10,79,21,46,68,42,40">⏭</e>
+        <e v="3" c="symbols" t="play,pause,5,10,79,21,68,46,42,40">⏯</e>
+        <e v="3" c="symbols" t="reverse,5,15,backward">◀</e>
+        <e v="3" c="symbols" t="114,reverse,5,rewind">⏪</e>
+        <e v="3" c="symbols" t="last,157,5,previous,10,33,21,46,68,42,40">⏮</e>
+        <e v="3" c="symbols" t="upwards,5,15,61">🔼</e>
+        <e v="3" c="symbols" t="114,5,15,46">⏫</e>
+        <e v="3" c="symbols" t="114,28,5,15,46">⏬</e>
+        <e v="3" c="symbols" t="downwards,5,15,28,61">🔽</e>
+        <e v="3" c="symbols" t="pause,5,46,42,40">⏸</e>
+        <e v="3" c="symbols" t="91,5,10,67">⏹</e>
+        <e v="3" c="symbols" t="record,5,10,7">⏺</e>
+        <e v="3" c="symbols" t="eject,5,45">⏏</e>
+        <e v="3" c="symbols" t="shuffle,tracks,5,twisted,200,arrows">🔀</e>
+        <e v="3" c="symbols" t="repeat,5">🔁</e>
+        <e v="3" c="symbols" t="repeat,single,5,180">🔂</e>
+        <e v="3" c="symbols" t="clockwise,42,arrows">🔃</e>
+        <e v="3" c="symbols" t="antenna,bars,signal,strength">📶</e>
+        <e v="3" c="symbols" t="vibration,mode">📳</e>
+        <e v="3" c="symbols" t="113,183,off">📴</e>
+        <e v="3" c="symbols" t="113,197">📵</e>
+        <e v="3" c="symbols" t="36,105">🔕</e>
+        <e v="3" c="symbols" t="zzz">💤</e>
+        <e v="3" c="symbols" t="muted,26,mute">🔇</e>
+        <e v="3" c="symbols" t="26,181,44">🔈</e>
+        <e v="3" c="symbols" t="26,medium,44,104">🔉</e>
+        <e v="3" c="symbols" t="26,165,44,loud,104">🔊</e>
+        <e v="3" c="symbols" t="loudspeaker">📢</e>
+        <e v="3" c="symbols" t="megaphone,mega">📣</e>
+        <e v="3" c="symbols" t="36">🔔</e>
+        <e v="3" c="symbols" t="36,105">🔕</e>
+        <e v="3" c="flags" t="chequered,1,checkered">🏁</e>
+        <e v="3" c="flags" t="triangular,1,159">🚩</e>
+        <e v="3" c="flags" t="72,flags">🎌</e>
+        <e v="3" c="flags" t="10,1,133">🏴</e>
+        <e v="3" c="flags" t="11,1,133">🏳</e>
+        <e v="3" c="flags" t="rainbow,1">🏳️‍🌈</e>
+        <e v="3" c="flags" t="pirate,1">🏴‍☠️</e>
+        <e v="3" c="flags" t="afghanistan,1">🇦🇫</e>
+        <e v="3" c="flags" t="albania,1">🇦🇱</e>
+        <e v="3" c="flags" t="algeria,1">🇩🇿</e>
+        <e v="3" c="flags" t="andorra,1">🇦🇩</e>
+        <e v="3" c="flags" t="angola,1">🇦🇴</e>
+        <e v="3" c="flags" t="antigua,barbuda,1">🇦🇬</e>
+        <e v="3" c="flags" t="argentina,1">🇦🇷</e>
+        <e v="3" c="flags" t="armenia,1">🇦🇲</e>
+        <e v="3" c="flags" t="australia,1">🇦🇺</e>
+        <e v="3" c="flags" t="austria,1">🇦🇹</e>
+        <e v="3" c="flags" t="azerbaijan,1">🇦🇿</e>
+        <e v="3" c="flags" t="bahamas,1">🇧🇸</e>
+        <e v="3" c="flags" t="bahrain,1">🇧🇭</e>
+        <e v="3" c="flags" t="bangladesh,1">🇧🇩</e>
+        <e v="3" c="flags" t="barbados,1">🇧🇧</e>
+        <e v="3" c="flags" t="belarus,1">🇧🇾</e>
+        <e v="3" c="flags" t="belgium,1">🇧🇪</e>
+        <e v="3" c="flags" t="belize,1">🇧🇿</e>
+        <e v="3" c="flags" t="benin,1">🇧🇯</e>
+        <e v="3" c="flags" t="bhutan,1">🇧🇹</e>
+        <e v="3" c="flags" t="bolivia,1">🇧🇴</e>
+        <e v="3" c="flags" t="bosnia,herzegovina,1">🇧🇦</e>
+        <e v="3" c="flags" t="botswana,1">🇧🇼</e>
+        <e v="3" c="flags" t="brazil,1">🇧🇷</e>
+        <e v="3" c="flags" t="brunei,1">🇧🇳</e>
+        <e v="3" c="flags" t="bulgaria,1">🇧🇬</e>
+        <e v="3" c="flags" t="burkina,faso,1">🇧🇫</e>
+        <e v="3" c="flags" t="burundi,1">🇧🇮</e>
+        <e v="3" c="flags" t="cape,verde,1">🇨🇻</e>
+        <e v="3" c="flags" t="cambodia,1">🇰🇭</e>
+        <e v="3" c="flags" t="cameroon,1">🇨🇲</e>
+        <e v="3" c="flags" t="canada,1">🇨🇦</e>
+        <e v="3" c="flags" t="central,african,201,1">🇨🇫</e>
+        <e v="3" c="flags" t="chad,1">🇹🇩</e>
+        <e v="3" c="flags" t="chile,1">🇨🇱</e>
+        <e v="3" c="flags" t="china,1,cn">🇨🇳</e>
+        <e v="3" c="flags" t="colombia,1">🇨🇴</e>
+        <e v="3" c="flags" t="comoros,1">🇰🇲</e>
+        <e v="3" c="flags" t="congo-kinshasa,1,congo,kinshasa">🇨🇩</e>
+        <e v="3" c="flags" t="congo-brazzaville,1,congo,brazzaville">🇨🇬</e>
+        <e v="3" c="flags" t="costa,rica,1">🇨🇷</e>
+        <e v="3" c="flags" t="côte,d’ivoire,1,cote,divoire">🇨🇮</e>
+        <e v="3" c="flags" t="croatia,1">🇭🇷</e>
+        <e v="3" c="flags" t="cuba,1">🇨🇺</e>
+        <e v="3" c="flags" t="cyprus,1">🇨🇾</e>
+        <e v="3" c="flags" t="czechia,1,czech,201">🇨🇿</e>
+        <e v="3" c="flags" t="denmark,1">🇩🇰</e>
+        <e v="3" c="flags" t="djibouti,1">🇩🇯</e>
+        <e v="3" c="flags" t="dominica,1">🇩🇲</e>
+        <e v="3" c="flags" t="dominican,201,1">🇩🇴</e>
+        <e v="3" c="flags" t="ecuador,1">🇪🇨</e>
+        <e v="3" c="flags" t="egypt,1">🇪🇬</e>
+        <e v="3" c="flags" t="el,salvador,1">🇸🇻</e>
+        <e v="3" c="flags" t="equatorial,115,1">🇬🇶</e>
+        <e v="3" c="flags" t="eritrea,1">🇪🇷</e>
+        <e v="3" c="flags" t="estonia,1">🇪🇪</e>
+        <e v="3" c="flags" t="eswatini,1,swaziland">🇸🇿</e>
+        <e v="3" c="flags" t="ethiopia,1">🇪🇹</e>
+        <e v="3" c="flags" t="fiji,1">🇫🇯</e>
+        <e v="3" c="flags" t="finland,1">🇫🇮</e>
+        <e v="3" c="flags" t="france,1,fr">🇫🇷</e>
+        <e v="3" c="flags" t="gabon,1">🇬🇦</e>
+        <e v="3" c="flags" t="gambia,1">🇬🇲</e>
+        <e v="3" c="flags" t="georgia,1">🇬🇪</e>
+        <e v="3" c="flags" t="germany,1,de">🇩🇪</e>
+        <e v="3" c="flags" t="ghana,1">🇬🇭</e>
+        <e v="3" c="flags" t="greece,1">🇬🇷</e>
+        <e v="3" c="flags" t="grenada,1">🇬🇩</e>
+        <e v="3" c="flags" t="guatemala,1">🇬🇹</e>
+        <e v="3" c="flags" t="115,1">🇬🇳</e>
+        <e v="3" c="flags" t="guinea-bissau,1,115,bissau">🇬🇼</e>
+        <e v="3" c="flags" t="guyana,1">🇬🇾</e>
+        <e v="3" c="flags" t="haiti,1">🇭🇹</e>
+        <e v="3" c="flags" t="honduras,1">🇭🇳</e>
+        <e v="3" c="flags" t="hungary,1">🇭🇺</e>
+        <e v="3" c="flags" t="iceland,1">🇮🇸</e>
+        <e v="3" c="flags" t="india,1">🇮🇳</e>
+        <e v="3" c="flags" t="indonesia,1">🇮🇩</e>
+        <e v="3" c="flags" t="iran,1">🇮🇷</e>
+        <e v="3" c="flags" t="iraq,1">🇮🇶</e>
+        <e v="3" c="flags" t="ireland,1">🇮🇪</e>
+        <e v="3" c="flags" t="israel,1">🇮🇱</e>
+        <e v="3" c="flags" t="italy,1">🇮🇹</e>
+        <e v="3" c="flags" t="jamaica,1">🇯🇲</e>
+        <e v="3" c="flags" t="japan,1,jp">🇯🇵</e>
+        <e v="3" c="flags" t="jordan,1">🇯🇴</e>
+        <e v="3" c="flags" t="kazakhstan,1">🇰🇿</e>
+        <e v="3" c="flags" t="kenya,1">🇰🇪</e>
+        <e v="3" c="flags" t="kiribati,1">🇰🇮</e>
+        <e v="3" c="flags" t="kosovo,1">🇽🇰</e>
+        <e v="3" c="flags" t="kuwait,1">🇰🇼</e>
+        <e v="3" c="flags" t="kyrgyzstan,1">🇰🇬</e>
+        <e v="3" c="flags" t="laos,1">🇱🇦</e>
+        <e v="3" c="flags" t="latvia,1">🇱🇻</e>
+        <e v="3" c="flags" t="lebanon,1">🇱🇧</e>
+        <e v="3" c="flags" t="lesotho,1">🇱🇸</e>
+        <e v="3" c="flags" t="liberia,1">🇱🇷</e>
+        <e v="3" c="flags" t="libya,1">🇱🇾</e>
+        <e v="3" c="flags" t="liechtenstein,1">🇱🇮</e>
+        <e v="3" c="flags" t="lithuania,1">🇱🇹</e>
+        <e v="3" c="flags" t="luxembourg,1">🇱🇺</e>
+        <e v="3" c="flags" t="madagascar,1">🇲🇬</e>
+        <e v="3" c="flags" t="malawi,1">🇲🇼</e>
+        <e v="3" c="flags" t="malaysia,1">🇲🇾</e>
+        <e v="3" c="flags" t="maldives,1">🇲🇻</e>
+        <e v="3" c="flags" t="mali,1">🇲🇱</e>
+        <e v="3" c="flags" t="malta,1">🇲🇹</e>
+        <e v="3" c="flags" t="marshall,islands,1">🇲🇭</e>
+        <e v="3" c="flags" t="mauritania,1">🇲🇷</e>
+        <e v="3" c="flags" t="mauritius,1">🇲🇺</e>
+        <e v="3" c="flags" t="mexico,1">🇲🇽</e>
+        <e v="3" c="flags" t="micronesia,1">🇫🇲</e>
+        <e v="3" c="flags" t="moldova,1">🇲🇩</e>
+        <e v="3" c="flags" t="monaco,1">🇲🇨</e>
+        <e v="3" c="flags" t="mongolia,1">🇲🇳</e>
+        <e v="3" c="flags" t="montenegro,1">🇲🇪</e>
+        <e v="3" c="flags" t="morocco,1">🇲🇦</e>
+        <e v="3" c="flags" t="mozambique,1">🇲🇿</e>
+        <e v="3" c="flags" t="myanmar,burma,1">🇲🇲</e>
+        <e v="3" c="flags" t="namibia,1">🇳🇦</e>
+        <e v="3" c="flags" t="nauru,1">🇳🇷</e>
+        <e v="3" c="flags" t="nepal,1">🇳🇵</e>
+        <e v="3" c="flags" t="netherlands,1">🇳🇱</e>
+        <e v="3" c="flags" t="new,zealand,1">🇳🇿</e>
+        <e v="3" c="flags" t="nicaragua,1">🇳🇮</e>
+        <e v="3" c="flags" t="niger,1">🇳🇪</e>
+        <e v="3" c="flags" t="nigeria,1">🇳🇬</e>
+        <e v="3" c="flags" t="norway,1">🇳🇴</e>
+        <e v="3" c="flags" t="oman,1">🇴🇲</e>
+        <e v="3" c="flags" t="pakistan,1">🇵🇰</e>
+        <e v="3" c="flags" t="palau,1">🇵🇼</e>
+        <e v="3" c="flags" t="palestinian,territories,1">🇵🇸</e>
+        <e v="3" c="flags" t="panama,1">🇵🇦</e>
+        <e v="3" c="flags" t="papua,new,115,1">🇵🇬</e>
+        <e v="3" c="flags" t="paraguay,1">🇵🇾</e>
+        <e v="3" c="flags" t="peru,1">🇵🇪</e>
+        <e v="3" c="flags" t="philippines,1">🇵🇭</e>
+        <e v="3" c="flags" t="poland,1">🇵🇱</e>
+        <e v="3" c="flags" t="portugal,1">🇵🇹</e>
+        <e v="3" c="flags" t="qatar,1">🇶🇦</e>
+        <e v="3" c="flags" t="romania,1">🇷🇴</e>
+        <e v="3" c="flags" t="russia,1,ru">🇷🇺</e>
+        <e v="3" c="flags" t="rwanda,1">🇷🇼</e>
+        <e v="3" c="flags" t="202,kitts,nevis,1">🇰🇳</e>
+        <e v="3" c="flags" t="202,lucia,1">🇱🇨</e>
+        <e v="3" c="flags" t="202,vincent,grenadines,1">🇻🇨</e>
+        <e v="3" c="flags" t="samoa,1">🇼🇸</e>
+        <e v="3" c="flags" t="san,marino,1">🇸🇲</e>
+        <e v="3" c="flags" t="são,tomé,príncipe,1,sao,tome,principe">🇸🇹</e>
+        <e v="3" c="flags" t="saudi,arabia,1">🇸🇦</e>
+        <e v="3" c="flags" t="senegal,1">🇸🇳</e>
+        <e v="3" c="flags" t="serbia,1">🇷🇸</e>
+        <e v="3" c="flags" t="sierra,leone,1">🇸🇱</e>
+        <e v="3" c="flags" t="singapore,1">🇸🇬</e>
+        <e v="3" c="flags" t="slovakia,1">🇸🇰</e>
+        <e v="3" c="flags" t="slovenia,1">🇸🇮</e>
+        <e v="3" c="flags" t="solomon,islands,1">🇸🇧</e>
+        <e v="3" c="flags" t="somalia,1">🇸🇴</e>
+        <e v="3" c="flags" t="south,africa,1">🇿🇦</e>
+        <e v="3" c="flags" t="south,sudan,1">🇸🇸</e>
+        <e v="3" c="flags" t="sudan,1">🇸🇩</e>
+        <e v="3" c="flags" t="suriname,1">🇸🇷</e>
+        <e v="3" c="flags" t="sweden,1">🇸🇪</e>
+        <e v="3" c="flags" t="switzerland,1">🇨🇭</e>
+        <e v="3" c="flags" t="syria,1">🇸🇾</e>
+        <e v="3" c="flags" t="taiwan,1">🇹🇼</e>
+        <e v="3" c="flags" t="tajikistan,1">🇹🇯</e>
+        <e v="3" c="flags" t="tanzania,1">🇹🇿</e>
+        <e v="3" c="flags" t="thailand,1">🇹🇭</e>
+        <e v="3" c="flags" t="timor-leste,1,timor,leste">🇹🇱</e>
+        <e v="3" c="flags" t="togo,1">🇹🇬</e>
+        <e v="3" c="flags" t="tonga,1">🇹🇴</e>
+        <e v="3" c="flags" t="trinidad,tobago,1">🇹🇹</e>
+        <e v="3" c="flags" t="tunisia,1">🇹🇳</e>
+        <e v="3" c="flags" t="türkiye,1,turkey,tr">🇹🇷</e>
+        <e v="3" c="flags" t="turkmenistan,1">🇹🇲</e>
+        <e v="3" c="flags" t="tuvalu,1">🇹🇻</e>
+        <e v="3" c="flags" t="uganda,1">🇺🇬</e>
+        <e v="3" c="flags" t="ukraine,1">🇺🇦</e>
+        <e v="3" c="flags" t="203,arab,emirates,1">🇦🇪</e>
+        <e v="3" c="flags" t="203,kingdom,1,gb,uk">🇬🇧</e>
+        <e v="3" c="flags" t="203,states,1,us">🇺🇸</e>
+        <e v="3" c="flags" t="uruguay,1">🇺🇾</e>
+        <e v="3" c="flags" t="uzbekistan,1">🇺🇿</e>
+        <e v="3" c="flags" t="vanuatu,1">🇻🇺</e>
+        <e v="3" c="flags" t="venezuela,1">🇻🇪</e>
+        <e v="3" c="flags" t="vietnam,1">🇻🇳</e>
+        <e v="3" c="flags" t="yemen,1">🇾🇪</e>
+        <e v="3" c="flags" t="zambia,1">🇿🇲</e>
+        <e v="3" c="flags" t="zimbabwe,1">🇿🇼</e>
+        <e v="3" c="flags" t="england">🏴󠁧󠁢󠁥󠁮󠁧󠁿</e>
+        <e v="3" c="flags" t="scotland">🏴󠁧󠁢󠁳󠁣󠁴󠁿</e>
+        <e v="3" c="flags" t="wales">🏴󠁧󠁢󠁷󠁬󠁳󠁿</e>
+        <e v="11" c="smileys" t="8,2,50,three">🥰</e>
+        <e v="11" c="smileys" t="partying,2">🥳</e>
+        <e v="11" c="smileys" t="58,2">🥵</e>
+        <e v="11" c="smileys" t="219,2">🥶</e>
+        <e v="11" c="smileys" t="woozy,2">🥴</e>
+        <e v="11" c="smileys" t="pleading,2">🥺</e>
+        <e v="11" c="people" t="superhero">🦸</e>
+        <e v="11" c="people" t="supervillain">🦹</e>
+        <e v="11" c="people" t="deaf,3">🧏</e>
+        <e v="11" c="people" t="101,82,18">🧑‍🤝‍🧑</e>
+        <e v="11" c="animals" t="hedgehog">🦔</e>
+        <e v="11" c="animals" t="sauropod">🦕</e>
+        <e v="11" c="animals" t="t-rex,rex">🦖</e>
+        <e v="11" c="animals" t="cricket">🦗</e>
+        <e v="11" c="animals" t="kangaroo">🦘</e>
+        <e v="11" c="animals" t="llama">🦙</e>
+        <e v="11" c="animals" t="peacock">🦚</e>
+        <e v="11" c="animals" t="hippopotamus">🦛</e>
+        <e v="11" c="animals" t="parrot">🦜</e>
+        <e v="11" c="animals" t="raccoon">🦝</e>
+        <e v="11" c="animals" t="lobster">🦞</e>
+        <e v="11" c="animals" t="mosquito">🦟</e>
+        <e v="11" c="animals" t="microbe">🦠</e>
+        <e v="11" c="food" t="bagel">🥯</e>
+        <e v="11" c="food" t="cupcake">🧁</e>
+        <e v="11" c="food" t="moon,59">🥮</e>
+        <e v="11" c="food" t="falafel">🧆</e>
+        <e v="11" c="travel" t="153,154">🛺</e>
+        <e v="11" c="travel" t="163,saucer">🛸</e>
+        <e v="11" c="activities" t="3,fencing">🤺</e>
+        <e v="11" c="activities" t="3,climbing">🧗</e>
+        <e v="11" c="activities" t="3,cartwheeling">🤸</e>
+        <e v="11" c="activities" t="101,wrestling">🤼</e>
+        <e v="11" c="activities" t="3,62,84,polo">🤽</e>
+        <e v="11" c="activities" t="3,62,handball">🤾</e>
+        <e v="11" c="activities" t="3,juggling">🤹</e>
+        <e v="11" c="activities" t="3,179,position">🧘</e>
+        <e v="11" c="objects" t="97">🧲</e>
+        <e v="11" c="objects" t="test,tube">🧪</e>
+        <e v="11" c="objects" t="petri,dish">🧫</e>
+        <e v="11" c="objects" t="dna">🧬</e>
+        <e v="11" c="objects" t="41,100">🧯</e>
+        <e v="11" c="objects" t="toolbox">🧰</e>
+        <e v="11" c="objects" t="brick,bricks">🧱</e>
+        <e v="11" c="objects" t="174,vest">🦺</e>
+        <e v="11" c="objects" t="lab,coat">🥼</e>
+        <e v="11" c="objects" t="scarf">🧣</e>
+        <e v="11" c="objects" t="gloves">🧤</e>
+        <e v="11" c="objects" t="coat">🧥</e>
+        <e v="11" c="objects" t="socks">🧦</e>
+        <e v="11" c="symbols" t="infinity">♾</e>
+        <e v="11" c="flags" t="196,1">🏳️‍⚧️</e>
+        <e v="12" c="smileys" t="yawning,2">🥱</e>
+        <e v="12" c="smileys" t="112,4">🤎</e>
+        <e v="12" c="smileys" t="11,4">🤍</e>
+        <e v="12" c="people" t="3,kneeling">🧎</e>
+        <e v="12" c="people" t="3,standing">🧍</e>
+        <e v="12" c="people" t="3,11,cane,probing">🧑‍🦯</e>
+        <e v="12" c="people" t="3,motorized,116">🧑‍🦼</e>
+        <e v="12" c="people" t="3,manual,116">🧑‍🦽</e>
+        <e v="12" c="animals" t="guide,57">🦮</e>
+        <e v="12" c="animals" t="service,57">🐕‍🦺</e>
+        <e v="12" c="animals" t="sloth">🦥</e>
+        <e v="12" c="animals" t="otter">🦦</e>
+        <e v="12" c="animals" t="skunk">🦨</e>
+        <e v="12" c="animals" t="flamingo">🦩</e>
+        <e v="12" c="food" t="waffle">🧇</e>
+        <e v="12" c="food" t="butter">🧈</e>
+        <e v="12" c="food" t="146,39">🧃</e>
+        <e v="12" c="food" t="mate">🧉</e>
+        <e v="12" c="food" t="89,cube">🧊</e>
+        <e v="12" c="travel" t="152,60">🛻</e>
+        <e v="12" c="travel" t="manual,116">🦽</e>
+        <e v="12" c="travel" t="motorized,116">🦼</e>
+        <e v="12" c="activities" t="curling,178">🥌</e>
+        <e v="12" c="activities" t="diving,125">🤿</e>
+        <e v="12" c="objects" t="185">🩺</e>
+        <e v="12" c="objects" t="adhesive,126">🩹</e>
+        <e v="12" c="objects" t="crutch">🩼</e>
+        <e v="12" c="objects" t="compass">🧭</e>
+        <e v="12" c="symbols" t="37,7">🟠</e>
+        <e v="12" c="symbols" t="76,7">🟡</e>
+        <e v="12" c="symbols" t="30,7">🟢</e>
+        <e v="12" c="symbols" t="77,7">🟣</e>
+        <e v="12" c="symbols" t="112,7">🟤</e>
+        <e v="13" c="smileys" t="8,2,tear">🥲</e>
+        <e v="13" c="people" t="3,253,53">🧑‍🍼</e>
+        <e v="13" c="people" t="101,213">🫂</e>
+        <e v="13" c="animals" t="polar,bear">🐻‍❄️</e>
+        <e v="13" c="animals" t="beetle">🪲</e>
+        <e v="13" c="animals" t="cockroach">🪳</e>
+        <e v="13" c="animals" t="fly">🪰</e>
+        <e v="13" c="animals" t="worm">🪱</e>
+        <e v="13" c="food" t="blueberries">🫐</e>
+        <e v="13" c="food" t="bubble,147">🧋</e>
+        <e v="13" c="food" t="148">🫙</e>
+        <e v="13" c="travel" t="162">🪂</e>
+        <e v="13" c="activities" t="boomerang">🪃</e>
+        <e v="13" c="activities" t="kite">🪁</e>
+        <e v="13" c="objects" t="175">🪣</e>
+        <e v="13" c="objects" t="168">🪜</e>
+        <e v="13" c="objects" t="41,100">🧯</e>
+        <e v="13" c="objects" t="38,172">🪤</e>
+        <e v="13" c="objects" t="173">🪒</e>
+        <e v="13" c="symbols" t="196,45">⚧</e>
+        <e v="14" c="smileys" t="melting,2">🫠</e>
+        <e v="14" c="smileys" t="saluting,2">🫡</e>
+        <e v="14" c="smileys" t="2,17,9,6,123,16">🫢</e>
+        <e v="14" c="smileys" t="2,peeking,121">🫣</e>
+        <e v="14" c="smileys" t="2,diagonal,16">🫤</e>
+        <e v="14" c="smileys" t="dotted,line,2">🫥</e>
+        <e v="14" c="smileys" t="biting,lip">🫦</e>
+        <e v="14" c="people" t="140,22">🫃</e>
+        <e v="14" c="people" t="140,3">🫄</e>
+        <e v="14" c="people" t="20,21,viewer">🫵</e>
+        <e v="14" c="people" t="200,6">🫱</e>
+        <e v="14" c="people" t="leftwards,6">🫲</e>
+        <e v="14" c="people" t="palm,28,6">🫳</e>
+        <e v="14" c="people" t="palm,6">🫴</e>
+        <e v="14" c="people" t="6,20,243,thumb,72">🫰</e>
+        <e v="14" c="animals" t="coral">🪸</e>
+        <e v="14" c="animals" t="10,bird,raven,crow,rook">🐦‍⬛</e>
+        <e v="14" c="animals" t="bison">🦬</e>
+        <e v="14" c="animals" t="donkey">🫏</e>
+        <e v="14" c="animals" t="moose">🫎</e>
+        <e v="14" c="food" t="145">🫕</e>
+        <e v="14" c="food" t="148">🫙</e>
+        <e v="14" c="travel" t="166">🛞</e>
+        <e v="14" c="travel" t="167">🪝</e>
+        <e v="14" c="activities" t="magic,wand">🪄</e>
+        <e v="14" c="objects" t="hamsa">🪬</e>
+        <e v="14" c="objects" t="170,25">🪩</e>
+        <e v="14" c="objects" t="folding,6,fan">🪭</e>
+        <e v="14" c="symbols" t="pink,4">🩷</e>
+        <e v="14" c="symbols" t="35,24,4">🩵</e>
+        <e v="14" c="symbols" t="grey,4">🩶</e>
+        <e v="15" c="smileys" t="shaking,2">🫨</e>
+        <e v="15" c="smileys" t="pink,4">🩷</e>
+        <e v="15" c="smileys" t="35,24,4">🩵</e>
+        <e v="15" c="smileys" t="grey,4">🩶</e>
+        <e v="15" c="people" t="200,pushing,6">🫸</e>
+        <e v="15" c="people" t="leftwards,pushing,6">🫷</e>
+        <e v="15" c="people" t="troll">🧌</e>
+        <e v="15" c="animals" t="jellyfish">🪼</e>
+        <e v="15" c="animals" t="wing">🪽</e>
+        <e v="15" c="animals" t="goose">🪿</e>
+        <e v="15" c="animals" t="phoenix">🐦‍🔥</e>
+        <e v="15" c="food" t="ginger,root">🫚</e>
+        <e v="15" c="food" t="pea,pod">🫛</e>
+        <e v="15" c="travel" t="elevator">🛗</e>
+        <e v="15" c="activities" t="piñata,pinata">🪅</e>
+        <e v="15" c="activities" t="nesting,dolls">🪆</e>
+        <e v="15" c="objects" t="181,battery">🪫</e>
+        <e v="15" c="objects" t="nesting,dolls">🪆</e>
+        <e v="15" c="objects" t="piñata,pinata">🪅</e>
+        <e v="15" c="symbols" t="179">🪷</e>
+    </emojis>
+
+</emoji_data>
