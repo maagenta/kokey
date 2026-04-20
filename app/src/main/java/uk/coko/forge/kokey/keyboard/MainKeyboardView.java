@@ -246,6 +246,11 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
                 keyboard, -getPaddingLeft(), -getPaddingTop() + getVerticalCorrection());
         PointerTracker.setKeyDetector(mKeyDetector);
         mMoreKeysKeyboardCache.clear();
+        // Sync the long-press-emoji-opens-search preference into PointerTracker.
+        final android.content.SharedPreferences prefs =
+                uk.coko.forge.kokey.compat.PreferenceManagerCompat.getDeviceSharedPreferences(getContext());
+        PointerTracker.setLongPressEmojiSearchEnabled(
+                uk.coko.forge.kokey.latin.settings.Settings.readLongPressEmojiSearch(prefs));
 
         mSpaceKey = keyboard.getKey(Constants.CODE_SPACE);
         final int keyHeight = keyboard.mMostCommonKeyHeight;

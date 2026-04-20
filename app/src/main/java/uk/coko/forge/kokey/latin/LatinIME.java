@@ -634,6 +634,12 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         switch (requestCode) {
             case Constants.CUSTOM_CODE_SHOW_INPUT_METHOD_PICKER:
                 return showInputMethodPicker();
+            case Constants.CUSTOM_CODE_EMOJI_SEARCH:
+                // Long press on emoji key from QWERTY — show search without touching the panel.
+                if(!mEmojiSearchActive) {
+                    showEmojiSearch();
+                    return true;
+                }
         }
         return false;
     }
@@ -840,16 +846,29 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
                 getCurrentRecapitalizeState());
     }
 
-    public void toggleEmojiPanel() {
-        mKeyboardSwitcher.toggleEmojiPanel();
+    public void showEmojiPanel() {
+        mKeyboardSwitcher.showEmojiPanel();
     }
 
+    public void hideEmojiPanel() {
+        mKeyboardSwitcher.hideEmojiPanel();
+    }
 
-    public void toggleEmojiSearch() {
-        mKeyboardSwitcher.toggleEmojiPanel();
+    /**
+     * Opens emoji search from within the emoji panel (search button).
+     * Hides the panel first so the QWERTY keyboard is visible for typing.
+     */
+    public void showEmojiSearchFromPanel() {
+        mKeyboardSwitcher.hideEmojiPanel();
+        showEmojiSearch();
+    }
+
+    /**
+     * Shows the emoji search bar. Called both from the panel search button
+     * (via showEmojiSearchFromPanel) and from long-pressing the emoji key on QWERTY.
+     */
+    public void showEmojiSearch() {
         mEmojiSearchActive = true;
-        // Disable long-press popup panels while emoji search is open,
-        // so typing a query doesn't accidentally trigger key variants.
         uk.coko.forge.kokey.keyboard.PointerTracker.setEmojiSearchActive(true);
         if (mEmojiSearchView != null) {
             mEmojiSearchView.setVisibility(android.view.View.VISIBLE);

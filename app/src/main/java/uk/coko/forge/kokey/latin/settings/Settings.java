@@ -58,6 +58,7 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
     public static final String PREF_KEYBOARD_COLOR = "pref_keyboard_color";
     public static final String PREF_SHOW_SPECIAL_CHARS = "pref_show_special_chars";
     public static final String PREF_SHOW_NUMBER_HINTS = "pref_show_number_hints";
+    public static final String PREF_LONG_PRESS_EMOJI_SEARCH = "pref_long_press_emoji_search";
     public static final String PREF_SHOW_NUMBER_ROW = "pref_show_number_row";
     public static final String PREF_SPACE_SWIPE = "pref_space_swipe";
     public static final String PREF_EMOJI_RENDERING = "pref_emoji_rendering";
@@ -219,6 +220,10 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
 
     public static boolean readShowNumberHints(final SharedPreferences prefs) {
         return prefs.getBoolean(PREF_SHOW_NUMBER_HINTS, true);
+    }
+
+    public static boolean readLongPressEmojiSearch(final SharedPreferences prefs) {
+        return prefs.getBoolean(PREF_LONG_PRESS_EMOJI_SEARCH, false);
     }
 
     public static boolean readShowNumberRow(final SharedPreferences prefs) {

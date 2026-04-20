@@ -182,12 +182,11 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
         });
 
         findViewById(R.id.emoji_keyboard_btn).setOnClickListener(v -> {
-            if (mLatinIME != null) mLatinIME.toggleEmojiPanel();
+            if (mLatinIME != null) mLatinIME.hideEmojiPanel();
         });
 
         findViewById(R.id.emoji_search_btn).setOnClickListener(v -> {
-            android.util.Log.e("EmojiSearch", "search button pressed");
-            if (mLatinIME != null) mLatinIME.toggleEmojiSearch();
+            if (mLatinIME != null) mLatinIME.showEmojiSearchFromPanel();
         });
 
         findViewById(R.id.emoji_backspace_btn).setOnClickListener(v -> {

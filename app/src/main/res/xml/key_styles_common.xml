@@ -95,7 +95,7 @@
     <key-style
         latin:styleName="emojiKeyStyle"
         latin:keySpec="!icon/emoji_key|!code/key_emoji"
-        latin:keyActionFlags="noKeyPreview"
+        latin:keyActionFlags="noKeyPreview|enableLongPress"
         latin:backgroundType="functional" />
     <key-style
         latin:styleName="emojiSearchKeyStyle"

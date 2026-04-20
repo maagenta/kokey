@@ -68,6 +68,8 @@ public final class Constants {
      */
     // The code to show input method picker.
     public static final int CUSTOM_CODE_SHOW_INPUT_METHOD_PICKER = 1;
+    // The code to open emoji search directly (triggered by long-pressing the emoji key).
+    public static final int CUSTOM_CODE_EMOJI_SEARCH = 2;
 
     /**
      * Some common keys code. Must be positive.

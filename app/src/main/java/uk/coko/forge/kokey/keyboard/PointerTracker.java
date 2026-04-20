@@ -52,6 +52,14 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         sEmojiSearchActive = active;
     }
 
+    // When enabled, long-pressing the emoji key opens emoji search instead of its more-keys panel.
+    private static boolean sLongPressEmojiSearchEnabled = false;
+
+    /** Called by MainKeyboardView whenever a keyboard is set, reflecting the current preference. */
+    public static void setLongPressEmojiSearchEnabled(final boolean enabled) {
+        sLongPressEmojiSearchEnabled = enabled;
+    }
+
     static final class PointerTrackerParams {
         public final boolean mKeySelectionByDraggingFinger;
         public final int mTouchNoiseThresholdTime;
@@ -769,6 +777,15 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
                 return;
             }
         }
+        if (code == Constants.CODE_EMOJI && sLongPressEmojiSearchEnabled) {
+            // Long pressing the emoji key opens emoji search when the option is enabled.
+            Log.d(TAG, "onLongPressed: CODE_EMOJI → requesting CUSTOM_CODE_EMOJI_SEARCH");
+            sListener.onCustomRequest(Constants.CUSTOM_CODE_EMOJI_SEARCH);
+            cancelKeyTracking();
+            sListener.onReleaseKey(code, false /* withSliding */);
+            return;
+        }
+        Log.d(TAG, "onLongPressed: code=" + code + " sLongPressEmojiSearchEnabled=" + sLongPressEmojiSearchEnabled);
 
         setReleasedKeyGraphics(key, false /* withAnimation */);
         // During emoji search, suppress all popup key panels — the user is typing
@@ -880,7 +897,7 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
     }
 
     // Minimum press duration (ms) required to fire the emoji key, to prevent accidental taps.
-    private static final long EMOJI_KEY_MIN_PRESS_MS = 80;
+    private static final long EMOJI_KEY_MIN_PRESS_MS = 50;
 
     private void detectAndSendKey(final Key key, final int x, final int y) {
         if (key == null) return;

@@ -489,7 +489,7 @@ public final class InputLogic {
     }
 
     private void onEmojiKeyPressed() {
-        mLatinIME.toggleEmojiPanel();
+        mLatinIME.showEmojiPanel();
     }
 
     /**

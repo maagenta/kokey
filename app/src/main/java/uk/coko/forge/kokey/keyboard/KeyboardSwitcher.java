@@ -385,22 +385,23 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         return currentInputView;
     }
 
-    public void toggleEmojiPanel() {
+    public void showEmojiPanel() {
         if (mEmojiPanelView == null) return;
-        if (mEmojiPanelView.getVisibility() == android.view.View.VISIBLE) {
-            mEmojiPanelView.setVisibility(android.view.View.GONE);
-            mKeyboardView.setVisibility(android.view.View.VISIBLE);
-        } else {
-            final int keyboardHeight = mKeyboardView.getMeasuredHeight();
-            if (keyboardHeight > 0) {
-                final android.view.ViewGroup.LayoutParams lp = mEmojiPanelView.getLayoutParams();
-                lp.height = keyboardHeight;
-                mEmojiPanelView.setLayoutParams(lp);
-            }
-            mKeyboardView.setVisibility(android.view.View.GONE);
-            mEmojiPanelView.setVisibility(android.view.View.VISIBLE);
-            mEmojiPanelView.initialize();
+        final int keyboardHeight = mKeyboardView.getMeasuredHeight();
+        if (keyboardHeight > 0) {
+            final android.view.ViewGroup.LayoutParams lp = mEmojiPanelView.getLayoutParams();
+            lp.height = keyboardHeight;
+            mEmojiPanelView.setLayoutParams(lp);
         }
+        mKeyboardView.setVisibility(android.view.View.GONE);
+        mEmojiPanelView.setVisibility(android.view.View.VISIBLE);
+        mEmojiPanelView.initialize();
+    }
+
+    public void hideEmojiPanel() {
+        if (mEmojiPanelView == null) return;
+        mEmojiPanelView.setVisibility(android.view.View.GONE);
+        mKeyboardView.setVisibility(android.view.View.VISIBLE);
     }
 
     public EmojiPanelView getEmojiPanelView() { return mEmojiPanelView; }
