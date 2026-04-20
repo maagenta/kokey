@@ -46,6 +46,12 @@ public final class EmojiSearchView extends LinearLayout {
             if (event.getAction() == MotionEvent.ACTION_UP) close();
             return true;
         });
+
+        findViewById(R.id.emoji_search_delete).setOnTouchListener((v, event) -> {
+            if (event.getAction() == MotionEvent.ACTION_UP)
+                onKey(uk.coko.forge.kokey.latin.common.Constants.CODE_DELETE);
+            return true;
+        });
     }
 
     public void setup(final LatinIME latinIME, final EmojiPanelView panelView, final int cellSize) {
