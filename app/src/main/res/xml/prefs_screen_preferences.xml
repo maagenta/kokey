@@ -29,11 +29,11 @@
     <SwitchPreference
         android:key="pref_show_special_chars"
         android:title="@string/show_special_chars"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
     <SwitchPreference
         android:key="pref_show_number_hints"
         android:title="@string/show_number_hints"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
     <SwitchPreference
         android:key="pref_show_language_switch_key"
         android:title="@string/show_language_switch_key"
@@ -45,7 +45,7 @@
     <SwitchPreference
         android:key="pref_long_press_emoji_search"
         android:title="@string/long_press_emoji_search"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
     <SwitchPreference
         android:key="pref_use_on_screen"
         android:title="@string/pref_use_on_screen"

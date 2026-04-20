@@ -215,15 +215,15 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
     }
 
     public static boolean readShowSpecialChars(final SharedPreferences prefs) {
-        return prefs.getBoolean(PREF_SHOW_SPECIAL_CHARS, true);
+        return prefs.getBoolean(PREF_SHOW_SPECIAL_CHARS, false);
     }
 
     public static boolean readShowNumberHints(final SharedPreferences prefs) {
-        return prefs.getBoolean(PREF_SHOW_NUMBER_HINTS, true);
+        return prefs.getBoolean(PREF_SHOW_NUMBER_HINTS, false);
     }
 
     public static boolean readLongPressEmojiSearch(final SharedPreferences prefs) {
-        return prefs.getBoolean(PREF_LONG_PRESS_EMOJI_SEARCH, false);
+        return prefs.getBoolean(PREF_LONG_PRESS_EMOJI_SEARCH, true);
     }
 
     public static boolean readShowNumberRow(final SharedPreferences prefs) {
