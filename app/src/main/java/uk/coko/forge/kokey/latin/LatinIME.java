@@ -467,6 +467,9 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         if (mainKeyboardView != null) {
             mainKeyboardView.closing();
         }
+        if (mEmojiSearchActive && mEmojiSearchView != null) {
+            mEmojiSearchView.close();
+        }
     }
 
     void onFinishInputInternal() {
@@ -732,8 +735,12 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     public void onCodeInput(final int codePoint, final int x, final int y,
             final boolean isKeyRepeat) {
         if (mEmojiSearchActive) {
-            if (mEmojiSearchView != null) mEmojiSearchView.onKey(codePoint);
-            return;
+            if (codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_DELETE) {
+                // Backspace goes to the normal pipeline to delete in the app's text field.
+            } else {
+                if (mEmojiSearchView != null) mEmojiSearchView.onKey(codePoint);
+                return;
+            }
         }
         final Event event = createSoftwareKeypressEvent(getCodePointForKeyboard(codePoint), isKeyRepeat);
         onEvent(event);
