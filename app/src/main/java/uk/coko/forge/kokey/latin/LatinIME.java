@@ -549,11 +549,6 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
             visibleHeight += mEmojiSearchView.getHeight();
         }
         final int visibleTopY = inputHeight - visibleHeight;
-        android.util.Log.d("Insets", "inputHeight=" + inputHeight
-                + " visibleHeight=" + visibleHeight
-                + " visibleTopY=" + visibleTopY
-                + " searchActive=" + mEmojiSearchActive
-                + " searchHeight=" + (mEmojiSearchView != null ? mEmojiSearchView.getHeight() : -1));
         // Need to set expanded touchable region only if a keyboard view is being shown.
         if (visibleKeyboardView.isShown()) {
             final int touchLeft = 0;
@@ -735,8 +730,14 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     public void onCodeInput(final int codePoint, final int x, final int y,
             final boolean isKeyRepeat) {
         if (mEmojiSearchActive) {
-            if (codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_DELETE) {
-                // Backspace goes to the normal pipeline to delete in the app's text field.
+            if (codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_DELETE
+                    || codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_ENTER
+                    || codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_SHIFT_ENTER
+                    || codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_EMOJI
+                    || codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_SWITCH_ALPHA_SYMBOL
+                    || codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_SYMBOL_SHIFT
+                    || codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_LANGUAGE_SWITCH) {
+                // These keys fall through to normal pipeline.
             } else {
                 if (mEmojiSearchView != null) mEmojiSearchView.onKey(codePoint);
                 return;
