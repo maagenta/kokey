@@ -83,8 +83,12 @@ public final class EmojiSearchView extends LinearLayout {
     public void onKey(final int codePoint) {
         if (codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_DELETE) {
             if (mQuery.length() > 0) mQuery.deleteCharAt(mQuery.length() - 1);
-        } else if (Character.isLetter(codePoint) || codePoint == ' ') {
+        } else if (Character.isLetterOrDigit(codePoint) || codePoint == ':') {
             mQuery.appendCodePoint(codePoint);
+        } else if (codePoint == ' ') {
+            if (mQuery.length() > 0 && mQuery.charAt(mQuery.length() - 1) != ' ') {
+                mQuery.appendCodePoint(codePoint);
+            }
         }
         final String query = mQuery.toString().trim();
         mSearchField.setText(query);
