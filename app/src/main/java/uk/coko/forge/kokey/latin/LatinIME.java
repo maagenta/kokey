@@ -848,6 +848,9 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     public void toggleEmojiSearch() {
         mKeyboardSwitcher.toggleEmojiPanel();
         mEmojiSearchActive = true;
+        // Disable long-press popup panels while emoji search is open,
+        // so typing a query doesn't accidentally trigger key variants.
+        uk.coko.forge.kokey.keyboard.PointerTracker.setEmojiSearchActive(true);
         if (mEmojiSearchView != null) {
             mEmojiSearchView.setVisibility(android.view.View.VISIBLE);
             mEmojiSearchView.show();
@@ -860,6 +863,8 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
 
     public void closeEmojiSearch() {
         mEmojiSearchActive = false;
+        // Re-enable long-press popup panels now that emoji search is closed.
+        uk.coko.forge.kokey.keyboard.PointerTracker.setEmojiSearchActive(false);
         if (mEmojiSearchView != null) {
             mEmojiSearchView.setVisibility(android.view.View.GONE);
         }

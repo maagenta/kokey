@@ -43,6 +43,15 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
     private static final boolean DEBUG_LISTENER = false;
     private static boolean DEBUG_MODE = DebugFlags.DEBUG_ENABLED || DEBUG_EVENT;
 
+    // When emoji search is active, long-press popups (more-keys panels) are suppressed
+    // so the user can type search queries without accidentally triggering key variants.
+    private static boolean sEmojiSearchActive = false;
+
+    /** Called by LatinIME when emoji search opens or closes. */
+    public static void setEmojiSearchActive(final boolean active) {
+        sEmojiSearchActive = active;
+    }
+
     static final class PointerTrackerParams {
         public final boolean mKeySelectionByDraggingFinger;
         public final int mTouchNoiseThresholdTime;
@@ -762,6 +771,9 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         }
 
         setReleasedKeyGraphics(key, false /* withAnimation */);
+        // During emoji search, suppress all popup key panels — the user is typing
+        // a query and long-pressing a key should not open the variants popup.
+        if (sEmojiSearchActive) return;
         final MoreKeysPanel moreKeysPanel = sDrawingProxy.showMoreKeysKeyboard(key, this);
         if (moreKeysPanel == null) {
             return;
