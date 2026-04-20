@@ -879,10 +879,18 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         return longpressTimeout;
     }
 
+    // Minimum press duration (ms) required to fire the emoji key, to prevent accidental taps.
+    private static final long EMOJI_KEY_MIN_PRESS_MS = 80;
+
     private void detectAndSendKey(final Key key, final int x, final int y) {
         if (key == null) return;
 
         final int code = key.getCode();
+        // Ignore very short taps on the emoji key to avoid accidental panel opens.
+        if (code == Constants.CODE_EMOJI
+                && System.currentTimeMillis() - mStartTime < EMOJI_KEY_MIN_PRESS_MS) {
+            return;
+        }
         callListenerOnCodeInput(key, code, x, y, false /* isKeyRepeat */);
         callListenerOnRelease(key, code, false /* withSliding */);
     }
