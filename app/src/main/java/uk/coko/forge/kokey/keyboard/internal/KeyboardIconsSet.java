@@ -81,7 +81,7 @@ public final class KeyboardIconsSet {
         NAME_ZWNJ_KEY,                    R.drawable.sym_keyboard_zwnj,
         NAME_ZWJ_KEY,                     R.drawable.sym_keyboard_zwj,
         NAME_EMOJI_KEY,                   R.drawable.sym_keyboard_emoji,
-        NAME_EMOJI_SEARCH_KEY,            R.drawable.sym_keyboard_search,
+        NAME_EMOJI_SEARCH_KEY,            R.drawable.sym_keyboard_emoji_search,
     };
 
     private static final int NUM_ICONS = NAMES_AND_ATTR_IDS.length / 2;

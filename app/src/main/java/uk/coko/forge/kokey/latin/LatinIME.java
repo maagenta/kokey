@@ -730,15 +730,14 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     public void onCodeInput(final int codePoint, final int x, final int y,
             final boolean isKeyRepeat) {
         if (mEmojiSearchActive) {
-            if (codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_DELETE
-                    || codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_ENTER
-                    || codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_SHIFT_ENTER
-                    || codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_EMOJI
-                    || codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_SWITCH_ALPHA_SYMBOL
-                    || codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_SYMBOL_SHIFT
-                    || codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_LANGUAGE_SWITCH) {
-                // These keys fall through to normal pipeline.
-            } else {
+            if (codePoint == uk.coko.forge.kokey.latin.common.Constants.CODE_EMOJI) {
+                closeEmojiSearch();
+            } else if (codePoint != uk.coko.forge.kokey.latin.common.Constants.CODE_DELETE
+                    && codePoint != uk.coko.forge.kokey.latin.common.Constants.CODE_ENTER
+                    && codePoint != uk.coko.forge.kokey.latin.common.Constants.CODE_SHIFT_ENTER
+                    && codePoint != uk.coko.forge.kokey.latin.common.Constants.CODE_SWITCH_ALPHA_SYMBOL
+                    && codePoint != uk.coko.forge.kokey.latin.common.Constants.CODE_SYMBOL_SHIFT
+                    && codePoint != uk.coko.forge.kokey.latin.common.Constants.CODE_LANGUAGE_SWITCH) {
                 if (mEmojiSearchView != null) mEmojiSearchView.onKey(codePoint);
                 return;
             }
