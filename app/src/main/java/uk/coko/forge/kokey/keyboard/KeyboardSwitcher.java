@@ -84,7 +84,7 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         final boolean themeUpdated = updateKeyboardThemeAndContextThemeWrapper(
                 mLatinIME, KeyboardTheme.getKeyboardTheme(mLatinIME));
         if (themeUpdated && mKeyboardView != null) {
-            mLatinIME.setInputView(onCreateInputView());
+            mLatinIME.setInputView(mLatinIME.onCreateInputView());
         }
     }
 
@@ -94,7 +94,7 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
         KeyboardLayoutSet.onKeyboardThemeChanged();
         if (mKeyboardView != null && Build.VERSION.SDK_INT < Build.VERSION_CODES.S) {
             // Live color pallet reloading doesn't work, need to rerender the View
-            mLatinIME.setInputView(onCreateInputView());
+            mLatinIME.setInputView(mLatinIME.onCreateInputView());
         }
     }
 

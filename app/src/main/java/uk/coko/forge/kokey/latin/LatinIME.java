@@ -854,6 +854,10 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         }
     }
 
+    public uk.coko.forge.kokey.keyboard.MainKeyboardView getMainKeyboardView() {
+        return mKeyboardSwitcher.getMainKeyboardView();
+    }
+
     public void closeEmojiSearch() {
         mEmojiSearchActive = false;
         if (mEmojiSearchView != null) {
