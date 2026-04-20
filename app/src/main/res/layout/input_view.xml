@@ -23,19 +23,36 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     style="?attr/inputViewStyle">
-    <uk.coko.forge.kokey.keyboard.MainKeyboardView
-        android:id="@+id/keyboard_view"
-        android:layoutDirection="ltr"
-        android:layout_gravity="bottom"
-        android:orientation="vertical"
-        android:fitsSystemWindows="true"
+
+    <!-- Keyboard + search strips stacked vertically -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <uk.coko.forge.kokey.latin.EmojiPanelView
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <uk.coko.forge.kokey.emoji.EmojiSearchView
+            android:id="@+id/emoji_search_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <uk.coko.forge.kokey.keyboard.MainKeyboardView
+            android:id="@+id/keyboard_view"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <uk.coko.forge.kokey.emoji.EmojiPanelView
         android:id="@+id/emoji_view"
         android:visibility="gone"
         android:background="?attr/keyboardViewBackground"
         android:layout_gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
 </uk.coko.forge.kokey.latin.InputView>

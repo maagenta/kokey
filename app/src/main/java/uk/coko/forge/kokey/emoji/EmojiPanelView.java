@@ -1,4 +1,4 @@
-package uk.coko.forge.kokey.latin;
+package uk.coko.forge.kokey.emoji;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import uk.coko.forge.kokey.R;
+import uk.coko.forge.kokey.latin.LatinIME;
 import uk.coko.forge.kokey.latin.settings.Settings;
 
 public final class EmojiPanelView extends android.widget.FrameLayout {
@@ -169,7 +170,7 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
         LayoutInflater.from(getContext()).inflate(R.layout.emoji_panel, this, true);
 
         mEmojiGridView = findViewById(R.id.emoji_grid_view);
-        mTabContainer = findViewById(R.id.emoji_tab_container);
+        mTabContainer  = findViewById(R.id.emoji_tab_container);
 
         final int minCellPx = (int)(36 * getResources().getDisplayMetrics().density);
         final int screenWidth = getResources().getDisplayMetrics().widthPixels;
@@ -184,11 +185,59 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
             if (mLatinIME != null) mLatinIME.toggleEmojiPanel();
         });
 
+        findViewById(R.id.emoji_search_btn).setOnClickListener(v -> {
+            android.util.Log.e("EmojiSearch", "search button pressed");
+            if (mLatinIME != null) mLatinIME.toggleEmojiSearch();
+        });
+
         findViewById(R.id.emoji_backspace_btn).setOnClickListener(v -> {
             if (mLatinIME != null) mLatinIME.onCodeInput(
                     uk.coko.forge.kokey.latin.common.Constants.CODE_DELETE,
                     0, 0, false);
         });
+    }
+
+    public interface SearchChunkCallback {
+        void onChunk(List<String> chunk);
+    }
+
+    public interface CancelCheck {
+        boolean isCancelled();
+    }
+
+    /**
+     * Searches emojis by tag query and delivers results in chunks on a background thread.
+     * Stops early if cancelCheck returns true before delivering a chunk.
+     */
+    public void searchLazy(final String query, final int chunkSize,
+                           final CancelCheck cancelCheck, final SearchChunkCallback callback) {
+        new Thread(() -> {
+            if (mEmojiData == null) mEmojiData = loadBin();
+            final int sdk = Build.VERSION.SDK_INT;
+            final String[] terms = query.toLowerCase(java.util.Locale.ROOT).trim().split("\\s+");
+            final List<String> chunk = new ArrayList<>(chunkSize);
+            for (int i = 0; i < mEmojiData.count; i++) {
+                if (cancelCheck.isCancelled()) return;
+                if (sdk < minApiForVersion(mEmojiData.version[i])) continue;
+                boolean allMatch = true;
+                for (final String term : terms) {
+                    boolean termFound = false;
+                    for (final String tag : mEmojiData.tags[i]) {
+                        if (tag.contains(term)) { termFound = true; break; }
+                    }
+                    if (!termFound) { allMatch = false; break; }
+                }
+                if (allMatch) {
+                    chunk.add(mEmojiData.emoji[i]);
+                }
+                if (chunk.size() >= chunkSize) {
+                    if (cancelCheck.isCancelled()) return;
+                    callback.onChunk(new ArrayList<>(chunk));
+                    chunk.clear();
+                }
+            }
+            if (!chunk.isEmpty() && !cancelCheck.isCancelled()) callback.onChunk(chunk);
+        }).start();
     }
 
     public void initialize() {
@@ -253,18 +302,19 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
                 "cldr_en", "raw", getContext().getPackageName());
         if (resId == 0) {
             Log.e(TAG, "cldr_en.bin not found in res/raw");
-            return new EmojiData(new String[0], new String[0], new int[0], new int[0], 0);
+            return new EmojiData(new String[0], new String[0], new int[0], new int[0], new String[0][], 0);
         }
         try (InputStream in = getResources().openRawResource(resId)) {
             final ByteArrayOutputStream buf = new ByteArrayOutputStream();
             final byte[] chunk = new byte[4096];
             int n;
             while ((n = in.read(chunk)) != -1) buf.write(chunk, 0, n);
-            return parseBin(ByteBuffer.wrap(buf.toByteArray()));
+            final EmojiData d = parseBin(ByteBuffer.wrap(buf.toByteArray()));
+            if (d != null) return d;
         } catch (Exception e) {
             Log.e(TAG, "Failed to load cldr_en.bin", e);
-            return new EmojiData(new String[0], new String[0], new int[0], new int[0], 0);
         }
+        return new EmojiData(new String[0], new String[0], new int[0], new int[0], new String[0][], 0);
     }
 
     private static EmojiData parseBin(final ByteBuffer buf) {
@@ -289,34 +339,40 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
         final int[]    version  = new int[count];
         final int[]    catIndex = new int[count];
 
+        final String[][] tags = new String[count][];
         for (int i = 0; i < count; i++) {
             final byte[] eb = new byte[buf.get() & 0xFF];
             buf.get(eb);
             emoji[i]    = new String(eb, StandardCharsets.UTF_8);
             version[i]  = buf.get() & 0xFF;
             catIndex[i] = buf.get() & 0xFF;
-            // Skip tags (search not implemented yet)
             final int numTags = buf.get() & 0xFF;
+            final String[] tagArr = new String[numTags];
             for (int t = 0; t < numTags; t++) {
-                final int tagLen = buf.get() & 0xFF;
-                buf.position(buf.position() + tagLen);
+                final byte[] tb = new byte[buf.get() & 0xFF];
+                buf.get(tb);
+                tagArr[t] = new String(tb, StandardCharsets.UTF_8).toLowerCase(java.util.Locale.ROOT);
             }
+            tags[i] = tagArr;
         }
-        return new EmojiData(categories, emoji, version, catIndex, count);
+        return new EmojiData(categories, emoji, version, catIndex, tags, count);
     }
 
     private static final class EmojiData {
-        final String[] categories;
-        final String[] emoji;
-        final int[]    version;
-        final int[]    catIndex;
-        final int      count;
+        final String[]   categories;
+        final String[]   emoji;
+        final int[]      version;
+        final int[]      catIndex;
+        final String[][] tags;
+        final int        count;
 
-        EmojiData(String[] categories, String[] emoji, int[] version, int[] catIndex, int count) {
+        EmojiData(String[] categories, String[] emoji, int[] version, int[] catIndex,
+                  String[][] tags, int count) {
             this.categories = categories;
             this.emoji      = emoji;
             this.version    = version;
             this.catIndex   = catIndex;
+            this.tags       = tags;
             this.count      = count;
         }
     }

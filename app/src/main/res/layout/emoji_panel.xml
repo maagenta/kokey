@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <!-- Emoji grid -->
-    <uk.coko.forge.kokey.latin.EmojiGridView
+    <uk.coko.forge.kokey.emoji.EmojiGridView
         android:id="@+id/emoji_grid_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -26,6 +26,16 @@
             android:text="⌨"
             android:textSize="20sp"
             android:textColor="?attr/functionalTextColor"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="0dp" />
+
+        <!-- Toggle emoji search -->
+        <Button
+            android:id="@+id/emoji_search_btn"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:text="🔍"
+            android:textSize="20sp"
             android:background="?android:attr/selectableItemBackground"
             android:padding="0dp" />
 

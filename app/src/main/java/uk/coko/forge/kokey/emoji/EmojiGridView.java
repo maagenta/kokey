@@ -1,4 +1,4 @@
-package uk.coko.forge.kokey.latin;
+package uk.coko.forge.kokey.emoji;
 
 import android.content.Context;
 import android.graphics.Bitmap;

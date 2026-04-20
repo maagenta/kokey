@@ -98,6 +98,11 @@
         latin:keyActionFlags="noKeyPreview"
         latin:backgroundType="functional" />
     <key-style
+        latin:styleName="emojiSearchKeyStyle"
+        latin:keySpec="!icon/emoji_search_key|!code/key_emoji_search"
+        latin:keyActionFlags="noKeyPreview"
+        latin:backgroundType="functional" />
+    <key-style
         latin:styleName="settingsKeyStyle"
         latin:keySpec="!icon/settings_key|!code/key_settings"
         latin:keyActionFlags="noKeyPreview|altCodeWhileTyping"

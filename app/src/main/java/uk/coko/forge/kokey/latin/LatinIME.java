@@ -90,6 +90,8 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
 
     private RichInputMethodManager mRichImm;
     final KeyboardSwitcher mKeyboardSwitcher;
+    private uk.coko.forge.kokey.emoji.EmojiSearchView mEmojiSearchView;
+    private boolean mEmojiSearchActive = false;
 
     private AlertDialog mOptionsDialog;
 
@@ -307,7 +309,14 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
 
     @Override
     public View onCreateInputView() {
-        return mKeyboardSwitcher.onCreateInputView();
+        final View inputView = mKeyboardSwitcher.onCreateInputView();
+        final android.util.DisplayMetrics dm = getResources().getDisplayMetrics();
+        final int cellSize = dm.widthPixels / Math.max(dm.widthPixels / (int)(36 * dm.density), 6);
+        mEmojiSearchView = inputView.findViewById(uk.coko.forge.kokey.R.id.emoji_search_view);
+        if (mEmojiSearchView != null) {
+            mEmojiSearchView.setup(this, mKeyboardSwitcher.getEmojiPanelView(), cellSize);
+        }
+        return inputView;
     }
 
     @Override
@@ -316,11 +325,6 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
         mInputView = view;
         updateSoftInputWindowLayoutParameters();
         view.requestApplyInsets();
-    }
-
-    @Override
-    public void setCandidatesView(final View view) {
-        // To ensure that CandidatesView will never be set.
     }
 
     @Override
@@ -535,7 +539,18 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
             outInsets.visibleTopInsets = inputHeight;
             return;
         }
-        final int visibleTopY = inputHeight - visibleKeyboardView.getHeight();
+        int visibleHeight = visibleKeyboardView.getHeight();
+        if (mEmojiSearchActive && mEmojiSearchView != null
+                && mEmojiSearchView.getVisibility() == android.view.View.VISIBLE
+                && mEmojiSearchView.getHeight() > 0) {
+            visibleHeight += mEmojiSearchView.getHeight();
+        }
+        final int visibleTopY = inputHeight - visibleHeight;
+        android.util.Log.d("Insets", "inputHeight=" + inputHeight
+                + " visibleHeight=" + visibleHeight
+                + " visibleTopY=" + visibleTopY
+                + " searchActive=" + mEmojiSearchActive
+                + " searchHeight=" + (mEmojiSearchView != null ? mEmojiSearchView.getHeight() : -1));
         // Need to set expanded touchable region only if a keyboard view is being shown.
         if (visibleKeyboardView.isShown()) {
             final int touchLeft = 0;
@@ -716,6 +731,10 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     @Override
     public void onCodeInput(final int codePoint, final int x, final int y,
             final boolean isKeyRepeat) {
+        if (mEmojiSearchActive) {
+            if (mEmojiSearchView != null) mEmojiSearchView.onKey(codePoint);
+            return;
+        }
         final Event event = createSoftwareKeypressEvent(getCodePointForKeyboard(codePoint), isKeyRepeat);
         onEvent(event);
     }
@@ -816,6 +835,23 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
 
     public void toggleEmojiPanel() {
         mKeyboardSwitcher.toggleEmojiPanel();
+    }
+
+
+    public void toggleEmojiSearch() {
+        mKeyboardSwitcher.toggleEmojiPanel();
+        mEmojiSearchActive = true;
+        if (mEmojiSearchView != null) {
+            mEmojiSearchView.setVisibility(android.view.View.VISIBLE);
+            mEmojiSearchView.show();
+        }
+    }
+
+    public void closeEmojiSearch() {
+        mEmojiSearchActive = false;
+        if (mEmojiSearchView != null) {
+            mEmojiSearchView.setVisibility(android.view.View.GONE);
+        }
     }
 
     public void launchSettings() {

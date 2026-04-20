@@ -28,6 +28,7 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 
 import uk.coko.forge.kokey.R;
+import uk.coko.forge.kokey.emoji.EmojiPanelView;
 import uk.coko.forge.kokey.event.Event;
 import uk.coko.forge.kokey.keyboard.KeyboardLayoutSet.KeyboardLayoutSetException;
 import uk.coko.forge.kokey.keyboard.internal.KeyboardState;
@@ -46,7 +47,7 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
     private static final String TAG = KeyboardSwitcher.class.getSimpleName();
 
     private MainKeyboardView mKeyboardView;
-    private uk.coko.forge.kokey.latin.EmojiPanelView mEmojiPanelView;
+    private EmojiPanelView mEmojiPanelView;
     private LatinIME mLatinIME;
     private RichInputMethodManager mRichImm;
 
@@ -401,4 +402,6 @@ public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
             mEmojiPanelView.initialize();
         }
     }
+
+    public EmojiPanelView getEmojiPanelView() { return mEmojiPanelView; }
 }

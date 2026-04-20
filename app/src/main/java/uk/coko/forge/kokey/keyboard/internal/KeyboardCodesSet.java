@@ -56,6 +56,7 @@ public final class KeyboardCodesSet {
         "key_right",
         "key_emoji",
         "key_unspecified",
+        "key_emoji_search",
     };
 
     private static final int[] DEFAULT = {
@@ -77,6 +78,7 @@ public final class KeyboardCodesSet {
         Constants.CODE_RIGHT,
         Constants.CODE_EMOJI,
         Constants.CODE_UNSPECIFIED,
+        Constants.CODE_EMOJI_SEARCH,
     };
 
     static {

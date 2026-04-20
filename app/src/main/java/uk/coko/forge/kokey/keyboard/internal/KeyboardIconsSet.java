@@ -53,6 +53,7 @@ public final class KeyboardIconsSet {
     public static final String NAME_ZWNJ_KEY = "zwnj_key";
     public static final String NAME_ZWJ_KEY = "zwj_key";
     public static final String NAME_EMOJI_KEY = "emoji_key";
+    public static final String NAME_EMOJI_SEARCH_KEY = "emoji_search_key";
 
     private static final SparseIntArray ATTR_ID_TO_ICON_ID = new SparseIntArray();
 
@@ -80,6 +81,7 @@ public final class KeyboardIconsSet {
         NAME_ZWNJ_KEY,                    R.drawable.sym_keyboard_zwnj,
         NAME_ZWJ_KEY,                     R.drawable.sym_keyboard_zwj,
         NAME_EMOJI_KEY,                   R.drawable.sym_keyboard_emoji,
+        NAME_EMOJI_SEARCH_KEY,            R.drawable.sym_keyboard_search,
     };
 
     private static final int NUM_ICONS = NAMES_AND_ATTR_IDS.length / 2;
