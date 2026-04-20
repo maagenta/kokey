@@ -104,6 +104,7 @@
     <string name="prefs_bottom_offset_portrait_settings">Bottom offset</string>
     <string name="keyboard_color">Set custom keyboard color</string>
     <string name="show_special_chars">Show special characters</string>
+    <string name="show_number_hints">Show number hints</string>
     <string name="show_language_switch_key">Show language switch key</string>
     <string name="show_emoji_key">Show emoji key</string>
     <string name="pref_use_on_screen">Show on-screen keyboard</string>

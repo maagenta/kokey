@@ -31,6 +31,10 @@
         android:title="@string/show_special_chars"
         android:defaultValue="true" />
     <SwitchPreference
+        android:key="pref_show_number_hints"
+        android:title="@string/show_number_hints"
+        android:defaultValue="true" />
+    <SwitchPreference
         android:key="pref_show_language_switch_key"
         android:title="@string/show_language_switch_key"
         android:defaultValue="true" />

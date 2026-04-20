@@ -92,6 +92,8 @@ public class KeyboardView extends View {
     private static final float KET_TEXT_SHADOW_RADIUS_DISABLED = -1.0f;
     protected int mCustomColor = 0;
     protected KeyboardTheme mTheme;
+    // When false, numeric hint labels (e.g. "1"–"0" on letter keys) are not drawn.
+    private boolean mShowNumberHints = true;
 
     // The maximum key label width in the proportion to the key width.
     private static final float MAX_LABEL_RATIO = 0.90f;
@@ -173,6 +175,7 @@ public class KeyboardView extends View {
         final SharedPreferences prefs = PreferenceManagerCompat.getDeviceSharedPreferences(getContext());
         mCustomColor = Settings.readKeyboardColor(prefs, getContext());
         mTheme = Settings.getKeyboardTheme(getContext());
+        mShowNumberHints = Settings.readShowNumberHints(prefs);
         invalidateAllKeys();
         requestLayout();
     }
@@ -404,9 +407,11 @@ public class KeyboardView extends View {
             paint.setTextScaleX(1.0f);
         }
 
-        // Draw hint label.
+        // Draw hint label (e.g. numbers on the top row of letter keys).
+        // Skipped when the hint is a single digit and "Show number hints" is disabled.
         final String hintLabel = key.getHintLabel();
-        if (hintLabel != null) {
+        if (hintLabel != null && (mShowNumberHints || hintLabel.length() != 1
+                || !Character.isDigit(hintLabel.charAt(0)))) {
             paint.setTextSize(key.selectHintTextSize(params));
             paint.setColor(key.selectHintTextColor(params));
             // TODO: Should add a way to specify type face for hint letters
