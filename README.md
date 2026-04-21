@@ -1,34 +1,33 @@
-# Kokey
+# KoKey
 
-<img src="images/screenshot-0.png"
-      alt="closeup"
-      width="500"/>
-      
-## About
+A keyboard that respects your screen and your attention.
 
-Features:
-- Small size (<1MB)
-- Emoji panel
-- Adjustable keyboard height for more screen space
+## What it does
+
+- Emoji panel with instant search
 - Number row
-- Swipe space to move cursor
+- Swipe the space bar to move your cursor
+- Adjustable height for more breathing room
 - Custom theme colors
-- Minimal permissions
-- Ads-free
 
-Feature it doesn't have:
-- GIFs
-- Spell checker
-- Swipe typing
+## What it doesn't do
 
-## Downloads
+- No GIFs
+- No spell checker
+- No swipe typing
+- No ads
+- No tracking
 
-[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"
-      alt="Get it on Google Play"
-      height="80">](https://play.google.com/store/apps/details?id=uk.coko.forge.kokey)
+## Why KoKey
+
+Keyboards used to just be keyboards. Somewhere along the way they became platforms — bloated with suggestions, animations, and features that slowly eat your screen and send your keystrokes somewhere else.
+
+KoKey is a keyboard again. Small, fast, and quiet. It does what you type and nothing more.
+
+## Download
+
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=uk.coko.forge.kokey)
 
 ## Credits
 
-Licensed under Apache License Version 2
-
-This keyboard is based on AOSP LatinIME keyboard. You can get the original source code in https://android.googlesource.com/platform/packages/inputmethods/LatinIME/
+Based on [simple-keyboard](https://github.com/rkkr/simple-keyboard) by rkkr. Licensed under Apache License Version 2.
