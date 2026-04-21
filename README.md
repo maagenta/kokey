@@ -1,5 +1,7 @@
 # KoKey
 
+<img src="branding/readme/kokey_frame.png" alt="KoKey keyboard" width="600"/>
+
 A keyboard that respects your screen and your attention.
 
 ## What it does
