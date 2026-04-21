@@ -15,7 +15,7 @@ final class EmojiLazyLoader implements EmojiLoader {
 
     private final LruCache<Integer, Bitmap> mCache = new LruCache<>(CACHE_SIZE);
     private final Set<Integer> mPending = ConcurrentHashMap.newKeySet();
-    private final ExecutorService mExecutor = Executors.newSingleThreadExecutor();
+    private ExecutorService mExecutor = Executors.newSingleThreadExecutor();
     private final Runnable mInvalidateCallback;
 
     private List<String> mEmojis;
@@ -38,6 +38,9 @@ final class EmojiLazyLoader implements EmojiLoader {
         final Bitmap cached = mCache.get(index);
         if (cached != null) return cached;
 
+        if (mExecutor.isShutdown()) {
+            mExecutor = Executors.newSingleThreadExecutor();
+        }
         if (mPending.add(index)) {
             final String emoji = mEmojis.get(index);
             final int size = mCellSize;

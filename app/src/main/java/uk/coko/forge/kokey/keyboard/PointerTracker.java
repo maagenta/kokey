@@ -779,13 +779,11 @@ public final class PointerTracker implements PointerTrackerQueue.Element {
         }
         if (code == Constants.CODE_EMOJI && sLongPressEmojiSearchEnabled) {
             // Long pressing the emoji key opens emoji search when the option is enabled.
-            Log.d(TAG, "onLongPressed: CODE_EMOJI → requesting CUSTOM_CODE_EMOJI_SEARCH");
             sListener.onCustomRequest(Constants.CUSTOM_CODE_EMOJI_SEARCH);
             cancelKeyTracking();
             sListener.onReleaseKey(code, false /* withSliding */);
             return;
         }
-        Log.d(TAG, "onLongPressed: code=" + code + " sLongPressEmojiSearchEnabled=" + sLongPressEmojiSearchEnabled);
 
         setReleasedKeyGraphics(key, false /* withAnimation */);
         // During emoji search, suppress all popup key panels — the user is typing

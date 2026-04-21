@@ -235,7 +235,7 @@ public final class Settings extends BroadcastReceiver implements SharedPreferenc
     }
 
     public static boolean readEmojiSmoothRendering(final SharedPreferences prefs) {
-        final String value = prefs.getString(PREF_EMOJI_RENDERING, EMOJI_RENDERING_SMOOTH);
+        final String value = prefs.getString(PREF_EMOJI_RENDERING, EMOJI_RENDERING_LIGHT);
         return EMOJI_RENDERING_SMOOTH.equals(value);
     }
 

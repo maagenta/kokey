@@ -16,7 +16,13 @@
 #   public *;
 #}
 
--keep class uk.coko.forge.kokey.R
+# Keep all R inner classes so resource IDs accessed at runtime are not stripped
+-keep class uk.coko.forge.kokey.R$* { *; }
+
+# LocaleResourceUtils uses R.class.getPackage().getName() to look up resources by name
+# at runtime via getIdentifier(). If R8 renames the package, getIdentifier() returns 0
+# and the app crashes with Resources$NotFoundException.
+-keeppackagenames uk.coko.forge.kokey.**
 -keep class uk.coko.forge.kokey.latin.settings.SettingsFragment
 -keep class uk.coko.forge.kokey.latin.settings.LanguagesSettingsFragment
 -keep class uk.coko.forge.kokey.latin.settings.SingleLanguageSettingsFragment

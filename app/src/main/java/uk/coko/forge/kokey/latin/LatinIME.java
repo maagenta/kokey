@@ -22,7 +22,6 @@
 package uk.coko.forge.kokey.latin;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
