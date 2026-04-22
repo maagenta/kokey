@@ -4,6 +4,12 @@
 - [ ] Make more easy to make the keyboard the default keyboard
 - [ ] If there is a personalized background color, there are issues with: [emoji-panel, emoji-search-view]
 
+## Questions
+- [ ] Floating keys should have the same color as the keyboard ?
+
+## Emoji
+- [ ] Add Recent Emoji View
+
 ## New Defaut Theme (New Fork)
 - [ ] No space-key background color
 - [ ] No return background color
