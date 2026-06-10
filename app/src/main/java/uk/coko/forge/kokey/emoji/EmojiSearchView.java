@@ -1,6 +1,7 @@
 package uk.coko.forge.kokey.emoji;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -11,8 +12,10 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
 import uk.coko.forge.kokey.R;
+import uk.coko.forge.kokey.compat.PreferenceManagerCompat;
 import uk.coko.forge.kokey.keyboard.MainKeyboardView;
 import uk.coko.forge.kokey.latin.LatinIME;
+import uk.coko.forge.kokey.latin.settings.Settings;
 
 /**
  * Self-contained emoji search UI: input bar + results strip.
@@ -85,6 +88,13 @@ findViewById(R.id.emoji_search_close).setOnTouchListener((v, event) -> {
         final android.view.ViewGroup.LayoutParams lp = mStrip.getLayoutParams();
         lp.height = cellSize;
         mStrip.setLayoutParams(lp);
+
+        final SharedPreferences prefs = PreferenceManagerCompat.getDeviceSharedPreferences(getContext());
+        final int color = Settings.readKeyboardColor(prefs, getContext());
+        for (int i = 0; i < getChildCount(); i++) {
+            getChildAt(i).setBackgroundColor(color);
+        }
+        mSearchField.setBackgroundColor(color);
     }
 
     public void show() {

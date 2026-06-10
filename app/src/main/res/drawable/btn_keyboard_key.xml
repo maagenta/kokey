@@ -18,8 +18,6 @@
     <!-- Action keys. -->
     <item android:state_active="true" android:state_pressed="true"
           android:drawable="@drawable/btn_keyboard_key_pressed_border" />
-    <item android:state_active="true"
-          android:drawable="@drawable/btn_keyboard_key_normal_border" />
 
     <!-- Toggle keys. Use checkable/checked state. -->
     <item android:state_checkable="true" android:state_checked="true" android:state_pressed="true"

@@ -1,19 +1,18 @@
 package uk.coko.forge.kokey.emoji;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
-import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
-
-import uk.coko.forge.kokey.R;
 
 import uk.coko.forge.kokey.keyboard.Key;
 import uk.coko.forge.kokey.keyboard.Keyboard;
 import uk.coko.forge.kokey.keyboard.MainKeyboardView;
+import uk.coko.forge.kokey.compat.PreferenceManagerCompat;
 import uk.coko.forge.kokey.latin.common.Constants;
+import uk.coko.forge.kokey.latin.settings.Settings;
 
 /**
  * Transparent overlay drawn on top of MainKeyboardView during emoji search.
@@ -52,10 +51,8 @@ final class EmojiSearchKeyDimOverlay extends View {
 
     EmojiSearchKeyDimOverlay(final Context context) {
         super(context);
-        final android.content.res.TypedArray ta =
-                context.obtainStyledAttributes(new int[]{ R.attr.keyboardViewBackground });
-        mDimPaint.setColor(ta.getColor(0, Color.BLACK));
-        ta.recycle();
+        final SharedPreferences prefs = PreferenceManagerCompat.getDeviceSharedPreferences(context);
+        mDimPaint.setColor(Settings.readKeyboardColor(prefs, context));
         mDimPaint.setAlpha(DIM_ALPHA);
         setWillNotDraw(false);
     }

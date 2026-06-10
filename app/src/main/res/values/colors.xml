@@ -31,7 +31,7 @@
     <color name="key_text_inactive_color_lxx_system">#de000000</color>
     <color name="key_hint_letter_color_lxx_system">#90000000</color>
     <color name="key_background_normal_lxx_system">#ffd6d7d7</color>
-    <color name="key_background_pressed_lxx_system">#20000000</color>
+    <color name="key_background_pressed_lxx_system">#0D000000</color>
     <!-- Color resources for LXX_Light theme. -->
     <color name="background_lxx_light">#ECEFF1</color>
     <color name="background_secondary_lxx_light">#20000000</color>
@@ -40,7 +40,7 @@
     <color name="key_text_inactive_color_lxx_light">#B337474F</color>
     <color name="key_hint_letter_color_lxx_light">#B337474F</color>
     <color name="key_background_normal_lxx_light">#26080B0C</color>
-    <color name="key_background_pressed_lxx_light">#400E1214</color>
+    <color name="key_background_pressed_lxx_light">#0D000000</color>
     <!-- Color resources for LXX_Dark theme. -->
     <color name="background_lxx_dark">#263238</color>
     <color name="background_secondary_lxx_dark">#20FFFFFF</color>

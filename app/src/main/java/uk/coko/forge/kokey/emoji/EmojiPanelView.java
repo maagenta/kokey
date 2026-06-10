@@ -89,6 +89,8 @@ public final class EmojiPanelView extends android.widget.FrameLayout {
 
     public void setLatinIME(final LatinIME latinIME) {
         mLatinIME = latinIME;
+        final SharedPreferences prefs = PreferenceManagerCompat.getDeviceSharedPreferences(getContext());
+        setBackgroundColor(Settings.readKeyboardColor(prefs, getContext()));
         preload();
     }
 
