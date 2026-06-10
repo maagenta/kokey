@@ -1396,7 +1396,7 @@ public final class KeyboardTextsTable {
         // U+0153: "œ" LATIN SMALL LIGATURE OE
         // U+014D: "ō" LATIN SMALL LETTER O WITH MACRON
         // U+00BA: "º" MASCULINE ORDINAL INDICATOR
-        /* morekeys_o */ "\u00F3,\u00F2,\u00F6,\u00F4,\u00F5,\u00F8,\u0153,\u014D,\u00BA",
+        /* morekeys_o */ "\u00F3,\u00F2,\u00F6,\u00F4,\u00F5,\u00F8,\u0153,\u014D,\u00BA,%",
         // U+00E9: "é" LATIN SMALL LETTER E WITH ACUTE
         // U+00E8: "è" LATIN SMALL LETTER E WITH GRAVE
         // U+00EB: "ë" LATIN SMALL LETTER E WITH DIAERESIS
@@ -1404,13 +1404,13 @@ public final class KeyboardTextsTable {
         // U+0119: "ę" LATIN SMALL LETTER E WITH OGONEK
         // U+0117: "ė" LATIN SMALL LETTER E WITH DOT ABOVE
         // U+0113: "ē" LATIN SMALL LETTER E WITH MACRON
-        /* morekeys_e */ "\u00E9,\u00E8,\u00EB,\u00EA,\u0119,\u0117,\u0113",
+        /* morekeys_e */ "\u00E9,\u00E8,\u00EB,\u00EA,\u0119,\u0117,\u0113,%",
         // U+00FA: "ú" LATIN SMALL LETTER U WITH ACUTE
         // U+00FC: "ü" LATIN SMALL LETTER U WITH DIAERESIS
         // U+00F9: "ù" LATIN SMALL LETTER U WITH GRAVE
         // U+00FB: "û" LATIN SMALL LETTER U WITH CIRCUMFLEX
         // U+016B: "ū" LATIN SMALL LETTER U WITH MACRON
-        /* morekeys_u */ "\u00FA,\u00FC,\u00F9,\u00FB,\u016B",
+        /* morekeys_u */ "\u00FA,\u00FC,\u00F9,\u00FB,\u016B,%",
         /* keylabel_to_alpha */ null,
         // U+00ED: "í" LATIN SMALL LETTER I WITH ACUTE
         // U+00EF: "ï" LATIN SMALL LETTER I WITH DIAERESIS
@@ -1418,7 +1418,7 @@ public final class KeyboardTextsTable {
         // U+00EE: "î" LATIN SMALL LETTER I WITH CIRCUMFLEX
         // U+012F: "į" LATIN SMALL LETTER I WITH OGONEK
         // U+012B: "ī" LATIN SMALL LETTER I WITH MACRON
-        /* morekeys_i */ "\u00ED,\u00EF,\u00EC,\u00EE,\u012F,\u012B",
+        /* morekeys_i */ "\u00ED,\u00EF,\u00EC,\u00EE,\u012F,\u012B,%",
         // U+00F1: "ñ" LATIN SMALL LETTER N WITH TILDE
         // U+0144: "ń" LATIN SMALL LETTER N WITH ACUTE
         /* morekeys_n */ "\u00F1,\u0144",

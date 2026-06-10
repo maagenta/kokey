@@ -46,3 +46,6 @@ captures/
 
 # Macos
 *.DS_STORE
+
+# Vim
+*.swp
